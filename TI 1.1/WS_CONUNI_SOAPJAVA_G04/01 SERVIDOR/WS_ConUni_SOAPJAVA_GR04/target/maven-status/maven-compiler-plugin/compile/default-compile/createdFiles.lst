@@ -1,6 +1,5 @@
-ec\edu\monster\servicio\SumaService.class
-ec\edu\monster\prueba\Prueba01.class
-ec\edu\monster\ws\WSSuma.class
-ec\edu\monster\servicio\LoginServicio.class
-com\mycompany\ws_conuni_soapjava_gr04\JakartaRestConfiguration.class
-com\mycompany\ws_conuni_soapjava_gr04\resources\JakartaEE10Resource.class
+ec\edu\monster\servicio\ConversionUnidadesServicio.class
+ec\edu\monster\ws\WSConversionUnidades.class
+ec\edu\monster\ws_conuni_soapjava_gr04\resources\JakartaEE10Resource.class
+ec\edu\monster\prueba\PruebaConversionUnidades.class
+ec\edu\monster\ws_conuni_soapjava_gr04\JakartaRestConfiguration.class

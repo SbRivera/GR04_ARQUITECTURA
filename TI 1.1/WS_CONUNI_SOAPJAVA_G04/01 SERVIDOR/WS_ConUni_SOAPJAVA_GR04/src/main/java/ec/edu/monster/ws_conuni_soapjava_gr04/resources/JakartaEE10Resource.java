@@ -1,4 +1,4 @@
-package com.mycompany.ws_conuni_soapjava_gr04.resources;
+package ec.edu.monster.ws_conuni_soapjava_gr04.resources;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
