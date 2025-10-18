@@ -1,0 +1,7 @@
+D:\OneDrive\Desktop\servidor aaaaa\WS_ConUni_SOAP_DOTNET_GR04\WS_ConUni_SOAP_DOTNET_GR04\bin\WS_ConUni_SOAP_DOTNET_GR04.dll.config
+D:\OneDrive\Desktop\servidor aaaaa\WS_ConUni_SOAP_DOTNET_GR04\WS_ConUni_SOAP_DOTNET_GR04\bin\WS_ConUni_SOAP_DOTNET_GR04.dll
+D:\OneDrive\Desktop\servidor aaaaa\WS_ConUni_SOAP_DOTNET_GR04\WS_ConUni_SOAP_DOTNET_GR04\bin\WS_ConUni_SOAP_DOTNET_GR04.pdb
+D:\OneDrive\Desktop\servidor aaaaa\WS_ConUni_SOAP_DOTNET_GR04\WS_ConUni_SOAP_DOTNET_GR04\obj\Debug\WS_ConUni_SOAP_DOTNET_GR04.csproj.AssemblyReference.cache
+D:\OneDrive\Desktop\servidor aaaaa\WS_ConUni_SOAP_DOTNET_GR04\WS_ConUni_SOAP_DOTNET_GR04\obj\Debug\WS_ConUni_SOAP_DOTNET_GR04.csproj.CoreCompileInputs.cache
+D:\OneDrive\Desktop\servidor aaaaa\WS_ConUni_SOAP_DOTNET_GR04\WS_ConUni_SOAP_DOTNET_GR04\obj\Debug\WS_ConUni_SOAP_DOTNET_GR04.dll
+D:\OneDrive\Desktop\servidor aaaaa\WS_ConUni_SOAP_DOTNET_GR04\WS_ConUni_SOAP_DOTNET_GR04\obj\Debug\WS_ConUni_SOAP_DOTNET_GR04.pdb

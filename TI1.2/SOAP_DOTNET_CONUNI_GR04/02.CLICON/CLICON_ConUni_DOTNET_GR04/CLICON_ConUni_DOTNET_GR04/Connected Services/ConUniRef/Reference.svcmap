@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="d551f8f9-2f9a-451d-b1ad-906ae9b957ae" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:65462/espe.edu.monster.servicio/WSConUni.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WSConUni.wsdl" MetadataType="Wsdl" ID="516d3544-85ae-4b39-a6a5-27c54a606dd5" SourceId="1" SourceUrl="http://localhost:65462/espe.edu.monster.servicio/WSConUni.svc?wsdl" />
+    <MetadataFile FileName="WSConUni.xsd" MetadataType="Schema" ID="d86517ab-d2e9-49f1-9995-38d9c97c29d8" SourceId="1" SourceUrl="http://localhost:65462/espe.edu.monster.servicio/WSConUni.svc?xsd=xsd0" />
+    <MetadataFile FileName="WSConUni1.xsd" MetadataType="Schema" ID="1091b44b-3600-4b40-877f-6228ae2e6b73" SourceId="1" SourceUrl="http://localhost:65462/espe.edu.monster.servicio/WSConUni.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

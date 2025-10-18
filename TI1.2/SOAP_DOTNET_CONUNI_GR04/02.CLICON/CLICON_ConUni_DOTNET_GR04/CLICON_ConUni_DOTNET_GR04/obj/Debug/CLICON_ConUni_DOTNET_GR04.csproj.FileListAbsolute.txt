@@ -1,0 +1,8 @@
+D:\OneDrive\Desktop\servidor aaaaa\CLICON_ConUni_DOTNET_GR04\CLICON_ConUni_DOTNET_GR04\obj\Debug\CLICON_ConUni_DOTNET_GR04.csproj.AssemblyReference.cache
+D:\OneDrive\Desktop\servidor aaaaa\CLICON_ConUni_DOTNET_GR04\CLICON_ConUni_DOTNET_GR04\obj\Debug\CLICON_ConUni_DOTNET_GR04.csproj.CoreCompileInputs.cache
+D:\OneDrive\Desktop\servidor aaaaa\CLICON_ConUni_DOTNET_GR04\CLICON_ConUni_DOTNET_GR04\bin\Debug\CLICON_ConUni_DOTNET_GR04.exe.config
+D:\OneDrive\Desktop\servidor aaaaa\CLICON_ConUni_DOTNET_GR04\CLICON_ConUni_DOTNET_GR04\bin\Debug\CLICON_ConUni_DOTNET_GR04.exe
+D:\OneDrive\Desktop\servidor aaaaa\CLICON_ConUni_DOTNET_GR04\CLICON_ConUni_DOTNET_GR04\bin\Debug\CLICON_ConUni_DOTNET_GR04.pdb
+D:\OneDrive\Desktop\servidor aaaaa\CLICON_ConUni_DOTNET_GR04\CLICON_ConUni_DOTNET_GR04\obj\Debug\CLICON_ConUni_DOTNET_GR04.exe
+D:\OneDrive\Desktop\servidor aaaaa\CLICON_ConUni_DOTNET_GR04\CLICON_ConUni_DOTNET_GR04\obj\Debug\CLICON_ConUni_DOTNET_GR04.pdb
+D:\OneDrive\Desktop\servidor aaaaa\CLICON_ConUni_DOTNET_GR04\CLICON_ConUni_DOTNET_GR04\obj\Debug\CLICON_ConUni_DOTNET_GR04.exe.config

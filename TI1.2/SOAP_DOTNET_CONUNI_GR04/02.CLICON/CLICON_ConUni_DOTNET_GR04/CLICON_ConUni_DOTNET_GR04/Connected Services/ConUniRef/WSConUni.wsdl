@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="WSConUni" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:65462/espe.edu.monster.servicio/WSConUni.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:65462/espe.edu.monster.servicio/WSConUni.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWSConUni_CentimetrosAPulgadas_InputMessage">
+    <wsdl:part name="parameters" element="tns:CentimetrosAPulgadas" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_CentimetrosAPulgadas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CentimetrosAPulgadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_PulgadasACentimetros_InputMessage">
+    <wsdl:part name="parameters" element="tns:PulgadasACentimetros" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_PulgadasACentimetros_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PulgadasACentimetrosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_CelsiusAFahrenheit_InputMessage">
+    <wsdl:part name="parameters" element="tns:CelsiusAFahrenheit" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_CelsiusAFahrenheit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CelsiusAFahrenheitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_FahrenheitACelsius_InputMessage">
+    <wsdl:part name="parameters" element="tns:FahrenheitACelsius" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_FahrenheitACelsius_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FahrenheitACelsiusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_KilogramosALibras_InputMessage">
+    <wsdl:part name="parameters" element="tns:KilogramosALibras" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_KilogramosALibras_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KilogramosALibrasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_LibrasAKilogramos_InputMessage">
+    <wsdl:part name="parameters" element="tns:LibrasAKilogramos" />
+  </wsdl:message>
+  <wsdl:message name="IWSConUni_LibrasAKilogramos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LibrasAKilogramosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWSConUni">
+    <wsdl:operation name="CentimetrosAPulgadas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSConUni/CentimetrosAPulgadas" message="tns:IWSConUni_CentimetrosAPulgadas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSConUni/CentimetrosAPulgadasResponse" message="tns:IWSConUni_CentimetrosAPulgadas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PulgadasACentimetros">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSConUni/PulgadasACentimetros" message="tns:IWSConUni_PulgadasACentimetros_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSConUni/PulgadasACentimetrosResponse" message="tns:IWSConUni_PulgadasACentimetros_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CelsiusAFahrenheit">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSConUni/CelsiusAFahrenheit" message="tns:IWSConUni_CelsiusAFahrenheit_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSConUni/CelsiusAFahrenheitResponse" message="tns:IWSConUni_CelsiusAFahrenheit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitACelsius">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSConUni/FahrenheitACelsius" message="tns:IWSConUni_FahrenheitACelsius_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSConUni/FahrenheitACelsiusResponse" message="tns:IWSConUni_FahrenheitACelsius_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="KilogramosALibras">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSConUni/KilogramosALibras" message="tns:IWSConUni_KilogramosALibras_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSConUni/KilogramosALibrasResponse" message="tns:IWSConUni_KilogramosALibras_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LibrasAKilogramos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWSConUni/LibrasAKilogramos" message="tns:IWSConUni_LibrasAKilogramos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWSConUni/LibrasAKilogramosResponse" message="tns:IWSConUni_LibrasAKilogramos_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWSConUni" type="tns:IWSConUni">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CentimetrosAPulgadas">
+      <soap:operation soapAction="http://tempuri.org/IWSConUni/CentimetrosAPulgadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PulgadasACentimetros">
+      <soap:operation soapAction="http://tempuri.org/IWSConUni/PulgadasACentimetros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CelsiusAFahrenheit">
+      <soap:operation soapAction="http://tempuri.org/IWSConUni/CelsiusAFahrenheit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FahrenheitACelsius">
+      <soap:operation soapAction="http://tempuri.org/IWSConUni/FahrenheitACelsius" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KilogramosALibras">
+      <soap:operation soapAction="http://tempuri.org/IWSConUni/KilogramosALibras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LibrasAKilogramos">
+      <soap:operation soapAction="http://tempuri.org/IWSConUni/LibrasAKilogramos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSConUni">
+    <wsdl:port name="BasicHttpBinding_IWSConUni" binding="tns:BasicHttpBinding_IWSConUni">
+      <soap:address location="http://localhost:65462/espe.edu.monster.servicio/WSConUni.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

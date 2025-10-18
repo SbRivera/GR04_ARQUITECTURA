@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\ws_conuni_soap_dotnet_gr04\\espe.edu.monster.controlador\\iwsconuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\espe.edu.monster.controlador\\iwsconuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|d:\\onedrive\\desktop\\servidor aaaaa\\ws_conuni_soap_dotnet_gr04\\ws_conuni_soap_dotnet_gr04\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
+              "RelativeDocumentMoniker": "WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
+              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
+              "RelativeToolTip": "WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-18T16:25:24.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WSConUni.svc.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
+              "RelativeDocumentMoniker": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
+              "RelativeToolTip": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T16:24:06.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WSConUni.svc",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
+              "RelativeDocumentMoniker": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
+              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
+              "RelativeToolTip": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
+              "WhenOpened": "2025-10-18T16:24:01.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IWSConUni.cs",
+              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
+              "RelativeDocumentMoniker": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
+              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
+              "RelativeToolTip": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T16:23:14.821Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
