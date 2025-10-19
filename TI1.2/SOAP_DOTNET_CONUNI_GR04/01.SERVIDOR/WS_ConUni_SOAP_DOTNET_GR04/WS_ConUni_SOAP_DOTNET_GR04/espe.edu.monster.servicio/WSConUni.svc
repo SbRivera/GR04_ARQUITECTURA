@@ -1,0 +1,3 @@
+﻿<%@ ServiceHost Language="C#" Debug="true"
+    Service="espe.edu.monster.servicio.WSConUni"
+    CodeBehind="WSConUni.svc.cs" %>
