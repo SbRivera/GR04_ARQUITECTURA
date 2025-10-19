@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nueva Paleta de Colores - Estilo .NET (Morado/Cyan moderno) -->
+    <!-- Colores Principales -->
+    <color name="primary">#6B46C1</color> <!-- Morado vibrante -->
+    <color name="primary_dark">#553C9A</color>
+    <color name="primary_light">#9F7AEA</color>
+    <color name="accent">#00D9FF</color> <!-- Cyan brillante -->
+    
+    <!-- Colores por Categoría (Degradado moderno) -->
+    <color name="longitud">#0891B2</color> <!-- Cyan oscuro -->
+    <color name="longitud_light">#06B6D4</color>
+    <color name="temperatura">#F59E0B</color> <!-- Ámbar -->
+    <color name="temperatura_light">#FBBF24</color>
+    <color name="masa">#EC4899</color> <!-- Rosa -->
+    <color name="masa_light">#F472B6</color>
+    
+    <!-- Colores Base (Más moderno) -->
+    <color name="background">#F8FAFC</color> <!-- Gris muy claro -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color> <!-- Casi negro azulado -->
+    <color name="text_secondary">#64748B</color> <!-- Gris azulado -->
+    <color name="divider">#CBD5E1</color>
+    
+    <!-- Colores de Estado (Vibrantes) -->
+    <color name="success">#10B981</color> <!-- Verde esmeralda -->
+    <color name="error">#EF4444</color> <!-- Rojo -->
+    <color name="warning">#F59E0B</color> <!-- Ámbar -->
+    <color name="info">#3B82F6</color> <!-- Azul -->
+    
+    <!-- Gradientes -->
+    <color name="gradient_start">#6B46C1</color>
+    <color name="gradient_end">#00D9FF</color>
+    
+    <!-- Colores Estándar -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    
+    <!-- Colores de Overlay -->
+    <color name="overlay_dark">#80000000</color>
+    <color name="overlay_light">#40FFFFFF</color>
+</resources>

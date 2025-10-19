@@ -1,4 +1,4 @@
-package ec.edu.monster.network;
+package ec.edu.monster.controller;
 
 import ec.edu.monster.util.Constants;
 import okhttp3.MediaType;

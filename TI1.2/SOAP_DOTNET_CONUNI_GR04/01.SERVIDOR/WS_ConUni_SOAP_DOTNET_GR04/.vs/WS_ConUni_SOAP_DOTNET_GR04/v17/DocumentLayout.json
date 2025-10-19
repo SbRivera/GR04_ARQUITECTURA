@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\",
+  "WorkspaceRootPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\ws_conuni_soap_dotnet_gr04\\espe.edu.monster.controlador\\iwsconuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\ws_conuni_soap_dotnet_gr04\\espe.edu.monster.controlador\\iwsconuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\espe.edu.monster.controlador\\iwsconuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|d:\\onedrive\\desktop\\servidor aaaaa\\ws_conuni_soap_dotnet_gr04\\ws_conuni_soap_dotnet_gr04\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.2\\soap_dotnet_conuni_gr04\\01.servidor\\ws_conuni_soap_dotnet_gr04\\ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\espe.edu.monster.servicio\\wsconuni.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\ws_conuni_soap_dotnet_gr04\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D10EEF34-88AA-429F-B40B-B634EE9003B4}|WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj|solutionrelative:ws_conuni_soap_dotnet_gr04\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +30,19 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Web.config",
-              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
               "RelativeDocumentMoniker": "WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
-              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
               "RelativeToolTip": "WS_ConUni_SOAP_DOTNET_GR04\\Web.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -47,23 +51,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "WSConUni.svc.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
               "RelativeDocumentMoniker": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
-              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
               "RelativeToolTip": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T16:24:06.614Z"
+              "WhenOpened": "2025-10-18T16:24:06.614Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "WSConUni.svc",
-              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
               "RelativeDocumentMoniker": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
-              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
               "RelativeToolTip": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.servicio\\WSConUni.svc",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003504|",
@@ -74,11 +79,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "IWSConUni.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
               "RelativeDocumentMoniker": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
-              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
               "RelativeToolTip": "WS_ConUni_SOAP_DOTNET_GR04\\espe.edu.monster.controlador\\IWSConUni.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-18T16:23:14.821Z",
               "EditorCaption": ""
