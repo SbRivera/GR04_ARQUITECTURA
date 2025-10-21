@@ -5,17 +5,19 @@ import android.view.View;
 import android.widget.*;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
 import ec.edu.monster.R;
-import ec.edu.monster.network.SoapClient;
+import ec.edu.monster.controller.SoapClient;
 
 public class MainActivity extends AppCompatActivity {
 
     private Spinner spinnerCategoria, spinnerConversion;
     private TextInputEditText etValor;
-    private TextView tvResultado;
+    private TextView tvResultado, tvUnidad;
     private Button btnConvertir;
     private CardView cardResultado;
+    private FloatingActionButton fabLimpiar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +29,10 @@ public class MainActivity extends AppCompatActivity {
         spinnerConversion = findViewById(R.id.spinnerConversion);
         etValor = findViewById(R.id.etValor);
         tvResultado = findViewById(R.id.tvResultado);
+        tvUnidad = findViewById(R.id.tvUnidad);
         btnConvertir = findViewById(R.id.btnConvertir);
         cardResultado = findViewById(R.id.cardResultado);
+        fabLimpiar = findViewById(R.id.fabLimpiar);
 
         // Configurar spinner de categorías
         String[] categorias = {"Seleccionar Categoría", "Longitud", "Temperatura", "Masa"};
@@ -49,6 +53,24 @@ public class MainActivity extends AppCompatActivity {
 
         // Listener para botón convertir
         btnConvertir.setOnClickListener(v -> realizarConversion());
+        
+        // Listener para botón flotante de limpiar
+        fabLimpiar.setOnClickListener(v -> limpiarCampos());
+    }
+    
+    private void limpiarCampos() {
+        // Limpiar el campo de valor
+        etValor.setText("");
+        
+        // Ocultar el card de resultado
+        cardResultado.setVisibility(View.GONE);
+        
+        // Limpiar los textos de resultado
+        tvResultado.setText("");
+        tvUnidad.setText("");
+        
+        // Mensaje de confirmación
+        Toast.makeText(this, "Campos limpiados", Toast.LENGTH_SHORT).show();
     }
 
     private void actualizarConversiones(int categoria) {
@@ -89,38 +111,45 @@ public class MainActivity extends AppCompatActivity {
 
         String metodo = "";
         String parametro = "";
+        String unidadResultado = "";
 
         // Determinar método SOAP según selección
         if (categoria == 1) { // Longitud
             if (conversion == 1) {
                 metodo = "centimetrosAPulgadas";
                 parametro = "centimetros";
+                unidadResultado = "in";
             } else {
                 metodo = "pulgadasACentimetros";
                 parametro = "pulgadas";
+                unidadResultado = "cm";
             }
         } else if (categoria == 2) { // Temperatura
             if (conversion == 1) {
                 metodo = "celsiusAFahrenheit";
                 parametro = "celsius";
+                unidadResultado = "°F";
             } else {
                 metodo = "fahrenheitACelsius";
                 parametro = "fahrenheit";
+                unidadResultado = "°C";
             }
         } else if (categoria == 3) { // Masa
             if (conversion == 1) {
                 metodo = "kilogramosALibras";
                 parametro = "kilogramos";
+                unidadResultado = "lb";
             } else {
                 metodo = "librasAKilogramos";
                 parametro = "libras";
+                unidadResultado = "kg";
             }
         }
 
-        convertir(metodo, parametro, valor);
+        convertir(metodo, parametro, valor, unidadResultado);
     }
 
-    private void convertir(String metodo, String parametro, String valorStr) {
+    private void convertir(String metodo, String parametro, String valorStr, String unidad) {
         new Thread(() -> {
             try {
                 float valor = Float.parseFloat(valorStr);
@@ -128,11 +157,13 @@ public class MainActivity extends AppCompatActivity {
                 runOnUiThread(() -> {
                     cardResultado.setVisibility(View.VISIBLE);
                     tvResultado.setText(String.format("%.3f", resultado));
+                    tvUnidad.setText(unidad);
                 });
             } catch (Exception e) {
                 runOnUiThread(() -> {
                     cardResultado.setVisibility(View.VISIBLE);
                     tvResultado.setText("Error: " + e.getMessage());
+                    tvUnidad.setText("");
                 });
             }
         }).start();
