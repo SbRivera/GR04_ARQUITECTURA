@@ -1,0 +1,165 @@
+﻿@model WSConUniConsumer.Models.ConversionViewModel
+@{
+    ViewData["Title"] = "Conversor Universal";
+
+    var usuarioSesion = ViewBag.Usuario as string;
+    var usuarioMostrar = string.IsNullOrWhiteSpace(usuarioSesion) ? "Operador" : usuarioSesion;
+}
+
+<link rel="stylesheet" href="~/css/converter.css" asp-append-version="true" />
+
+<div class="layout">
+    <header class="hero">
+        <div>
+            <h1>Conversor Universal</h1>
+            <p>Transforma magnitudes con precisión cuántica.</p>
+        </div>
+        <div class="user-badge">
+            <span>Conectado como</span>
+            <strong>@usuarioMostrar</strong>
+        </div>
+        <form asp-controller="Login"
+              asp-action="Logout"
+              method="post"
+              class="logout-form">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="logout">Cerrar sesión</button>
+        </form>
+    </header>
+
+    <main class="grid">
+        <section class="card">
+            <h2>Longitud</h2>
+            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="false">
+                <input type="hidden" name="Tipo" value="cmToIn" />
+                <div class="field">
+                    <label for="LongitudEntrada">Centímetros → Pulgadas</label>
+                    <input type="number" id="LongitudEntrada" name="Valor"
+                           step="any" min="0" placeholder="Ej. 12.5" required />
+                </div>
+                <div class="actions">
+                    <button type="submit">Convertir</button>
+                </div>
+            </form>
+            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="false">
+                <input type="hidden" name="Tipo" value="inToCm" />
+                <div class="field">
+                    <label for="LongitudEntrada2">Pulgadas → Centímetros</label>
+                    <input type="number" id="LongitudEntrada2" name="Valor"
+                           step="any" min="0" placeholder="Ej. 5.3" required />
+                </div>
+                <div class="actions">
+                    <button type="submit">Convertir</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Temperatura</h2>
+            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="true">
+                <input type="hidden" name="Tipo" value="cToF" />
+                <div class="field">
+                    <label for="TemperaturaEntrada">Celsius → Fahrenheit</label>
+                    <input type="number" id="TemperaturaEntrada" name="Valor"
+                           step="any" placeholder="Ej. -10" required />
+                </div>
+                <div class="actions">
+                    <button type="submit">Convertir</button>
+                </div>
+            </form>
+            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="true">
+                <input type="hidden" name="Tipo" value="fToC" />
+                <div class="field">
+                    <label for="TemperaturaEntrada2">Fahrenheit → Celsius</label>
+                    <input type="number" id="TemperaturaEntrada2" name="Valor"
+                           step="any" placeholder="Ej. 86" required />
+                </div>
+                <div class="actions">
+                    <button type="submit">Convertir</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Masa</h2>
+            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="false">
+                <input type="hidden" name="Tipo" value="kgToLb" />
+                <div class="field">
+                    <label for="MasaEntrada">Kilogramos → Libras</label>
+                    <input type="number" id="MasaEntrada" name="Valor"
+                           step="any" min="0" placeholder="Ej. 4.2" required />
+                </div>
+                <div class="actions">
+                    <button type="submit">Convertir</button>
+                </div>
+            </form>
+            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="false">
+                <input type="hidden" name="Tipo" value="lbToKg" />
+                <div class="field">
+                    <label for="MasaEntrada2">Libras → Kilogramos</label>
+                    <input type="number" id="MasaEntrada2" name="Valor"
+                           step="any" min="0" placeholder="Ej. 9.3" required />
+                </div>
+                <div class="actions">
+                    <button type="submit">Convertir</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <aside class="result-card">
+        <h2>Resultado</h2>
+        @if (!string.IsNullOrWhiteSpace(Model.Resultado))
+        {
+            <p class="result-value">@Model.Resultado</p>
+            <p class="result-details">
+                Valor ingresado: <span>@Model.Valor</span><br />
+                Operación: <span>@Model.Tipo</span>
+            </p>
+        }
+        else if (!string.IsNullOrWhiteSpace(Model.Error))
+        {
+            <p class="alert">@Model.Error</p>
+        }
+        else
+        {
+            <p class="placeholder">Ingresa un valor y obtén el resultado al instante.</p>
+        }
+
+    </aside>
+</div>
+
+@section Scripts {
+    <script>
+        document.querySelectorAll('form[data-role="conversion"]').forEach(form => {
+            const input = form.querySelector('input[name="Valor"]');
+            const allowNegative = form.dataset.allowNegative === "true";
+
+            form.addEventListener('submit', event => {
+                const value = parseFloat(input.value);
+                if (!Number.isFinite(value)) {
+                    event.preventDefault();
+                    mostrarMensaje("Por favor ingresa un número válido.");
+                    return;
+                }
+                if (!allowNegative && value < 0) {
+                    event.preventDefault();
+                    mostrarMensaje("No se permiten valores negativos en esta categoría.");
+                    input.focus();
+                }
+            });
+        });
+
+        function mostrarMensaje(texto) {
+            let banner = document.querySelector('.banner');
+            if (!banner) {
+                banner = document.createElement('div');
+                banner.className = 'banner';
+                document.body.appendChild(banner);
+            }
+            banner.textContent = texto;
+            banner.classList.add('visible');
+            setTimeout(() => banner.classList.remove('visible'), 3200);
+        }
+    </script>
+}
