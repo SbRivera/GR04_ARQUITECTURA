@@ -1,0 +1,19 @@
+[
+  {
+    "ContainingType": "WS_ConUni_REST_DOTNET.Controllers.ConUni",
+    "Method": "POST",
+    "RelativePath": "ConUni/ConUni",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WS_ConUni_REST_DOTNET.Controllers.ConversionRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "ConUni"
+  }
+]
