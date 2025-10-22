@@ -10,6 +10,7 @@ public class ApplicationConfig extends Application {
     public Set<Class<?>> getClasses() {
         Set<Class<?>> resources = new java.util.HashSet<>();
         resources.add(ec.edu.monster.ws.ConUniResource.class);
+        resources.add(ec.edu.monster.ws.CORSFilter.class);
         return resources;
     }
 }
