@@ -4,3 +4,5 @@
 # Node modules y dependencias
 node_modules/
 **/node_modules/
+/TI1.3/REST_JAVA_CONUNI_GR04/02.CLIWEB/nbproject/private/
+/TI1.3/REST_JAVA_CONUNI_GR04/02.CLIWEB/build/
