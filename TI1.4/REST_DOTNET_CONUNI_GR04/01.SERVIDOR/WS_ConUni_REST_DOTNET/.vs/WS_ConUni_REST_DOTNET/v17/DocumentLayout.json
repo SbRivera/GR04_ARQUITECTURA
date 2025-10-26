@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\OneDrive\\Desktop\\Nueva carpeta\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\",
+  "WorkspaceRootPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|d:\\onedrive\\desktop\\nueva carpeta\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\controllers\\conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\controllers\\conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\controllers\\conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|d:\\onedrive\\desktop\\nueva carpeta\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\ws_conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\ws_conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|d:\\onedrive\\desktop\\nueva carpeta\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\ws_conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\ws_conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,48 +30,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WS_ConUni_REST_DOTNET.http",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
+              "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
+              "RelativeToolTip": "WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-26T13:22:17.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\appsettings.json",
+              "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\appsettings.json",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\appsettings.json",
+              "RelativeToolTip": "WS_ConUni_REST_DOTNET\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-26T13:22:04.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ConUni.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Desktop\\Nueva carpeta\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
               "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
-              "ToolTip": "D:\\OneDrive\\Desktop\\Nueva carpeta\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAhwG4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwC0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T16:20:37.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "WS_ConUni.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Desktop\\Nueva carpeta\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
               "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
-              "ToolTip": "D:\\OneDrive\\Desktop\\Nueva carpeta\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAD4vwkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:17:55.2Z"
+              "WhenOpened": "2025-10-22T16:17:55.2Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Desktop\\Nueva carpeta\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Program.cs",
               "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\Program.cs",
-              "ToolTip": "D:\\OneDrive\\Desktop\\Nueva carpeta\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Program.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Program.cs",
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:16:23.919Z"
+              "WhenOpened": "2025-10-22T16:16:23.919Z",
+              "EditorCaption": ""
             }
           ]
         }
