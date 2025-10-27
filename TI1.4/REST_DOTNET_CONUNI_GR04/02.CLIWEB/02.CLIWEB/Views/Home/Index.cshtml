@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Conversor de Unidades";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .pulse-dot {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @@keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div class="max-w-6xl w-full">
+        <!-- Header -->
+        <div class="text-center mb-12 animate-fade-in">
+            <div class="flex justify-center items-center mb-6">
+                <div class="relative">
+                    <i class="fa-brands fa-microsoft text-white text-8xl"></i>
+                    <span class="absolute -top-2 -right-2 flex h-6 w-6">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-6 w-6 bg-purple-500 border-2 border-white"></span>
+                    </span>
+                </div>
+            </div>
+            <h1 class="text-6xl font-bold text-white mb-4">
+                <i class="fas fa-exchange-alt mr-3"></i>Conversor de Unidades
+            </h1>
+            <p class="text-xl text-purple-100 mb-2">Convierte Unidades de Medida</p>
+            <div class="flex items-center justify-center gap-2 text-purple-200">
+                <i class="fas fa-server pulse-dot"></i>
+                <span class="text-sm">Grupo 04</span>
+            </div>
+        </div>
+
+        <!-- Features Cards -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+            <!-- Card 1 -->
+            <div class="card-hover bg-white rounded-2xl shadow-2xl p-8 text-center">
+                <div class="bg-gradient-to-br from-purple-500 to-purple-700 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-ruler text-white text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Longitud</h3>
+                <p class="text-gray-600 mb-4">Convierte entre centímetros y pulgadas con precisión exacta</p>
+                <div class="flex justify-center gap-2 text-purple-600">
+                    <i class="fas fa-arrows-alt-h"></i>
+                    <span class="text-sm font-semibold">CM ↔ IN</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card-hover bg-white rounded-2xl shadow-2xl p-8 text-center">
+                <div class="bg-gradient-to-br from-purple-500 to-purple-700 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-temperature-high text-white text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Temperatura</h3>
+                <p class="text-gray-600 mb-4">Conversión entre Celsius y Fahrenheit al instante</p>
+                <div class="flex justify-center gap-2 text-purple-600">
+                    <i class="fas fa-thermometer-half"></i>
+                    <span class="text-sm font-semibold">°C ↔ °F</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card-hover bg-white rounded-2xl shadow-2xl p-8 text-center">
+                <div class="bg-gradient-to-br from-purple-500 to-purple-700 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-weight text-white text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Peso</h3>
+                <p class="text-gray-600 mb-4">Transforma kilogramos a libras y viceversa</p>
+                <div class="flex justify-center gap-2 text-purple-600">
+                    <i class="fas fa-balance-scale"></i>
+                    <span class="text-sm font-semibold">KG ↔ LB</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center">
+            <a href="/Login/Index" class="inline-flex items-center gap-3 bg-white text-purple-700 font-bold text-xl px-12 py-5 rounded-full shadow-2xl hover:shadow-purple-500/50 hover:scale-110 transition-all duration-300">
+                <i class="fas fa-rocket"></i>
+                <span>Comenzar Ahora</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            
+           
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-16 text-purple-200 text-sm">
+            <p class="mb-2">
+                <i class="fa-brands fa-microsoft mr-2"></i>
+                Desarrollado con ASP.NET Core MVC
+            </p>
+            <p>&copy; 2025 Conversor de Unidades - GR04</p>
+        </div>
+    </div>
+</body>
+</html>

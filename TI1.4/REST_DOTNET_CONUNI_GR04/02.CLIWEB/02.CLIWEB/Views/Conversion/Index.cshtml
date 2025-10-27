@@ -1,0 +1,393 @@
+﻿@{
+    ViewData["Title"] = "Conversor de Unidades";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .conversion-type-btn {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        .conversion-type-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        .conversion-type-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #9333ea;
+            box-shadow: 0 0 0 4px rgba(147, 51, 234, 0.1);
+        }
+        @@keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-gradient {
+            background: linear-gradient(270deg, #667eea, #764ba2, #667eea);
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+        }
+        @@keyframes pulse-glow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(118, 75, 162, 0.8);
+            }
+        }
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-6">
+    <!-- Top Navigation -->
+    <div class="max-w-7xl mx-auto mb-6">
+        <div class="glass-card rounded-2xl shadow-xl p-4 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="bg-gradient-to-br from-purple-500 to-purple-700 p-3 rounded-xl pulse-glow">
+                    <i class="fa-brands fa-microsoft text-white text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                        <i class="fas fa-exchange-alt text-purple-600"></i>
+                        ConUni Converter
+                    </h1>
+                    <p class="text-sm text-gray-600">
+                        <i class="fas fa-server mr-1"></i>Sistema Profesional de Conversión
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <!-- User Profile Section -->
+                <div class="hidden lg:flex items-center gap-3 bg-gradient-to-r from-purple-50 to-purple-100 px-4 py-2 rounded-xl border border-purple-200">
+                    <img src="/Perfil.jpg" alt="Usuario" class="w-10 h-10 rounded-full object-cover border-2 border-purple-400 shadow-md">
+                    <div class="flex flex-col">
+                        <span class="text-sm font-bold text-gray-800">@Context.Session.GetString("usuario")</span>
+                        <span class="text-xs text-gray-600 flex items-center gap-1">
+                            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                            En línea
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Mobile User Avatar -->
+                <div class="lg:hidden">
+                    <img src="/Perfil.jpg" alt="Usuario" class="w-10 h-10 rounded-full object-cover border-2 border-purple-400 shadow-md">
+                </div>
+                
+                <a href="/Login/Logout" class="flex items-center gap-2 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-4 py-2 rounded-xl transition-all hover:-translate-y-1 shadow-lg">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="hidden md:inline">Cerrar Sesión</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-3 gap-6">
+        <!-- Left Panel - Conversion Types -->
+        <div class="lg:col-span-1 space-y-4">
+            <div class="glass-card rounded-2xl shadow-xl p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                    <i class="fas fa-list text-purple-600"></i>
+                    Tipos de Conversión
+                </h2>
+                
+                <div class="space-y-3" id="conversionTypes">
+                    <div class="conversion-type-btn active glass-card rounded-xl p-4 border-2 border-purple-200" data-type="cm" data-name="Centímetros a Pulgadas">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-purple-100 p-3 rounded-lg">
+                                <i class="fas fa-ruler text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Longitud</h3>
+                                <p class="text-xs text-gray-600">CM → IN</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversion-type-btn glass-card rounded-xl p-4 border-2 border-gray-200" data-type="inch" data-name="Pulgadas a Centímetros">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-blue-100 p-3 rounded-lg">
+                                <i class="fas fa-ruler-horizontal text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Longitud</h3>
+                                <p class="text-xs text-gray-600">IN → CM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversion-type-btn glass-card rounded-xl p-4 border-2 border-gray-200" data-type="c" data-name="Celsius a Fahrenheit">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-red-100 p-3 rounded-lg">
+                                <i class="fas fa-temperature-high text-red-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Temperatura</h3>
+                                <p class="text-xs text-gray-600">°C → °F</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversion-type-btn glass-card rounded-xl p-4 border-2 border-gray-200" data-type="f" data-name="Fahrenheit a Celsius">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-orange-100 p-3 rounded-lg">
+                                <i class="fas fa-temperature-low text-orange-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Temperatura</h3>
+                                <p class="text-xs text-gray-600">°F → °C</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversion-type-btn glass-card rounded-xl p-4 border-2 border-gray-200" data-type="kg" data-name="Kilogramos a Libras">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-green-100 p-3 rounded-lg">
+                                <i class="fas fa-weight text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Peso</h3>
+                                <p class="text-xs text-gray-600">KG → LB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conversion-type-btn glass-card rounded-xl p-4 border-2 border-gray-200" data-type="lb" data-name="Libras a Kilogramos">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-yellow-100 p-3 rounded-lg">
+                                <i class="fas fa-balance-scale text-yellow-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Peso</h3>
+                                <p class="text-xs text-gray-600">LB → KG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+
+        <!-- Right Panel - Conversion Form -->
+        <div class="lg:col-span-2">
+            <div class="glass-card rounded-2xl shadow-xl p-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-2" id="conversionTitle">Centímetros a Pulgadas</h2>
+                    <p class="text-gray-600">Ingresa el valor que deseas convertir</p>
+                </div>
+
+                <form asp-action="Convertir" method="post" id="conversionForm">
+                    <input type="hidden" name="tipo" id="selectedType" value="cm" />
+                    
+                    <!-- Input Value -->
+                    <div class="mb-6">
+                        <label class="block text-lg font-bold text-gray-800 mb-3">
+                            <i class="fas fa-hashtag mr-2 text-purple-600"></i>
+                            Valor a Convertir
+                        </label>
+                        <div class="relative">
+                            <input type="number" 
+                                   step="any" 
+                                   name="valor" 
+                                   id="valorInput"
+                                   placeholder="0.00"
+                                   class="input-field w-full text-4xl font-bold text-center border-3 border-gray-300 rounded-2xl py-6 px-6 transition-all duration-300"
+                                   required />
+                        </div>
+                    </div>
+
+                    <!-- Quick Values -->
+                    <div class="mb-8">
+                        <label class="block text-sm font-semibold text-gray-700 mb-3">Valores rápidos</label>
+                        <div class="grid grid-cols-5 gap-2">
+                            <button type="button" onclick="setValue(1)" class="bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-600 hover:to-purple-700 hover:text-white py-3 rounded-xl font-bold transition-all transform hover:scale-105">1</button>
+                            <button type="button" onclick="setValue(10)" class="bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-600 hover:to-purple-700 hover:text-white py-3 rounded-xl font-bold transition-all transform hover:scale-105">10</button>
+                            <button type="button" onclick="setValue(50)" class="bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-600 hover:to-purple-700 hover:text-white py-3 rounded-xl font-bold transition-all transform hover:scale-105">50</button>
+                            <button type="button" onclick="setValue(100)" class="bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-600 hover:to-purple-700 hover:text-white py-3 rounded-xl font-bold transition-all transform hover:scale-105">100</button>
+                            <button type="button" onclick="setValue(1000)" class="bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-600 hover:to-purple-700 hover:text-white py-3 rounded-xl font-bold transition-all transform hover:scale-105">1000</button>
+                        </div>
+                    </div>
+
+                    <!-- Convert Button -->
+                    <button type="submit" class="w-full animated-gradient text-white font-bold text-xl py-6 rounded-2xl shadow-2xl hover:shadow-purple-500/50 transition-all transform hover:scale-105 flex items-center justify-center gap-3">
+                        <i class="fas fa-sync-alt" id="convertIcon"></i>
+                        <span id="convertText">Convertir Ahora</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+
+                <!-- Info Section -->
+                <div class="mt-8 grid md:grid-cols-3 gap-4">
+                    <div class="text-center p-4 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl">
+                        <i class="fas fa-bolt text-blue-600 text-3xl mb-2"></i>
+                        <h4 class="font-bold text-gray-800 text-sm">Instantáneo</h4>
+                    </div>
+                    <div class="text-center p-4 bg-gradient-to-br from-green-50 to-green-100 rounded-xl">
+                        <i class="fas fa-check-circle text-green-600 text-3xl mb-2"></i>
+                        <h4 class="font-bold text-gray-800 text-sm">Preciso</h4>
+                    </div>
+                    <div class="text-center p-4 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl">
+                        <i class="fa-brands fa-microsoft text-purple-600 text-3xl mb-2"></i>
+                        <h4 class="font-bold text-gray-800 text-sm">.NET 8.0</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const conversionData = {
+            'cm': { name: 'Centímetros a Pulgadas', from: 'CM', to: 'IN' },
+            'inch': { name: 'Pulgadas a Centímetros', from: 'IN', to: 'CM' },
+            'c': { name: 'Celsius a Fahrenheit', from: '°C', to: '°F' },
+            'f': { name: 'Fahrenheit a Celsius', from: '°F', to: '°C' },
+            'kg': { name: 'Kilogramos a Libras', from: 'KG', to: 'LB' },
+            'lb': { name: 'Libras a Kilogramos', from: 'LB', to: 'KG' }
+        };
+
+        // Handle conversion type selection
+        document.querySelectorAll('.conversion-type-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active from all
+                document.querySelectorAll('.conversion-type-btn').forEach(b => {
+                    b.classList.remove('active');
+                    b.classList.add('border-gray-200');
+                    b.classList.remove('border-purple-200');
+                });
+                
+                // Add active to clicked
+                this.classList.add('active');
+                this.classList.remove('border-gray-200');
+                this.classList.add('border-purple-200');
+                
+                // Update selected type
+                const type = this.dataset.type;
+                document.getElementById('selectedType').value = type;
+                document.getElementById('conversionTitle').textContent = conversionData[type].name;
+                
+                // Toast notification
+                Toastify({
+                    text: `✓ ${conversionData[type].name} seleccionado`,
+                    duration: 2000,
+                    gravity: "top",
+                    position: "right",
+                    style: {
+                        background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                        borderRadius: "12px",
+                        padding: "12px 20px",
+                        fontWeight: "600"
+                    }
+                }).showToast();
+            });
+        });
+
+        function setValue(value) {
+            document.getElementById('valorInput').value = value;
+            document.getElementById('valorInput').focus();
+            
+            Toastify({
+                text: `✓ Valor establecido: ${value}`,
+                duration: 2000,
+                gravity: "top",
+                position: "right",
+                style: {
+                    background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+                    borderRadius: "12px",
+                    padding: "12px 20px",
+                    fontWeight: "600"
+                }
+            }).showToast();
+        }
+
+        document.getElementById('conversionForm').addEventListener('submit', function(e) {
+            const valor = document.getElementById('valorInput').value;
+            if (!valor || valor == 0) {
+                e.preventDefault();
+                Toastify({
+                    text: "⚠️ Por favor ingresa un valor válido",
+                    duration: 3000,
+                    gravity: "top",
+                    position: "right",
+                    style: {
+                        background: "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+                        borderRadius: "12px",
+                        padding: "16px 24px",
+                        fontWeight: "600"
+                    }
+                }).showToast();
+                return;
+            }
+            
+            const button = this.querySelector('button[type="submit"]');
+            const icon = document.getElementById('convertIcon');
+            const text = document.getElementById('convertText');
+            
+            icon.classList.add('fa-spin');
+            text.textContent = 'Convirtiendo...';
+            button.disabled = true;
+
+            Toastify({
+                text: "⏳ Procesando conversión...",
+                duration: 2000,
+                gravity: "top",
+                position: "right",
+                style: {
+                    background: "linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)",
+                    borderRadius: "12px",
+                    padding: "12px 20px",
+                    fontWeight: "600"
+                }
+            }).showToast();
+        });
+
+        // Welcome message
+        window.addEventListener('load', function() {
+            @if (TempData["LoginSuccess"] != null)
+            {
+                <text>
+                Toastify({
+                    text: "✓ ¡Bienvenido al sistema de conversión!",
+                    duration: 4000,
+                    gravity: "top",
+                    position: "right",
+                    style: {
+                        background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
+                        borderRadius: "12px",
+                        padding: "16px 24px",
+                        fontWeight: "600",
+                        boxShadow: "0 10px 25px rgba(16, 185, 129, 0.3)"
+                    }
+                }).showToast();
+                </text>
+            }
+        });
+    </script>
+</body>
+</html>

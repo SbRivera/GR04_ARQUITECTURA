@@ -1,0 +1,16 @@
+﻿using System.Text.Json.Serialization;
+
+namespace _02.CLIWEB.Models
+{
+    public class Resultado
+    {
+        [JsonPropertyName("type")]
+        public string Type { get; set; } = string.Empty;
+
+        [JsonPropertyName("input")]
+        public string Input { get; set; } = string.Empty;
+
+        [JsonPropertyName("output")]
+        public string Output { get; set; } = string.Empty;
+    }
+}
