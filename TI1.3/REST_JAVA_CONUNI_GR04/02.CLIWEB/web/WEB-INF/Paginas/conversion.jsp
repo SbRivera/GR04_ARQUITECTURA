@@ -66,7 +66,7 @@
                         <i class="fas fa-user-circle text-3xl text-orange-600" style="display: none;"></i>
                         <span class="font-semibold text-gray-800"><%= session.getAttribute("usuario") != null ? session.getAttribute("usuario") : "Usuario" %></span>
                     </div>
-                    <a href="index.html" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition flex items-center space-x-2">
+                    <a href="${pageContext.request.contextPath}/Logout" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition flex items-center space-x-2">
                         <i class="fas fa-sign-out-alt"></i>
                         <span>Cerrar Sesión</span>
                     </a>

@@ -66,9 +66,7 @@
                 <h1 class="text-2xl font-bold text-gray-800">Convertor<span class="text-orange-600"> - Unidades</span></h1>
             </div>
             <div class="flex space-x-4">
-                <a href="${pageContext.request.contextPath}/index.html" class="text-gray-600 hover:text-orange-600 transition flex items-center">
-                    <i class="fas fa-home mr-2"></i>Inicio
-                </a>
+                <!-- Enlace de inicio removido - La aplicación inicia directamente en login -->
             </div>
         </div>
     </header>
