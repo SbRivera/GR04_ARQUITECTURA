@@ -34,11 +34,11 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -50,8 +50,7 @@
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-10-26T13:22:17.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T13:22:17.36Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T13:22:04.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T13:22:04.8Z"
             },
             {
               "$type": "Document",
@@ -74,7 +72,7 @@
               "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
               "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwC0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T16:20:37.962Z",
               "EditorCaption": ""
@@ -89,8 +87,7 @@
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:17:55.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T16:17:55.2Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Program.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAgwAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:16:23.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T16:16:23.919Z"
             }
           ]
         }

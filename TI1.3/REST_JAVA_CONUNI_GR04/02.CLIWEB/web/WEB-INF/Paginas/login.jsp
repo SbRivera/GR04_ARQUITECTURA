@@ -348,10 +348,7 @@
     </script>
 </body>
 </html>
-                <a href="index.html" class="text-gray-600 hover:text-orange-600 transition flex items-center justify-center space-x-2">
-                    <i class="fas fa-arrow-left"></i>
-                    <span>Volver al inicio</span>
-                </a>
+                
             </div>
         </div>
     </main>
