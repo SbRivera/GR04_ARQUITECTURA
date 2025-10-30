@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/card_background"/>
-    <corners android:radius="20dp"/>
-    <padding android:left="24dp" android:right="24dp" android:top="32dp" android:bottom="32dp"/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base oscura elegante -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:startColor="#141E30"
+                android:centerColor="#1e3c72"
+                android:endColor="#2a5298"
+                android:type="linear"/>
+        </shape>
+    </item>
+
+    <!-- Primera ola de luz -->
+    <item android:top="-200dp" android:left="-100dp" android:right="-100dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="400dp"
+                android:startColor="#5000FFAA"
+                android:centerColor="#3000FF88"
+                android:endColor="#00000000"/>
+            <size android:height="500dp"/>
+        </shape>
+    </item>
+
+    <!-- Segunda ola de luz -->
+    <item android:top="-100dp" android:left="50dp" android:right="-200dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="350dp"
+                android:startColor="#508888FF"
+                android:centerColor="#306666FF"
+                android:endColor="#00000000"/>
+            <size android:height="450dp"/>
+        </shape>
+    </item>
+
+    <!-- Tercera ola de luz inferior -->
+    <item android:bottom="-250dp" android:left="-150dp" android:right="-150dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="450dp"
+                android:startColor="#50AA00FF"
+                android:centerColor="#308800FF"
+                android:endColor="#00000000"/>
+            <size android:height="550dp"/>
+        </shape>
+    </item>
+
+    <!-- Brillo ambiental -->
+    <item android:top="200dp" android:right="-180dp">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="250dp"
+                android:startColor="#4000FFCC"
+                android:centerColor="#2000FFAA"
+                android:endColor="#00000000"/>
+            <size android:width="400dp" android:height="400dp"/>
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marcelo Echeverría Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj": {}
+    "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marcelo Echeverría Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj": {
+    "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marcelo Echeverría Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
+        "projectUniqueName": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
         "projectName": "ClienteWebConUni",
-        "projectPath": "C:\\Users\\Marcelo Echeverría Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
-        "packagesPath": "C:\\Users\\Marcelo Echeverría Y\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marcelo Echeverría Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\obj\\",
+        "projectPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
+        "packagesPath": "C:\\Users\\DETPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Marcelo Echeverría Y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DETPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
