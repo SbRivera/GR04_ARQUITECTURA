@@ -1,8 +1,8 @@
-﻿using _02.CLIWEB.Services;
+﻿using _02.CLIWEB.ec.edu.monster.servicio;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace _02.CLIWEB.Controllers
+namespace _02.CLIWEB.ec.edu.monster.controler
 {
     public class ConversionController : Controller
     {

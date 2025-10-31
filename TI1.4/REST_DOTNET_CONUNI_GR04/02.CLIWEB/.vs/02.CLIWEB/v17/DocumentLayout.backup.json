@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\ec.edu.monster.controler\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\ec.edu.monster.controler\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\ec.edu.monster.controler\\conversioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\ec.edu.monster.controler\\conversioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\ec.edu.monster.vista\\conversion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\ec.edu.monster.vista\\conversion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\ec.edu.monster.vista\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\ec.edu.monster.vista\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\ec.edu.monster.vista\\conversion\\resultado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\ec.edu.monster.vista\\conversion\\resultado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\views\\conversion\\resultado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\views\\conversion\\resultado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\ec.edu.monster.servicio\\conuniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\ec.edu.monster.servicio\\conuniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\views\\conversion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\views\\conversion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\controllers\\conversioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\controllers\\conversioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\services\\conuniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\services\\conuniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\models\\resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\models\\resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliweb\\02.cliweb\\ec.edu.monster.modelo\\resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2F2A254-268C-4B31-B0A4-65ACF669255D}|02.CLIWEB\\02.CLIWEB.csproj|solutionrelative:02.cliweb\\ec.edu.monster.modelo\\resultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,19 +42,91 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.controler\\LoginController.cs",
+              "RelativeDocumentMoniker": "02.CLIWEB\\ec.edu.monster.controler\\LoginController.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.controler\\LoginController.cs",
+              "RelativeToolTip": "02.CLIWEB\\ec.edu.monster.controler\\LoginController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T13:06:02.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.vista\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "02.CLIWEB\\ec.edu.monster.vista\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.vista\\Login\\Index.cshtml",
+              "RelativeToolTip": "02.CLIWEB\\ec.edu.monster.vista\\Login\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPEAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-26T13:08:17.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.vista\\Conversion\\Index.cshtml",
+              "RelativeDocumentMoniker": "02.CLIWEB\\ec.edu.monster.vista\\Conversion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.vista\\Conversion\\Index.cshtml",
+              "RelativeToolTip": "02.CLIWEB\\ec.edu.monster.vista\\Conversion\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-26T13:08:32.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Resultado.cshtml",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.vista\\Conversion\\Resultado.cshtml",
+              "RelativeDocumentMoniker": "02.CLIWEB\\ec.edu.monster.vista\\Conversion\\Resultado.cshtml",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.vista\\Conversion\\Resultado.cshtml",
+              "RelativeToolTip": "02.CLIWEB\\ec.edu.monster.vista\\Conversion\\Resultado.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-26T13:08:44.061Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ConversionController.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.controler\\ConversionController.cs",
+              "RelativeDocumentMoniker": "02.CLIWEB\\ec.edu.monster.controler\\ConversionController.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.controler\\ConversionController.cs",
+              "RelativeToolTip": "02.CLIWEB\\ec.edu.monster.controler\\ConversionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T13:06:34.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConUniService.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.servicio\\ConUniService.cs",
+              "RelativeDocumentMoniker": "02.CLIWEB\\ec.edu.monster.servicio\\ConUniService.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.servicio\\ConUniService.cs",
+              "RelativeToolTip": "02.CLIWEB\\ec.edu.monster.servicio\\ConUniService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T13:07:31.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Program.cs",
               "RelativeDocumentMoniker": "02.CLIWEB\\Program.cs",
@@ -62,94 +134,19 @@
               "RelativeToolTip": "02.CLIWEB\\Program.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAWwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:12:09.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ConUniService.cs",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Services\\ConUniService.cs",
-              "RelativeDocumentMoniker": "02.CLIWEB\\Services\\ConUniService.cs",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Services\\ConUniService.cs",
-              "RelativeToolTip": "02.CLIWEB\\Services\\ConUniService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:07:31.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "02.CLIWEB\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "02.CLIWEB\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:06:02.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Views\\Login\\Index.cshtml",
-              "RelativeDocumentMoniker": "02.CLIWEB\\Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Views\\Login\\Index.cshtml",
-              "RelativeToolTip": "02.CLIWEB\\Views\\Login\\Index.cshtml",
-              "ViewState": "AgIAAOEAAAAAAAAAAAD4v+gAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-26T13:08:17.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Views\\Conversion\\Index.cshtml",
-              "RelativeDocumentMoniker": "02.CLIWEB\\Views\\Conversion\\Index.cshtml",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Views\\Conversion\\Index.cshtml",
-              "RelativeToolTip": "02.CLIWEB\\Views\\Conversion\\Index.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-26T13:08:32.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Resultado.cshtml",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Views\\Conversion\\Resultado.cshtml",
-              "RelativeDocumentMoniker": "02.CLIWEB\\Views\\Conversion\\Resultado.cshtml",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Views\\Conversion\\Resultado.cshtml",
-              "RelativeToolTip": "02.CLIWEB\\Views\\Conversion\\Resultado.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-26T13:08:44.061Z"
+              "WhenOpened": "2025-10-26T13:12:09.911Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Resultado.cs",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Models\\Resultado.cs",
-              "RelativeDocumentMoniker": "02.CLIWEB\\Models\\Resultado.cs",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Models\\Resultado.cs",
-              "RelativeToolTip": "02.CLIWEB\\Models\\Resultado.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.modelo\\Resultado.cs",
+              "RelativeDocumentMoniker": "02.CLIWEB\\ec.edu.monster.modelo\\Resultado.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\ec.edu.monster.modelo\\Resultado.cs",
+              "RelativeToolTip": "02.CLIWEB\\ec.edu.monster.modelo\\Resultado.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-26T13:06:46.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConversionController.cs",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Controllers\\ConversionController.cs",
-              "RelativeDocumentMoniker": "02.CLIWEB\\Controllers\\ConversionController.cs",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIWEB\\02.CLIWEB\\Controllers\\ConversionController.cs",
-              "RelativeToolTip": "02.CLIWEB\\Controllers\\ConversionController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T13:06:34.339Z"
             }
           ]
         }

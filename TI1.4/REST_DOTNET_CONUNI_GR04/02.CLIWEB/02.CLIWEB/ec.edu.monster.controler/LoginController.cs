@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace _02.CLIWEB.Controllers
+namespace _02.CLIWEB.ec.edu.monster.controler
 {
     public class LoginController : Controller
     {

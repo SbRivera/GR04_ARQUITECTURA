@@ -19,7 +19,6 @@ C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTU
 C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
-C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\scopedcss\bundle\02.CLIWEB.styles.css
 C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\scopedcss\projectbundle\02.CLIWEB.bundle.scp.css
 C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\staticwebassets.build.json
@@ -32,3 +31,4 @@ C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTU
 C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\02.CLIWEB.genruntimeconfig.cache
 C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\ref\02.CLIWEB.dll
 C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.4\REST_DOTNET_CONUNI_GR04\02.CLIWEB\02.CLIWEB\obj\Debug\net8.0\scopedcss\ec.edu.monster.vista\Shared\_Layout.cshtml.rz.scp.css

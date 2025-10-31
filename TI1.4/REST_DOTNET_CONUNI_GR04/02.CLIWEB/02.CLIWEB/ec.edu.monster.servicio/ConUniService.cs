@@ -1,10 +1,10 @@
-﻿using _02.CLIWEB.Models;
+﻿using _02.CLIWEB.ec.edu.monster.modelo;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace _02.CLIWEB.Services
+namespace _02.CLIWEB.ec.edu.monster.servicio
 {
     public class ConUniService
     {

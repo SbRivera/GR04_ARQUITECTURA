@@ -1,4 +1,4 @@
-namespace _02.CLIWEB.Models
+namespace _02.CLIWEB.ec.edu.monster.modelo
 {
     public class ErrorViewModel
     {

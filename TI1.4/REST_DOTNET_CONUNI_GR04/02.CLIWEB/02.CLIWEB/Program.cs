@@ -1,9 +1,15 @@
-using _02.CLIWEB.Services;
+using _02.CLIWEB.ec.edu.monster.servicio;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddRazorOptions(options =>
+    {
+        options.ViewLocationFormats.Clear();
+        options.ViewLocationFormats.Add("/ec.edu.monster.vista/{1}/{0}.cshtml");
+        options.ViewLocationFormats.Add("/ec.edu.monster.vista/Shared/{0}.cshtml");
+    });
 
 // Configurar sesiones
 builder.Services.AddDistributedMemoryCache();

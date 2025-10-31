@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace _02.CLIWEB.Models
+namespace _02.CLIWEB.ec.edu.monster.modelo
 {
     public class Resultado
     {
