@@ -1,26 +1,56 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\",
+  "WorkspaceRootPath": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\controllers\\conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\views\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\controllers\\conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\controllers\\conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\ws_conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\ws_conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\views\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\controllers\\conversioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\models\\conversionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\models\\conversionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\ws_conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\ws_conuni.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAE6D000-60D1-48EC-9EB7-A165A6659660}|..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.cliesc\\cliesc_convuni_dotnet_gr04\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|c:\\users\\marcelo echeverr\u00EDa y\\desktop\\ti1.1\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\01.servidor\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{5B687A92-3A0E-4EAC-9532-04D7D5F70459}|WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj|solutionrelative:ws_conuni_rest_dotnet\\ws_conuni_rest_dotnet.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +60,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,11 +68,165 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:43:08.766Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Program.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Program.cs",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:12:12.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.Designer.cs",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.Designer.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAASwEsAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:11:50.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAAAiwEkBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:11:36.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.Designer.cs",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:11:09.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.cs",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwB4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:10:13.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConversionController.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Controllers\\ConversionController.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Controllers\\ConversionController.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Controllers\\ConversionController.cs",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Controllers\\ConversionController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:09:43.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConversionResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionResponse.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionResponse.cs",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:09:17.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConversionRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionRequest.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionRequest.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionRequest.cs",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:09:04.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Program.cs",
+              "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\Program.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Program.cs",
+              "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:16:23.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConUni.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
+              "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
+              "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAIwFwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T16:20:37.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Form1.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T17:04:55.987Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "WS_ConUni_REST_DOTNET.http",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
               "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
@@ -50,52 +234,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\appsettings.json",
               "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\appsettings.json",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\appsettings.json",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\appsettings.json",
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T13:22:04.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ConUni.cs",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
-              "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
-              "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:20:37.962Z",
+              "WhenOpened": "2025-10-26T13:22:04.8Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "WS_ConUni.cs",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
+              "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
               "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:17:55.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Program.cs",
-              "RelativeDocumentMoniker": "WS_ConUni_REST_DOTNET\\Program.cs",
-              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\Program.cs",
-              "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:16:23.919Z"
+              "WhenOpened": "2025-10-22T16:17:55.2Z",
+              "EditorCaption": ""
             }
           ]
         }
