@@ -69,14 +69,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainForm.cs [Dise\u00F1o]",
+              "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
               "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T17:43:08.766Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -88,8 +88,7 @@
               "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T17:12:12.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T17:12:12.724Z"
             },
             {
               "$type": "Document",
@@ -101,8 +100,7 @@
               "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.Designer.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAASwEsAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T17:11:50.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T17:11:50.896Z"
             },
             {
               "$type": "Document",
@@ -112,7 +110,7 @@
               "RelativeDocumentMoniker": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
               "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
               "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\MainForm.cs",
-              "ViewState": "AgIAADYBAAAAAAAAAAAiwEkBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADYBAAAAAAAAAAAiwE8BAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T17:11:36.156Z",
               "EditorCaption": ""
@@ -127,8 +125,7 @@
               "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T17:11:09.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T17:11:09.925Z"
             },
             {
               "$type": "Document",
@@ -140,8 +137,7 @@
               "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Views\\LoginForm.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwB4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T17:10:13.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T17:10:13.03Z"
             },
             {
               "$type": "Document",
@@ -153,8 +149,7 @@
               "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Controllers\\ConversionController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAADEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T17:09:43.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T17:09:43.612Z"
             },
             {
               "$type": "Document",
@@ -166,8 +161,7 @@
               "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T17:09:17.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T17:09:17.837Z"
             },
             {
               "$type": "Document",
@@ -179,8 +173,7 @@
               "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Models\\ConversionRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T17:09:04.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-02T17:09:04.617Z"
             },
             {
               "$type": "Document",
@@ -192,8 +185,7 @@
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:16:23.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T16:16:23.919Z"
             },
             {
               "$type": "Document",
@@ -205,8 +197,7 @@
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\Controllers\\ConUni.cs",
               "ViewState": "AgIAACYAAAAAAAAAAAAIwFwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:20:37.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T16:20:37.962Z"
             },
             {
               "$type": "Document",
@@ -217,8 +208,7 @@
               "ToolTip": "C:\\Users\\Marcelo Echeverr\u00EDa Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T17:04:55.987Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-11-02T17:04:55.987Z"
             },
             {
               "$type": "Document",
@@ -242,8 +232,7 @@
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-26T13:22:04.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-26T13:22:04.8Z"
             },
             {
               "$type": "Document",
@@ -255,8 +244,7 @@
               "RelativeToolTip": "WS_ConUni_REST_DOTNET\\WS_ConUni.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T16:17:55.2Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T16:17:55.2Z"
             }
           ]
         }

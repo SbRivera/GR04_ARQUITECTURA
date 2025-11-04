@@ -1,12 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.monster.controlador;
 
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "LoginServlet", urlPatterns = {"/login"})
@@ -21,18 +20,26 @@ public class LoginServlet extends HttpServlet {
 
         String usuario = request.getParameter("usuario");
         String password = request.getParameter("password");
+        HttpSession sesion = request.getSession();
 
         if (USER.equals(usuario) && PASS.equals(password)) {
-            // Guardar sesión
-            HttpSession sesion = request.getSession();
+            // Guardar sesión y limpiar cualquier error previo
             sesion.setAttribute("usuario", usuario);
+            sesion.removeAttribute("loginError");
 
-            // Redirigir al programa principal
+            // Ir al panel principal
             response.sendRedirect("conversion.jsp");
         } else {
-            // Redirigir con mensaje de error
-            response.sendRedirect("index.jsp?error=true");
+            // Flash message: se leerá y borrará en index.jsp
+            sesion.setAttribute("loginError", "Usuario o contraseña incorrectos.");
+            response.sendRedirect("index.jsp");
         }
     }
-}
 
+    // (Opcional) si alguien hace GET a /login, redirigimos al formulario
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
+        response.sendRedirect("index.jsp");
+    }
+}

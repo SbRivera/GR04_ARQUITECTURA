@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="<%= request.getContextPath() %>/styles.css">
 </head>
 <body class="main-bg">
-    <div className="layout">
+    <div class="layout">
         <header class="hero">
             <div>
                 <h1>Conversor Universal</h1>

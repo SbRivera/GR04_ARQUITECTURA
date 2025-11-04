@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
+/* ===== Variables y ajustes base ===== */
 :root {
   color-scheme: light dark;
   --bg-gradient: radial-gradient(circle at 20% 20%, #1b2735, #0a0d16 70%);
@@ -13,22 +14,30 @@
   --text-secondary: #98aac2;
   --danger: #ff6b88;
   --shadow: 0 22px 60px rgba(8, 12, 24, 0.55);
+
+  /* Nuevas utilidades (no cambian la paleta) */
+  --radius: 20px;
+  --radius-lg: 24px;
+  --field-bg: rgba(255, 255, 255, 0.08);
+  --field-bg-focus: rgba(255, 255, 255, 0.16);
+  --ring: 0 0 0 3px var(--accent-soft);
+
   font-family: "Inter", "Segoe UI", sans-serif;
   font-size: 16px;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   min-height: 100vh;
   margin: 0;
   color: var(--text-primary);
   background: var(--bg-gradient);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Login */
+/* ===== Login ===== */
 body.login-bg {
   display: flex;
   align-items: center;
@@ -36,9 +45,7 @@ body.login-bg {
   padding: 3rem 1.5rem;
 }
 
-.login-wrapper {
-  width: min(420px, 100%);
-}
+.login-wrapper { width: min(420px, 100%); }
 
 .login-card {
   background: var(--glass);
@@ -69,10 +76,11 @@ body.login-bg {
   gap: 1.4rem;
 }
 
+/* ===== Campos y formularios ===== */
 .field {
   text-align: left;
   display: grid;
-  gap: 0.55rem;
+  gap: 0.6rem;
 }
 
 label {
@@ -80,27 +88,60 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-secondary);
+  transition: color .18s ease;
 }
 
+/* Inputs y selects (manteniendo colores, mejorando estados) */
 input,
 select {
   width: 100%;
-  border-radius: 14px;
+  border-radius: var(--radius);
   padding: 0.9rem 1rem;
-  border: 1px solid transparent;
-  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: var(--field-bg);
   color: inherit;
-  transition: border 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  transition: border 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, transform .06s ease;
 }
+
+input:hover,
+select:hover { background: var(--field-bg-focus); }
 
 input:focus,
-select:focus {
+select:focus,
+input:focus-visible,
+select:focus-visible {
   outline: none;
   border-color: var(--accent);
-  background: rgba(255, 255, 255, 0.16);
-  box-shadow: 0 0 0 3px var(--accent-soft);
+  background: var(--field-bg-focus);
+  box-shadow: var(--ring);
 }
 
+.field:focus-within > label { color: var(--accent); }
+
+input::placeholder {
+  color: color-mix(in srgb, var(--text-secondary) 85%, transparent);
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--text-primary);
+  -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255,.06) inset;
+}
+
+/* Select: caret personalizado y mejor hit-area */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.4rem;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%2355c1ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right .8rem center;
+  background-size: 18px 18px;
+}
+select:disabled { opacity: .55; cursor: not-allowed; }
+
+/* ===== Botones ===== */
 button {
   border: none;
   border-radius: 999px;
@@ -110,13 +151,23 @@ button {
   color: #fff;
   background-image: linear-gradient(135deg, var(--accent), var(--accent-strong));
   cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition: transform 0.12s ease, box-shadow 0.18s ease, filter .18s ease;
+  box-shadow: 0 8px 24px rgba(119,107,255,.22);
 }
 
 button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 30px rgba(119, 107, 255, 0.35);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(119,107,255,.32);
 }
+
+button:active { transform: translateY(0); filter: brightness(.97); }
+
+button:focus-visible {
+  outline: none;
+  box-shadow: var(--ring), 0 14px 32px rgba(119,107,255,.32);
+}
+
+button:disabled { opacity:.6; cursor:not-allowed; box-shadow:none; }
 
 .alert {
   margin: 0;
@@ -127,16 +178,14 @@ button:hover {
   color: var(--danger);
 }
 
-/* Conversión */
-body.main-bg {
-  padding: 3.5rem min(4vw, 3rem);
-}
+/* ===== Conversión / Layout ===== */
+body.main-bg { padding: 3.5rem min(4vw, 3rem); }
 
 .layout {
   width: min(1180px, 100%);
   margin: 0 auto;
   display: grid;
-  gap: 2rem;
+  gap: 2.2rem;
   grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
 }
 
@@ -152,8 +201,8 @@ body.main-bg {
 .hero h1 {
   margin: 0;
   font-size: clamp(2.3rem, 5vw, 2.9rem);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;      /* menos tracking para mejor lectura */
+  text-transform: none;        /* más limpio */
 }
 
 .hero p {
@@ -184,18 +233,30 @@ body.main-bg {
 
 .grid {
   display: grid;
-  gap: 1.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.card {
-  background: var(--glass);
-  border: 1px solid var(--border);
-  border-radius: 22px;
+/* Tarjetas con relieve sutil */
+.card,
+.result-card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)), var(--glass);
+  border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
+  border-radius: var(--radius-lg);
   padding: 2.3rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 12px 40px rgba(8, 12, 24, 0.45);
   backdrop-filter: blur(20px);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card::before,
+.result-card::before {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(120% 80% at 10% 0%, rgba(255,255,255,.10), transparent 50%);
+  opacity: .6;
 }
 
 .card:hover {
@@ -204,61 +265,36 @@ body.main-bg {
   box-shadow: 0 30px 60px rgba(85, 193, 255, 0.25);
 }
 
-.card h2 {
+.card h2,
+.result-card h2 {
   margin: 0 0 1.5rem;
   font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;  /* más legible */
+  text-transform: none;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
-.card form {
-  display: grid;
-  gap: 1.2rem;
-}
+.card form { display: grid; gap: 1.2rem; }
 
-.actions {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.result-card {
-  background: var(--glass-strong);
-  border: 1px solid var(--border);
-  border-radius: 22px;
-  padding: 2.3rem;
-  box-shadow: var(--shadow);
-  display: grid;
-  gap: 1rem;
-  align-content: start;
-  backdrop-filter: blur(22px);
-}
-
-.result-card h2 {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-}
+.actions { display: flex; justify-content: flex-end; }
 
 .result-value {
   font-size: clamp(2.6rem, 5vw, 3.4rem);
   margin: 0.6rem 0;
   font-weight: 700;
   letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums; /* números alineados */
 }
 
+.result-details { line-height: 1.5; }
 .result-details span {
   color: var(--accent);
   font-weight: 600;
+  border-bottom: 1px dashed color-mix(in srgb, var(--accent) 60%, transparent);
 }
 
-.placeholder {
-  color: var(--text-secondary);
-  font-style: italic;
-}
+.placeholder { color: var(--text-secondary); font-style: italic; }
 
 .footer {
   grid-column: 1 / -1;
@@ -273,6 +309,7 @@ body.main-bg {
   letter-spacing: 0.1em;
 }
 
+/* ===== Mensajes flotantes ===== */
 .banner {
   position: fixed;
   inset: auto 50% 2.5rem;
@@ -294,24 +331,46 @@ body.main-bg {
   transform: translateX(-50%) translateY(0);
 }
 
-@media (max-width: 960px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
-  .hero {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer {
-    justify-content: center;
+/* ===== FIX: visibilidad de opciones del <select> ===== */
+/* El campo cerrado hereda el color del tema (ya definido),
+   pero el popup de opciones usa fondo del sistema. Forzamos colores. */
+select { color: var(--text-primary); }
+
+select option {
+  background: #ffffff;   /* fondo claro del popup */
+  color: #111111;        /* texto oscuro para contraste */
+}
+
+select option:hover,
+select option:checked {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  select option {
+    background: #0f172a; /* popup oscuro */
+    color: #e5e7eb;
   }
 }
 
+/* ===== Responsivo y accesibilidad ===== */
+@media (max-width: 960px) {
+  .layout { grid-template-columns: 1fr; }
+  .hero { flex-direction: column; align-items: flex-start; }
+  .footer { justify-content: center; }
+}
+
+@media (max-width: 600px){
+  .user-badge { font-size: .72rem; padding: .7rem 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ===== Animaciones ===== */
 @keyframes float {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-10px);
-  }
+  from { transform: translateY(0); }
+  to   { transform: translateY(-10px); }
 }

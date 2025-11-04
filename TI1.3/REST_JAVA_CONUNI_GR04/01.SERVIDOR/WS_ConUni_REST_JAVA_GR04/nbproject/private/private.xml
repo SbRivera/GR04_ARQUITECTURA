@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Marcelo%20Echeverría%20Y/Desktop/TI1.1/GR04_ARQUITECTURA/TI1.3/REST_JAVA_CONUNI_GR04/01.SERVIDOR/WS_ConUni_REST_JAVA_GR04/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Marcelo%20Echeverría%20Y/Desktop/TI1.1/GR04_ARQUITECTURA/TI1.3/REST_JAVA_CONUNI_GR04/01.SERVIDOR/WS_ConUni_REST_JAVA_GR04/web/WEB-INF/beans.xml</file>
+            <file>file:/C:/Users/Marcelo%20Echeverría%20Y/Desktop/TI1.1/GR04_ARQUITECTURA/TI1.3/REST_JAVA_CONUNI_GR04/01.SERVIDOR/WS_ConUni_REST_JAVA_GR04/src/java/ec/edu/monster/ws/ApplicationConfig.java</file>
+            <file>file:/C:/Users/Marcelo%20Echeverría%20Y/Desktop/TI1.1/GR04_ARQUITECTURA/TI1.3/REST_JAVA_CONUNI_GR04/01.SERVIDOR/WS_ConUni_REST_JAVA_GR04/src/java/ec/edu/monster/ws/ConUniResource.java</file>
+            <file>file:/C:/Users/Marcelo%20Echeverría%20Y/Desktop/TI1.1/GR04_ARQUITECTURA/TI1.3/REST_JAVA_CONUNI_GR04/01.SERVIDOR/WS_ConUni_REST_JAVA_GR04/src/java/ec/edu/monster/ws/CORSFilter.java</file>
+            <file>file:/C:/Users/Marcelo%20Echeverría%20Y/Desktop/TI1.1/GR04_ARQUITECTURA/TI1.3/REST_JAVA_CONUNI_GR04/01.SERVIDOR/WS_ConUni_REST_JAVA_GR04/web/index.html</file>
+        </group>
+    </open-files>
 </project-private>
