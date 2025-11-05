@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "WS_ConUni_SOAP_DOTNET_GR04\\WS_ConUni_SOAP_DOTNET_GR04.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

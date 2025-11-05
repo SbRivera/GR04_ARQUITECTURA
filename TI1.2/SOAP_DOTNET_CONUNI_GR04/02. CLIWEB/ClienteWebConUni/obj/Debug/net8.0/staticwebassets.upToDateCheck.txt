@@ -1,7 +1,8 @@
 wwwroot\css\converter.css
 wwwroot\css\site.css
+wwwroot\css\styles.css
 wwwroot\favicon.ico
-wwwroot\images\logo.png
+wwwroot\images\sullivan.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

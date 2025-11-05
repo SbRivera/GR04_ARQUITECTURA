@@ -4,36 +4,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Login - Cliente WS</title>
+    <title>Conversor de Unidades - Iniciar Sesión</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="login-bg">
-    <div class="login-wrapper">
-        <section class="login-card">
-            <h1>Panel Quantum</h1>
-            <p>Ingresa tus credenciales para acceder al conversor.</p>
+    <div class="login-container">
+        <div class="login-card floating">
+            <img src="${pageContext.request.contextPath}/images/sullivan.jpg" alt="Avatar" class="avatar">
+            <h1>¡Bienvenido!</h1>
+            <p>Conversor de Unidades</p>
 
             <form action="login" method="post" novalidate>
-                <div class="field">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" id="usuario" name="usuario" autocomplete="username" required>
+                <div class="input-group">
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" autocomplete="username" required>
                 </div>
-
-                <div class="field">
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="password" name="password"
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Contraseña"
                            autocomplete="current-password" required>
                 </div>
 
-                <button type="submit">Iniciar Sesión</button>
+                <button type="submit" class="btn-login">INICIAR SESIÓN</button>
 
-                <!-- Mostrar error solo una vez -->
+                <p class="note">Por favor, ingrese sus credenciales</p>
+
                 <c:if test="${not empty sessionScope.loginError}">
                     <p class="alert">${sessionScope.loginError}</p>
                     <c:remove var="loginError" scope="session"/>
                 </c:if>
             </form>
-        </section>
+        </div>
     </div>
 </body>
 </html>

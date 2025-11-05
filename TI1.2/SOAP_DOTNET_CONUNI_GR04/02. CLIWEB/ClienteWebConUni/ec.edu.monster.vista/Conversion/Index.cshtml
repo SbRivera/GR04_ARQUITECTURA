@@ -1,165 +1,238 @@
 ﻿@model WSConUniConsumer.Models.ConversionViewModel
 @{
     ViewData["Title"] = "Conversor Universal";
-
-    var usuarioSesion = ViewBag.Usuario as string;
-    var usuarioMostrar = string.IsNullOrWhiteSpace(usuarioSesion) ? "Operador" : usuarioSesion;
+    var usuario = (ViewBag.Usuario as string);
+    var mostrarUsuario = string.IsNullOrWhiteSpace(usuario) ? "MONSTER" : usuario;
+    // Descomenta si quieres vista sin layout:
+    // Layout = null;
 }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+</head>
+<body class="main-bg">
 
-<link rel="stylesheet" href="~/css/converter.css" asp-append-version="true" />
-
-<div class="layout">
-    <header class="hero">
-        <div>
-            <h1>Conversor Universal</h1>
-            <p>Transforma magnitudes con precisión cuántica.</p>
-        </div>
+    <header class="topbar">
+        <h1>Conversiones de Unidades</h1>
         <div class="user-badge">
-            <span>Conectado como</span>
-            <strong>@usuarioMostrar</strong>
+            <div class="user-info">
+                <span>Conectado como</span>
+                <strong>@mostrarUsuario</strong>
+            </div>
+            <form asp-controller="Login" asp-action="Logout" method="post" style="margin:0;">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="logout">Cerrar sesión</button>
+            </form>
         </div>
-        <form asp-controller="Login"
-              asp-action="Logout"
-              method="post"
-              class="logout-form">
-            @Html.AntiForgeryToken()
-            <button type="submit" class="logout">Cerrar sesión</button>
-        </form>
     </header>
 
-    <main class="grid">
-        <section class="card">
-            <h2>Longitud</h2>
-            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="false">
-                <input type="hidden" name="Tipo" value="cmToIn" />
-                <div class="field">
-                    <label for="LongitudEntrada">Centímetros → Pulgadas</label>
-                    <input type="number" id="LongitudEntrada" name="Valor"
-                           step="any" min="0" placeholder="Ej. 12.5" required />
-                </div>
-                <div class="actions">
-                    <button type="submit">Convertir</button>
-                </div>
-            </form>
-            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="false">
-                <input type="hidden" name="Tipo" value="inToCm" />
-                <div class="field">
-                    <label for="LongitudEntrada2">Pulgadas → Centímetros</label>
-                    <input type="number" id="LongitudEntrada2" name="Valor"
-                           step="any" min="0" placeholder="Ej. 5.3" required />
-                </div>
-                <div class="actions">
-                    <button type="submit">Convertir</button>
-                </div>
-            </form>
-        </section>
+    <div class="conv-shell">
+        <main class="conv-wrapper"
+              data-cat=""
+              data-tipo="@Model?.Tipo"
+              data-valor="@Model?.Valor">
 
-        <section class="card">
-            <h2>Temperatura</h2>
-            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="true">
-                <input type="hidden" name="Tipo" value="cToF" />
-                <div class="field">
-                    <label for="TemperaturaEntrada">Celsius → Fahrenheit</label>
-                    <input type="number" id="TemperaturaEntrada" name="Valor"
-                           step="any" placeholder="Ej. -10" required />
+            <!-- Paso 1 -->
+            <section class="conv-card">
+                <div class="conv-card__header header--blue">
+                    <span class="header-icon" aria-hidden="true">i</span>
+                    <h2>Categoría de Conversión</h2>
                 </div>
-                <div class="actions">
-                    <button type="submit">Convertir</button>
+                <div class="conv-card__body">
+                    <div class="input-outline">
+                        <select id="categoria" aria-label="Seleccionar Categoría">
+                            <option value="" selected>Seleccionar Categoría</option>
+                            <option value="longitud">Longitud</option>
+                            <option value="temperatura">Temperatura</option>
+                            <option value="masa">Masa</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Paso 2 -->
+            <section class="conv-card">
+                <div class="conv-card__header header--orange">
+                    <span class="header-icon" aria-hidden="true">i</span>
+                    <h2>Tipo de Conversión</h2>
+                </div>
+                <div class="conv-card__body">
+                    <div class="input-outline">
+                        <select id="tipo" aria-label="Seleccionar tipo de conversión" disabled>
+                            <option value="">Primero seleccione una</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Paso 3 -->
+            <form id="form-conversion" class="conv-card" asp-action="Index" method="post" novalidate>
+                @Html.AntiForgeryToken()
+                <div class="conv-card__header header--green">
+                    <span class="header-icon" aria-hidden="true">i</span>
+                    <h2>Ingrese el Valor</h2>
+                </div>
+
+                <div class="conv-card__body">
+                    <input type="hidden" name="Tipo" id="tipo-hidden" />
+                    <input type="hidden" name="Cat" id="cat-hidden" />
+
+                    <div class="input-outline">
+                        <input type="number" inputmode="decimal" id="valor" name="Valor"
+                               placeholder="Ingrese el valor numérico" required />
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-block">CONVERTIR</button>
+
+                    @if (!string.IsNullOrWhiteSpace(Model?.Resultado))
+                    {
+                        <div class="result-chip only-mobile">
+                            <strong>@Model.Resultado</strong>
+                            <small>Valor inicial: @Model.Valor · Operación: @Model.Tipo</small>
+                        </div>
+                    }
+                    else if (!string.IsNullOrWhiteSpace(Model?.Error))
+                    {
+                        <p class="alert only-mobile">@Model.Error</p>
+                    }
                 </div>
             </form>
-            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="true">
-                <input type="hidden" name="Tipo" value="fToC" />
-                <div class="field">
-                    <label for="TemperaturaEntrada2">Fahrenheit → Celsius</label>
-                    <input type="number" id="TemperaturaEntrada2" name="Valor"
-                           step="any" placeholder="Ej. 86" required />
-                </div>
-                <div class="actions">
-                    <button type="submit">Convertir</button>
-                </div>
-            </form>
-        </section>
+        </main>
 
-        <section class="card">
-            <h2>Masa</h2>
-            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="false">
-                <input type="hidden" name="Tipo" value="kgToLb" />
-                <div class="field">
-                    <label for="MasaEntrada">Kilogramos → Libras</label>
-                    <input type="number" id="MasaEntrada" name="Valor"
-                           step="any" min="0" placeholder="Ej. 4.2" required />
-                </div>
-                <div class="actions">
-                    <button type="submit">Convertir</button>
-                </div>
-            </form>
-            <form asp-action="Index" method="post" data-role="conversion" data-allow-negative="false">
-                <input type="hidden" name="Tipo" value="lbToKg" />
-                <div class="field">
-                    <label for="MasaEntrada2">Libras → Kilogramos</label>
-                    <input type="number" id="MasaEntrada2" name="Valor"
-                           step="any" min="0" placeholder="Ej. 9.3" required />
-                </div>
-                <div class="actions">
-                    <button type="submit">Convertir</button>
-                </div>
-            </form>
-        </section>
-    </main>
+        <aside class="result-panel only-desktop">
+            <h3>Resultado</h3>
+            @if (!string.IsNullOrWhiteSpace(Model?.Resultado))
+            {
+                <p class="result-big">@Model.Resultado</p>
+                <p class="muted">Valor inicial: <b>@Model.Valor</b></p>
+                <p class="muted">Operación: <b>@Model.Tipo</b></p>
+            }
+            else if (!string.IsNullOrWhiteSpace(Model?.Error))
+            {
+                <p class="alert">@Model.Error</p>
+            }
+            else
+            {
+                <p class="muted">Ingresa un valor y presiona <b>Convertir</b>.</p>
+            }
+        </aside>
+    </div>
 
-    <aside class="result-card">
-        <h2>Resultado</h2>
-        @if (!string.IsNullOrWhiteSpace(Model.Resultado))
-        {
-            <p class="result-value">@Model.Resultado</p>
-            <p class="result-details">
-                Valor ingresado: <span>@Model.Valor</span><br />
-                Operación: <span>@Model.Tipo</span>
-            </p>
-        }
-        else if (!string.IsNullOrWhiteSpace(Model.Error))
-        {
-            <p class="alert">@Model.Error</p>
-        }
-        else
-        {
-            <p class="placeholder">Ingresa un valor y obtén el resultado al instante.</p>
-        }
+    <button type="button" class="fab danger" id="btn-limpiar" title="Limpiar">
+        <span class="trash" aria-hidden="true">🗑️</span>
+    </button>
 
-    </aside>
-</div>
-
-@section Scripts {
     <script>
-        document.querySelectorAll('form[data-role="conversion"]').forEach(form => {
-            const input = form.querySelector('input[name="Valor"]');
-            const allowNegative = form.dataset.allowNegative === "true";
+        // Opciones por categoría (usa tus códigos del backend)
+        const opciones = {
+            longitud: [
+                { val: "cmToIn", txt: "Centímetros → Pulgadas", min0: true },
+                { val: "inToCm", txt: "Pulgadas → Centímetros", min0: true }
+            ],
+            temperatura: [
+                { val: "cToF", txt: "Celsius → Fahrenheit", min0: false },
+                { val: "fToC", txt: "Fahrenheit → Celsius", min0: false }
+            ],
+            masa: [
+                { val: "kgToLb", txt: "Kilogramos → Libras", min0: true },
+                { val: "lbToKg", txt: "Libras → Kilogramos", min0: true }
+            ]
+        };
 
-            form.addEventListener('submit', event => {
-                const value = parseFloat(input.value);
-                if (!Number.isFinite(value)) {
-                    event.preventDefault();
-                    mostrarMensaje("Por favor ingresa un número válido.");
-                    return;
-                }
-                if (!allowNegative && value < 0) {
-                    event.preventDefault();
-                    mostrarMensaje("No se permiten valores negativos en esta categoría.");
-                    input.focus();
-                }
+        // DOM
+        const categoria = document.getElementById('categoria');
+        const tipo = document.getElementById('tipo');
+        const tipoHidden = document.getElementById('tipo-hidden');
+        const catHidden = document.getElementById('cat-hidden');
+        const valor = document.getElementById('valor');
+        const form = document.getElementById('form-conversion');
+        const btnLimpiar = document.getElementById('btn-limpiar');
+
+        // Listeners
+        categoria.addEventListener('change', () => {
+            const cat = categoria.value;
+            catHidden.value = cat || '';
+            tipo.innerHTML = '';
+            if (!cat) {
+                tipo.disabled = true;
+                tipo.innerHTML = '<option value="">Primero seleccione una</option>';
+                tipoHidden.value = '';
+                return;
+            }
+            opciones[cat].forEach(o => {
+                const opt = document.createElement('option');
+                opt.value = o.val; opt.textContent = o.txt;
+                tipo.appendChild(opt);
             });
+            tipo.disabled = false;
+            aplicarReglas(opciones[cat][0].min0);
+            tipoHidden.value = tipo.value;
         });
 
-        function mostrarMensaje(texto) {
-            let banner = document.querySelector('.banner');
-            if (!banner) {
-                banner = document.createElement('div');
-                banner.className = 'banner';
-                document.body.appendChild(banner);
+        tipo.addEventListener('change', () => {
+            const cat = categoria.value;
+            const sel = opciones[cat]?.find(o => o.val === tipo.value);
+            aplicarReglas(sel ? sel.min0 : true);
+            tipoHidden.value = tipo.value || '';
+        });
+
+        function aplicarReglas(min0) {
+            if (min0) { valor.setAttribute('min','0'); }
+            else { valor.removeAttribute('min'); }
+        }
+
+        form.addEventListener('submit', (e) => {
+            const t = tipo.value; const v = valor.value.trim();
+            if (!categoria.value) { e.preventDefault(); toast("Seleccione una categoría."); return; }
+            if (!t) { e.preventDefault(); toast("Seleccione el tipo de conversión."); return; }
+            if (v === '' || !isFinite(parseFloat(v))) { e.preventDefault(); toast("Ingrese un valor numérico válido."); return; }
+            tipoHidden.value = tipo.value;
+            catHidden.value = categoria.value;
+        });
+
+        btnLimpiar.addEventListener('click', () => {
+            categoria.value=''; tipo.innerHTML='<option value="">Primero seleccione una</option>';
+            tipo.disabled=true; valor.value=''; tipoHidden.value=''; catHidden.value='';
+            toast("Formulario reiniciado.");
+        });
+
+        // Rehidratar tras POST usando Model (Tipo/Valor)
+        (function rehidratar(){
+            const wrapper = document.querySelector('.conv-wrapper');
+            let cat = (wrapper.dataset.cat || '').trim();
+            const tpo = (wrapper.dataset.tipo || '').trim();
+            const val = (wrapper.dataset.valor || '').trim();
+
+            if (!cat && tpo){
+                if (/cmToIn|inToCm/.test(tpo)) cat = 'longitud';
+                else if (/cToF|fToC/.test(tpo)) cat = 'temperatura';
+                else if (/kgToLb|lbToKg/.test(tpo)) cat = 'masa';
             }
-            banner.textContent = texto;
-            banner.classList.add('visible');
-            setTimeout(() => banner.classList.remove('visible'), 3200);
+
+            if (cat){
+                categoria.value = cat;
+                categoria.dispatchEvent(new Event('change'));
+                if (tpo){
+                    tipo.value = tpo;
+                    tipo.dispatchEvent(new Event('change'));
+                }
+            }
+            if (val) valor.value = val;
+
+            catHidden.value = categoria.value || '';
+            tipoHidden.value = tipo.value || '';
+        })();
+
+        // Toast mínimo (sin librerías)
+        function toast(t) {
+            let b = document.querySelector('.banner');
+            if (!b) { b = document.createElement('div'); b.className='banner'; document.body.appendChild(b); }
+            b.textContent = t; b.classList.add('visible'); setTimeout(()=>b.classList.remove('visible'),2200);
         }
     </script>
-}
+</body>
+</html>

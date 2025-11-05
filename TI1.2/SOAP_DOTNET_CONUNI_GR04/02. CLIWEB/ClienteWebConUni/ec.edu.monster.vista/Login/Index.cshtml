@@ -1,46 +1,60 @@
 ﻿@model ec.edu.monster.modelo.LoginModel
 @{
-    ViewData["Title"] = "Inicio de sesión";
+    ViewData["Title"] = "Conversor de Unidades - Iniciar Sesión";
 }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
 
-<link rel="stylesheet" href="~/css/converter.css" asp-append-version="true" />
+    <!-- Hoja de estilos con las clases del layout JSP (login-bg, login-container, etc.) -->
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+</head>
+<body class="login-bg">
 
-<div class="login-wrapper">
-    <div class="login-card">
+    <div class="login-container">
+        <div class="login-card floating">
+            <!-- Usa la misma imagen que el JSP. Ajusta la ruta si tu proyecto usa otra -->
+            <img src="~/images/sullivan.jpg" alt="Avatar" class="avatar" />
 
-        <div class="logo-container">
-            <img src="~/images/logo.png" alt="Logo" class="login-logo" />
+            <h1>¡Bienvenido!</h1>
+            <p>Conversor de Unidades</p>
+
+            <form asp-action="Index" method="post" novalidate>
+                @Html.AntiForgeryToken()
+
+                <div class="input-group">
+                    <input asp-for="Usuario" id="usuario" placeholder="Usuario" autocomplete="username" required />
+                    <span class="validation" asp-validation-for="Usuario"></span>
+                </div>
+
+                <div class="input-group">
+                    <input asp-for="Password" id="password" type="password" placeholder="Contraseña" autocomplete="current-password" required />
+                    <span class="validation" asp-validation-for="Password"></span>
+                </div>
+
+                <button type="submit" class="btn-login">INICIAR SESIÓN</button>
+
+                <p class="note">Por favor, ingrese sus credenciales</p>
+
+                @* Equivalente al <c:if test="${not empty sessionScope.loginError}"> del JSP *@
+                @if (!string.IsNullOrWhiteSpace(Model?.Error))
+                {
+                    <p class="alert">@Model.Error</p>
+                }
+                else if (TempData["LoginError"] is string tempErr && !string.IsNullOrWhiteSpace(tempErr))
+                {
+                    <p class="alert">@tempErr</p>
+                }
+            </form>
         </div>
-
-        <h1>Control de Acceso</h1>
-        <p class="subtitle">Tu pase a las conversiones cuánticas</p>
-
-        <form asp-action="Index" method="post" class="login-form">
-            <div class="field">
-                <label asp-for="Usuario"></label>
-                <input asp-for="Usuario" autocomplete="username" />
-                <span class="validation" asp-validation-for="Usuario"></span>
-            </div>
-
-            <div class="field">
-                <label asp-for="Password"></label>
-                <input asp-for="Password" type="password" autocomplete="current-password" />
-                <span class="validation" asp-validation-for="Password"></span>
-            </div>
-
-            @if (!string.IsNullOrWhiteSpace(Model.Error))
-            {
-                <div class="alert">@Model.Error</div>
-            }
-
-            <div class="actions">
-                <button type="submit">Ingresar</button>
-            </div>
-        </form>
-
     </div>
-</div>
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</body>
+</html>
+

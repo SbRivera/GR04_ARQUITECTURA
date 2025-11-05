@@ -2,6 +2,14 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/ARQ/GR04_ARQUITECTURA/TI%201.1/WS_CONUNI_SOAPJAVA_G04/02%20CLIESC/src/ec/edu/monster/controlador/ConversionControlador.java</file>
+            <file>file:/D:/ARQ/GR04_ARQUITECTURA/TI%201.1/WS_CONUNI_SOAPJAVA_G04/02%20CLIESC/src/ec/edu/monster/pruebas/ConversionPrueba.java</file>
+            <file>file:/D:/ARQ/GR04_ARQUITECTURA/TI%201.1/WS_CONUNI_SOAPJAVA_G04/02%20CLIESC/src/cliesc_conuni_soapjava/Main.java</file>
+            <file>file:/D:/ARQ/GR04_ARQUITECTURA/TI%201.1/WS_CONUNI_SOAPJAVA_G04/02%20CLIESC/src/ec/edu/monster/modelo/Conversion.java</file>
+            <file>file:/D:/ARQ/GR04_ARQUITECTURA/TI%201.1/WS_CONUNI_SOAPJAVA_G04/02%20CLIESC/src/ec/edu/monster/vista/VistaConversion.java</file>
+            <file>file:/D:/ARQ/GR04_ARQUITECTURA/TI%201.1/WS_CONUNI_SOAPJAVA_G04/02%20CLIESC/src/ec/edu/monster/vista/VistaLogin.java</file>
+            <file>file:/D:/ARQ/GR04_ARQUITECTURA/TI%201.1/WS_CONUNI_SOAPJAVA_G04/02%20CLIESC/src/ec/edu/monster/controlador/LoginControlador.java</file>
+        </group>
     </open-files>
 </project-private>

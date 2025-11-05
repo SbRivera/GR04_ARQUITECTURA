@@ -5,10 +5,6 @@
       {
         "Path": "WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj",
         "Action": "Start"
-      },
-      {
-        "Path": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_DOTNET_GR04\\CLIESC_CONVUNI_DOTNET_GR04.csproj",
-        "Action": "Start"
       }
     ]
   }
