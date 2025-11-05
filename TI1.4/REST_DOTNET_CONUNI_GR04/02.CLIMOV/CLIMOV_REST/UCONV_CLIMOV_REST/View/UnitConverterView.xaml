@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UCONV_CLIMOV_REST.View.UnitConverterView"
+             Title="UnitConverterView">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30"
+        Spacing="20"
+        VerticalOptions="CenterAndExpand">
+
+            <!-- Title Label -->
+            <Label 
+            Text="Unit Converter"
+            FontSize="24"
+            HorizontalOptions="Center" />
+
+            <!-- Convert Kilos to Pounds Form -->
+            <Label Text="Convert Kilograms to Pounds:" FontSize="18" />
+            <Entry
+            x:Name="KgInput"
+            Placeholder="Enter kilograms"
+            Keyboard="Numeric"
+            Text=""
+            HorizontalOptions="Fill" />
+
+            <Button
+            Text="Convert to Pounds"
+            Clicked="OnConvertToPoundsClicked"
+            HorizontalOptions="Fill" />
+
+            <Label
+            x:Name="KgToLbResultLabel"
+            Text=""
+            FontSize="16"
+            TextColor="White"
+            HorizontalOptions="Center" />
+
+            <!-- Convert Pounds to Kilograms Form -->
+            <Label Text="Convert Pounds to Kilograms:" FontSize="18" />
+            <Entry
+            x:Name="LbInput"
+            Placeholder="Enter pounds"
+            Keyboard="Numeric"
+            Text=""
+            HorizontalOptions="Fill" />
+
+            <Button
+            Text="Convert to Kilograms"
+            Clicked="OnConvertToKgClicked"
+            HorizontalOptions="Fill" />
+
+            <Label
+            x:Name="LbToKgResultLabel"
+            Text=""
+            FontSize="16"
+            TextColor="White"
+            HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

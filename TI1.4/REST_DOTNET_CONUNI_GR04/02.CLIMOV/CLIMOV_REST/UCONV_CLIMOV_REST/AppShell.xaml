@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="UCONV_CLIMOV_REST.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:UCONV_CLIMOV_REST"
+    xmlns:view="clr-namespace:UCONV_CLIMOV_REST.View"
+    Shell.FlyoutBehavior="Disabled"
+    Title="UCONV_CLIMOV_REST">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+    Title="Unit Converter"
+    ContentTemplate="{DataTemplate view:UnitConverterView}"
+    Route="UnitConverterView" />
+
+</Shell>

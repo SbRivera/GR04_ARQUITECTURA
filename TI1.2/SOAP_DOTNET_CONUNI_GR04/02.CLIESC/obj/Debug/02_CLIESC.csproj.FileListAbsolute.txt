@@ -1,0 +1,11 @@
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\obj\Debug\02_CLIESC.csproj.AssemblyReference.cache
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\obj\Debug\_02_CLIESC.Properties.Resources.resources
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\obj\Debug\02_CLIESC.csproj.GenerateResource.cache
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\obj\Debug\02_CLIESC.csproj.CoreCompileInputs.cache
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\bin\Debug\02_CLIESC.exe.config
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\bin\Debug\02_CLIESC.exe
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\bin\Debug\02_CLIESC.pdb
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\obj\Debug\02_CLIESC.exe
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\obj\Debug\02_CLIESC.pdb
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\obj\Debug\_02_CLIESC.Views.Index.resources
+C:\Users\HAMILTON\Arquitectura\p2\Con_Unidades\02_CLIESC\obj\Debug\_02_CLIESC.Login.resources
