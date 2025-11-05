@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "CLIESC_CONVUNI_DOTNET_GR04.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

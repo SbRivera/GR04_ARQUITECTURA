@@ -447,23 +447,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Marcelo Echeverría Y\\.nuget\\packages\\": {},
+    "C:\\Users\\luise\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marcelo Echeverría Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj",
+      "projectUniqueName": "D:\\ARQUITECTURA\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj",
       "projectName": "WS_ConUni_REST_DOTNET",
-      "projectPath": "C:\\Users\\Marcelo Echeverría Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj",
-      "packagesPath": "C:\\Users\\Marcelo Echeverría Y\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marcelo Echeverría Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\obj\\",
+      "projectPath": "D:\\ARQUITECTURA\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET.csproj",
+      "packagesPath": "C:\\Users\\luise\\.nuget\\packages\\",
+      "outputPath": "D:\\ARQUITECTURA\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\01.SERVIDOR\\WS_ConUni_REST_DOTNET\\WS_ConUni_REST_DOTNET\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Marcelo Echeverría Y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luise\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
