@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Threading.Tasks;
@@ -11,185 +12,355 @@ namespace CLIESC_CONVUNI_DOTNET_GR04.Views
     public partial class MainForm : Form
     {
         private readonly ConversionController _controller = new ConversionController();
-
-        private Label lblEstadoConexion;
-        private Label lblSesion;
-        private Label lblFooter;
-        private Button btnLogout;
-
-        // Títulos (encima de los campos)
-        private Label lblTipoTitulo;
-        private Label lblValorTitulo;
-
-        private System.Windows.Forms.Timer glowTimer;
-        private System.Windows.Forms.Timer colorTimer;
-        private int glowIntensity = 0;
-        private bool glowIncreasing = true;
-        private int colorPhase = 0;
-
         private readonly string usuarioActivo;
 
-        // Recibe el usuario desde el login
+        private Label hdr1, hdr2, hdr3;         // headers de tarjetas
+        private Label lblHintTipo, lblHintValor;
+
+        // mapping categorías -> lista de tipos (texto, valor)
+        private readonly Dictionary<string, List<OptionItem>> tiposPorCategoria = new();
+
+        // ----- Colores de header por tarjeta (maqueta) -----
+        static readonly Color HDR_BLUE_A = Color.FromArgb(70, 125, 255);
+        static readonly Color HDR_BLUE_B = Color.FromArgb(58, 98, 205);
+        static readonly Color HDR_ORANGE_A = Color.FromArgb(255, 173, 72);
+        static readonly Color HDR_ORANGE_B = Color.FromArgb(243, 112, 85);
+        static readonly Color HDR_GREEN_A = Color.FromArgb(48, 201, 134);
+        static readonly Color HDR_GREEN_B = Color.FromArgb(23, 162, 132);
+
         public MainForm(string usuario)
         {
             usuarioActivo = usuario;
             InitializeComponent();
-            ConfigurarInterfaz();
-            IniciarAnimacionTitulo();
-            IniciarAnimacionFondo();
+            BuildUI();
+            BuildData();
+            OnMainResize();
         }
 
-        // ===============  UI / ESTILO  ===============
-        private void ConfigurarInterfaz()
+        private void BuildUI()
         {
-            this.DoubleBuffered = true;
-            this.Paint += (s, e) => DibujarFondo(e.Graphics);
+            // ===== Appbar texto real =====
+            lblSesion.Text = $"Conectado como {usuarioActivo}";
+            lblSesion.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
 
-            // --- Sesión activa (arriba-izquierda) ---
-            lblSesion = new Label
+            btnLogout.MouseEnter += (s, e) => btnLogout.BackColor = Color.FromArgb(245, 90, 90);
+            btnLogout.MouseLeave += (s, e) => btnLogout.BackColor = Color.FromArgb(224, 62, 62);
+
+            // === Colores por tarjeta (degradado del header) ===
+            cardCategoria.TopColor = HDR_BLUE_A; cardCategoria.BottomColor = HDR_BLUE_B;
+            cardTipo.TopColor = HDR_ORANGE_A; cardTipo.BottomColor = HDR_ORANGE_B;
+            cardValor.TopColor = HDR_GREEN_A; cardValor.BottomColor = HDR_GREEN_B;
+            // El resultado va clarito
+            cardResultado.TopColor = Color.FromArgb(235, 239, 250);
+            cardResultado.BottomColor = Color.FromArgb(235, 239, 250);
+
+            // ====== Card 1 — Categoría ======
+            hdr1 = HeaderLabel("Categoría de Conversión");
+            cardCategoria.Controls.Add(hdr1);
+
+            cbCategoria = new ComboBox
             {
-                Text = $"Sesión activa: {usuarioActivo}",
-                ForeColor = Color.FromArgb(130, 180, 255),
-                Font = new Font("Segoe UI", 9F, FontStyle.Italic),
-                AutoSize = true,
-                BackColor = Color.Transparent,
-                Location = new Point(20, 20),
-                Anchor = AnchorStyles.Top | AnchorStyles.Left
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                Font = new Font("Segoe UI", 10.5f),
+                Width = 320,
+                Height = 44
             };
-            panelTop.Controls.Add(lblSesion);
-            lblSesion.BringToFront();
+            StyleField(cbCategoria);
+            cbCategoria.SelectedIndexChanged += (s, e) => RecargarTipos();
+            PlaceInCard(cardCategoria, cbCategoria, y: 90);
 
-            // --- Botón Cerrar sesión (arriba-derecha) ---
-            btnLogout = new Button
+            var hint1 = HintLabel("Seleccionar Categoría");
+            cardCategoria.Controls.Add(hint1);
+            hint1.Location = new Point((cardCategoria.Width - hint1.Width) / 2, 60);
+
+            // ====== Card 2 — Tipo ======
+            hdr2 = HeaderLabel("Tipo de Conversión");
+            cardTipo.Controls.Add(hdr2);
+
+            cbTipo = new ComboBox
             {
-                Text = "⏻  Cerrar sesión",
-                ForeColor = Color.White,
-                BackColor = Color.FromArgb(60, 70, 130),
-                FlatStyle = FlatStyle.Flat,
-                Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold),
-                Size = new Size(130, 28),
-                Location = new Point(panelTop.Width - 150, 16),
-                Anchor = AnchorStyles.Top | AnchorStyles.Right,
-                Cursor = Cursors.Hand
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                Font = new Font("Segoe UI", 10.5f),
+                Width = 320,
+                Height = 44
             };
-            btnLogout.FlatAppearance.BorderSize = 0;
-            btnLogout.MouseEnter += (s, e) => btnLogout.BackColor = Color.FromArgb(80, 100, 180);
-            btnLogout.MouseLeave += (s, e) => btnLogout.BackColor = Color.FromArgb(60, 70, 130);
-            btnLogout.Click += (s, e) => VolverAlLogin();
-            panelTop.Controls.Add(btnLogout);
-            btnLogout.BringToFront();
+            StyleField(cbTipo);
+            PlaceInCard(cardTipo, cbTipo, y: 90);
 
-            // Re-centrar “Sesión activa” verticalmente si cambia el alto del panel
-            panelTop.Resize += (s, e) =>
+            lblHintTipo = HintLabel("Primero seleccione una");
+            cardTipo.Controls.Add(lblHintTipo);
+            lblHintTipo.Location = new Point((cardTipo.Width - lblHintTipo.Width) / 2, 60);
+
+            // ====== Card 3 — Valor ======
+            hdr3 = HeaderLabel("Ingrese el Valor");
+            cardValor.Controls.Add(hdr3);
+
+            txtValor = new UITheme.PlaceholderTextBox
             {
-                lblSesion.Location = new Point(20, (panelTop.Height - lblSesion.Height) / 2);
+                Placeholder = "Ingresa el valor numérico",
+                Font = new Font("Segoe UI", 11f),
+                Width = 320,
+                Height = 44
             };
+            StyleField(txtValor);
+            PlaceInCard(cardValor, txtValor, y: 90);
 
-            // --- Etiquetas título sobre cbTipo y txtValor ---
-            // Ajusta offX/sepY si quieres moverlos (sepY = distancia vertical sobre el control)
-            int offX = 0;
-            int sepY = -58;
-
-            lblTipoTitulo = CrearTituloSobreControl(cbTipo, "Unidad de conversión", offX, sepY);
-            lblValorTitulo = CrearTituloSobreControl(txtValor, "Valor a convertir", offX, sepY);
-
-            // Reposicionar en cada resize (NO recrear)
-            this.Resize += (s, e) =>
+            btnConvertir = new UITheme.GradientButton
             {
-                ActualizarTituloPosicion(cbTipo, lblTipoTitulo, offX, sepY);
-                ActualizarTituloPosicion(txtValor, lblValorTitulo, offX, sepY);
-                PosicionarEstadoConexion();
+                Text = "CONVERTIR",
+                Font = new Font("Segoe UI", 11f, FontStyle.Bold),
+                Size = new Size(320, 44),
+                Top = 150,
+                Left = (cardValor.Width - 320) / 2
             };
+            btnConvertir.Click += async (s, e) => await ConvertirAsync();
+            cardValor.Controls.Add(btnConvertir);
 
-            // --- Indicador de conexión (abajo-izquierda, por encima del footer) ---
-            lblEstadoConexion = new Label
+            // ====== Card Resultado ======
+            var hdrRes = new Panel
             {
-                Text = "Servidor: Conectado",
-                ForeColor = Color.FromArgb(0, 220, 140),
-                Font = new Font("Consolas", 9F, FontStyle.Italic),
-                AutoSize = true,
-                BackColor = Color.Transparent
+                BackColor = Color.FromArgb(235, 239, 250),
+                Height = 60,
+                Dock = DockStyle.Top
             };
-            this.Controls.Add(lblEstadoConexion);
-            lblEstadoConexion.BringToFront();
-            PosicionarEstadoConexion(); // Posición inicial (sin footer aún)
-
-            // --- Footer (abajo centrado) ---
-            lblFooter = new Label
+            var lblHdrRes = new Label
             {
-                Text = $"Cliente REST | {DateTime.Now:dd MMM yyyy HH:mm}",
-                ForeColor = Color.FromArgb(90, 150, 200),
-                Font = new Font("Consolas", 9F, FontStyle.Italic),
+                Text = "Resultado",
+                ForeColor = Color.FromArgb(90, 96, 120),
+                Font = new Font("Segoe UI", 16f, FontStyle.Bold),
+                AutoSize = false,
+                Dock = DockStyle.Fill,
+                TextAlign = ContentAlignment.MiddleLeft,
+                Padding = new Padding(22, 0, 0, 0)
+            };
+            hdrRes.Controls.Add(lblHdrRes);
+            cardResultado.Controls.Add(hdrRes);
+
+            // Más aire arriba (Top padding 32 en lugar de 18)
+            var inner = new Panel { Dock = DockStyle.Fill, Padding = new Padding(26, 32, 26, 26), BackColor = Color.White };
+            cardResultado.Controls.Add(inner);
+
+            lblOutMain = new Label { Text = "—", Font = new Font("Segoe UI", 22f, FontStyle.Bold), AutoSize = true };
+            lblIn = new Label { Text = "Ingresa un valor y presiona Convertir.", AutoSize = true, ForeColor = Color.FromArgb(90, 90, 90) };
+            lblDetalle = new Label { Text = "", AutoSize = true, ForeColor = Color.FromArgb(90, 90, 90) };
+
+            inner.Controls.Add(lblOutMain);
+            inner.Controls.Add(lblIn);
+            inner.Controls.Add(lblDetalle);
+            lblOutMain.Location = new Point(6, 18); // un poco más abajo
+            lblIn.Location = new Point(6, 62);
+            lblDetalle.Location = new Point(6, 90);
+
+            // Mensaje inferior (validación / estado)
+            lblMensaje = new Label
+            {
+                AutoSize = false,
+                Height = 36,
                 Dock = DockStyle.Bottom,
-                Height = 22,
-                TextAlign = ContentAlignment.MiddleCenter
+                TextAlign = ContentAlignment.MiddleCenter,
+                BackColor = Color.FromArgb(0, 0, 0, 0)
             };
-            this.Controls.Add(lblFooter);
+            root.Controls.Add(lblMensaje);
 
-            // Ajustar posición del estado ahora que existe el footer
-            PosicionarEstadoConexion();
+            // ===== FAB borrar =====
+            btnClearFab.Paint += DrawTrashFab;
+            btnClearFab.Click += (s, e) => ClearAll();
+            AcceptButton = btnConvertir;
+        }
 
-            // Actualiza hora del footer
-            var reloj = new System.Windows.Forms.Timer { Interval = 1000 };
-            reloj.Tick += (s, e) => lblFooter.Text = $"Cliente REST | {DateTime.Now:dd MMM yyyy HH:mm}";
-            reloj.Start();
-
-            // Separador inferior del panelTop (cosmético)
-            var separador = new Panel
+        private void BuildData()
+        {
+            tiposPorCategoria["Temperatura"] = new List<OptionItem>
             {
-                Dock = DockStyle.Bottom,
-                Height = 1,
-                BackColor = Color.FromArgb(40, 60, 100)
+                new("Celsius → Fahrenheit",   "c_to_f",     "°C", "°F"),
+                new("Fahrenheit → Celsius",   "f_to_c",     "°F", "°C")
             };
-            panelTop.Controls.Add(separador);
-            separador.BringToFront();
+            tiposPorCategoria["Longitud"] = new List<OptionItem>
+            {
+                new("Centímetros → Pulgadas", "cm_to_inch", "cm", "in"),
+                new("Pulgadas → Centímetros", "inch_to_cm", "in", "cm")
+            };
+            tiposPorCategoria["Peso"] = new List<OptionItem>
+            {
+                new("Kilogramos → Libras",    "kg_to_lb",   "kg", "lb"),
+                new("Libras → Kilogramos",    "lb_to_kg",   "lb", "kg")
+            };
+
+            cbCategoria.Items.Clear();
+            foreach (var cat in tiposPorCategoria.Keys)
+                cbCategoria.Items.Add(cat);
+
+            cbCategoria.SelectedIndex = -1;
+            cbTipo.SelectedIndex = -1;
         }
 
-        private void PosicionarEstadoConexion()
-        {
-            if (lblEstadoConexion == null || lblEstadoConexion.IsDisposed) return;
-
-            int margen = 8;
-            int footerH = (lblFooter != null && !lblFooter.IsDisposed) ? lblFooter.Height : 0;
-            int y = this.ClientSize.Height - footerH - lblEstadoConexion.Height - margen;
-            if (y < margen) y = margen;
-
-            lblEstadoConexion.Location = new Point(margen, y);
-        }
-        private void StyleLabel(Label l)
-        {
-            l.FlatStyle = FlatStyle.Standard;      // evita glow morado
-            l.BackColor = Color.Transparent;       // sin recuadro
-            l.UseCompatibleTextRendering = false;  // texto GDI (estable)
-        }
-        // Crear y posicionar un título sobre un control
-        private Label CrearTituloSobreControl(Control control, string texto, int offX = 0, int sepY = 22)
+        // ===== Helpers de estilo/posicionamiento =====
+        private static Label HeaderLabel(string text)
         {
             var lbl = new Label
             {
-                Text = texto,
-                ForeColor = Color.FromArgb(150, 180, 220),
-                Font = new Font("Segoe UI", 9f, FontStyle.Italic),
-                AutoSize = true
+                Text = text,
+                ForeColor = Color.White,
+                Font = new Font("Segoe UI", 16f, FontStyle.Bold),
+                AutoSize = true,
+                BackColor = Color.Transparent,
+                Location = new Point(22, 22)
             };
-            StyleLabel(lbl);
-            this.Controls.Add(lbl);
-            lbl.BringToFront();
-
-            ActualizarTituloPosicion(control, lbl, offX, sepY);
-            control.LocationChanged += (s, e) => ActualizarTituloPosicion(control, lbl, offX, sepY);
-            control.SizeChanged += (s, e) => ActualizarTituloPosicion(control, lbl, offX, sepY);
             return lbl;
         }
 
-        private void ActualizarTituloPosicion(Control control, Label lbl, int offX, int sepY)
+        private static Label HintLabel(string text)
         {
-            // sepY es cuánto “por encima” del control queda el título
-            // (a mayor sepY más arriba)
-            lbl.Location = new Point(control.Left + offX, Math.Max(5, control.Top - sepY));
+            return new Label
+            {
+                Text = text,
+                AutoSize = true,
+                ForeColor = Color.FromArgb(90, 90, 105),
+                BackColor = Color.Transparent,
+                Font = new Font("Segoe UI", 9f, FontStyle.Regular)
+            };
         }
 
-        // 🔙 Volver al login
+        private static void StyleField(Control c)
+        {
+            c.BackColor = Color.White;
+            c.ForeColor = Color.FromArgb(40, 40, 40);
+        }
+
+        private static void PlaceInCard(Control parent, Control child, int y)
+        {
+            child.Left = (parent.Width - child.Width) / 2;
+            child.Top = y;
+            parent.Controls.Add(child);
+        }
+
+        private void OnMainResize()
+        {
+            // Reubicar appbar labels/botón
+            if (btnLogout != null)
+            {
+                btnLogout.Left = this.ClientSize.Width - 190;
+                btnLogout.Top = 16;
+            }
+            if (lblSesion != null)
+            {
+                lblSesion.Left = this.ClientSize.Width - 360;
+                lblSesion.Top = 22;
+            }
+
+            // Centrar resultado (lo bajamos un poco)
+            if (cardResultado != null)
+            {
+                cardResultado.Left = (this.ClientSize.Width - cardResultado.Width) / 2;
+                cardResultado.Top = 380; // antes 360
+            }
+
+            // FAB en esquina inferior derecha (margen 26/30)
+            if (btnClearFab != null)
+            {
+                btnClearFab.Left = this.ClientSize.Width - btnClearFab.Width - 26;
+                btnClearFab.Top = this.ClientSize.Height - btnClearFab.Height - 30;
+            }
+        }
+
+        private void DrawTrashFab(object? sender, PaintEventArgs e)
+        {
+            var g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            int w = btnClearFab.Width, h = btnClearFab.Height;
+
+            using (var shadow = new SolidBrush(Color.FromArgb(60, 0, 0, 0)))
+                g.FillEllipse(shadow, 4, 6, w - 8, h - 8);
+
+            using (var lg = new LinearGradientBrush(btnClearFab.ClientRectangle,
+                       Color.FromArgb(255, 160, 76), Color.FromArgb(237, 93, 74), 45f))
+                g.FillEllipse(lg, 0, 0, w - 8, h - 8);
+
+            using (var pen = new Pen(Color.FromArgb(255, 255, 255, 200), 2f))
+                g.DrawEllipse(pen, 1, 1, w - 10, h - 10);
+
+            // iconito de papelera
+            g.TranslateTransform(16, 14);
+            using var white = new SolidBrush(Color.White);
+            g.FillRectangle(white, 4, 0, 16, 4);             // tapa
+            g.FillRectangle(white, 0, 4, 24, 16);            // cuerpo
+            using var p = new Pen(Color.White, 2f);
+            g.DrawLine(p, 7, 6, 7, 18);
+            g.DrawLine(p, 12, 6, 12, 18);
+            g.DrawLine(p, 17, 6, 17, 18);
+        }
+
+        // ===== Lógica =====
+
+        private void RecargarTipos()
+        {
+            cbTipo.DataSource = null;
+            if (cbCategoria.SelectedItem == null) { cbTipo.SelectedIndex = -1; return; }
+
+            var cat = cbCategoria.SelectedItem.ToString()!;
+            var list = tiposPorCategoria.TryGetValue(cat, out var l) ? l : new List<OptionItem>();
+            cbTipo.DataSource = list;
+            cbTipo.DisplayMember = nameof(OptionItem.Text);
+            cbTipo.ValueMember = nameof(OptionItem.Value);
+            cbTipo.SelectedIndex = -1;
+
+            lblHintTipo.Visible = list.Count == 0;
+        }
+
+        private async Task ConvertirAsync()
+        {
+            if (cbTipo.SelectedItem is not OptionItem sel)
+            {
+                ShowMessage("Seleccione un tipo de conversión.", Color.OrangeRed);
+                return;
+            }
+            if (!double.TryParse(txtValor.Text.Trim(), out double valor))
+            {
+                ShowMessage("Ingrese un número válido.", Color.OrangeRed);
+                return;
+            }
+
+            btnConvertir.Enabled = false;
+            ShowMessage("Procesando conversión…", Color.FromArgb(120, 180, 255));
+
+            var req = new ConversionRequest { Type = sel.Value, Value = valor };
+            var res = await _controller.ConvertAsync(req);
+
+            btnConvertir.Enabled = true;
+
+            if (!string.IsNullOrEmpty(res.Error))
+            {
+                ShowMessage($"Error: {res.Error}", Color.OrangeRed);
+                return;
+            }
+
+            // Mostrar usando las unidades del OptionItem seleccionado
+            lblOutMain.Text = $"{res.Output:0.######} {sel.OutUnit}";
+            lblIn.Text = $"Entrada: {res.Input:0.######} {sel.InUnit}";
+            lblDetalle.Text = sel.Text;
+
+            ShowMessage("Conversión realizada con éxito.", Color.FromArgb(22, 118, 38));
+        }
+
+        private void ShowMessage(string text, Color color)
+        {
+            lblMensaje.Text = text;
+            lblMensaje.ForeColor = color;
+        }
+
+        private void ClearAll()
+        {
+            cbCategoria.SelectedIndex = -1;
+            cbTipo.DataSource = null;
+            cbTipo.SelectedIndex = -1;
+            txtValor.Text = "";
+            lblOutMain.Text = "—";
+            lblIn.Text = "Ingresa un valor y presiona Convertir.";
+            lblDetalle.Text = "";
+            ShowMessage("Campos reiniciados.", Color.FromArgb(60, 60, 60));
+            txtValor.Focus();
+        }
+
         private void VolverAlLogin()
         {
             var login = new LoginForm();
@@ -197,153 +368,19 @@ namespace CLIESC_CONVUNI_DOTNET_GR04.Views
             this.Hide();
         }
 
-        // ===============  ANIMACIONES / FONDO  ===============
-        private void DibujarFondo(Graphics g)
+        // Item helper
+        private sealed class OptionItem
         {
-            Rectangle rect = this.ClientRectangle;
-            Color c1 = Color.FromArgb(10, 10, 30);
-            Color c2 = Color.FromArgb(25 + colorPhase, 20, 60 + colorPhase);
+            public string Text { get; }
+            public string Value { get; }
+            public string InUnit { get; }
+            public string OutUnit { get; }
 
-            using (var brush = new LinearGradientBrush(rect, c1, c2, 120f))
+            public OptionItem(string text, string value, string inUnit, string outUnit)
             {
-                g.FillRectangle(brush, rect);
+                Text = text; Value = value; InUnit = inUnit; OutUnit = outUnit;
             }
-        }
-
-        private void IniciarAnimacionFondo()
-        {
-            colorTimer = new System.Windows.Forms.Timer { Interval = 80 };
-            colorTimer.Tick += (s, e) =>
-            {
-                colorPhase++;
-                if (colorPhase > 30) colorPhase = 0;
-                this.Invalidate();
-            };
-            colorTimer.Start();
-        }
-
-        private void IniciarAnimacionTitulo()
-        {
-            glowTimer = new System.Windows.Forms.Timer { Interval = 70 };
-            glowTimer.Tick += (s, e) =>
-            {
-                glowIntensity += glowIncreasing ? 4 : -4;
-                if (glowIntensity >= 80) glowIncreasing = false;
-                if (glowIntensity <= 0) glowIncreasing = true;
-
-                int g = Math.Min(255, 180 + glowIntensity);
-                lblTitulo.ForeColor = Color.FromArgb(100, g, 255);
-            };
-            glowTimer.Start();
-        }
-
-        // ===============  COMBO DRAW / VALIDACIÓN  ===============
-        private void cbTipo_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            if (e.Index < 0) return;
-
-            string text = cbTipo.Items[e.Index].ToString();
-            bool isSection = text.StartsWith("—");
-
-            e.DrawBackground();
-
-            Color bg = (e.State & DrawItemState.Selected) == DrawItemState.Selected
-                ? Color.FromArgb(60, 110, 255)
-                : Color.FromArgb(25, 25, 45);
-
-            Color fg = isSection ? Color.FromArgb(100, 160, 220) : Color.White;
-
-            using (var bgb = new SolidBrush(bg))
-                e.Graphics.FillRectangle(bgb, e.Bounds);
-            using (var fgb = new SolidBrush(fg))
-                e.Graphics.DrawString(text, e.Font, fgb, e.Bounds.X + (isSection ? 20 : 6), e.Bounds.Y + 3);
-
-            e.DrawFocusRectangle();
-        }
-
-        private void cbTipo_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            if (cbTipo.SelectedItem == null) return;
-            string item = cbTipo.SelectedItem.ToString();
-            if (item.StartsWith("—"))
-            {
-                cbTipo.SelectedIndex = -1;
-                cbTipo.Refresh();
-            }
-        }
-
-        private void txtValor_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (char.IsControl(e.KeyChar)) return;
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != '-') e.Handled = true;
-            if (e.KeyChar == '.' && txtValor.Text.Contains('.')) e.Handled = true;
-            if (e.KeyChar == '-' && txtValor.SelectionStart != 0) e.Handled = true;
-        }
-
-        // ===============  CONVERSIÓN  ===============
-        private async void btnConvertir_Click(object sender, EventArgs e)
-        {
-            string tipo = cbTipo.SelectedItem?.ToString();
-            string valorTexto = txtValor.Text.Trim();
-
-            if (string.IsNullOrEmpty(tipo) || tipo.StartsWith("—"))
-            {
-                MostrarMensaje("Selecciona un tipo de conversión válido.", Color.OrangeRed);
-                return;
-            }
-
-            if (!double.TryParse(valorTexto, out double valor))
-            {
-                MostrarMensaje("Ingrese un número válido.", Color.OrangeRed);
-                return;
-            }
-
-            bool esTemperatura = tipo.StartsWith("c_") || tipo.StartsWith("f_");
-            if (!esTemperatura && valor < 0)
-            {
-                MostrarMensaje("Solo las conversiones de temperatura aceptan valores negativos.", Color.OrangeRed);
-                return;
-            }
-
-            btnConvertir.Enabled = false;
-            MostrarMensaje("Convirtiendo...", Color.LightSkyBlue);
-
-            var request = new ConversionRequest { Type = tipo, Value = valor };
-            var response = await _controller.ConvertAsync(request);
-
-            btnConvertir.Enabled = true;
-
-            if (!string.IsNullOrEmpty(response.Error))
-            {
-                MostrarMensaje($"Error: {response.Error}", Color.OrangeRed);
-                lblEstadoConexion.Text = "Servidor: Desconectado";
-                lblEstadoConexion.ForeColor = Color.OrangeRed;
-                return;
-            }
-
-            lblEstadoConexion.Text = "Servidor: Conectado";
-            lblEstadoConexion.ForeColor = Color.FromArgb(0, 220, 140);
-
-            string resultado = $"{response.Input}  ➜  {response.Output}";
-            MostrarMensaje(resultado, Color.FromArgb(120, 255, 200));
-            await AnimarResultado();
-        }
-
-        private async Task AnimarResultado()
-        {
-            for (int i = 0; i < 3; i++)
-            {
-                lblResultado.ForeColor = Color.FromArgb(80, 255, 180);
-                await Task.Delay(120);
-                lblResultado.ForeColor = Color.FromArgb(100, 255, 200);
-                await Task.Delay(120);
-            }
-        }
-
-        private void MostrarMensaje(string texto, Color color)
-        {
-            lblResultado.ForeColor = color;
-            lblResultado.Text = texto;
+            public override string ToString() => Text;
         }
     }
 }

@@ -6,165 +6,152 @@ namespace CLIESC_CONVUNI_DOTNET_GR04.Views
     partial class MainForm
     {
         private System.ComponentModel.IContainer components = null;
-        private ComboBox cbTipo;
-        private TextBox txtValor;
-        private Button btnConvertir;
-        private Label lblResultado;
+
+        // Contenedor raíz (fondo con gradiente)
+        private UITheme.GradientPanel root;
+
+        // Appbar
+        private Panel appbar;
         private Label lblTitulo;
-        private TableLayoutPanel layoutPanel;
-        private Panel panelTop;
-        private Panel panelBottom;
-        private Label lblUnidadEntrada;
-        private Label lblUnidadSalida;
+        private Label lblSesion;
+        private Button btnLogout;
+
+        // Tarjetas
+        private UITheme.CardPanel cardCategoria;
+        private UITheme.CardPanel cardTipo;
+        private UITheme.CardPanel cardValor;
+        private UITheme.CardPanel cardResultado;
+
+        // Controles de entrada
+        private ComboBox cbCategoria;
+        private ComboBox cbTipo;
+        private UITheme.PlaceholderTextBox txtValor;
+        private UITheme.GradientButton btnConvertir;
+
+        // Resultado / mensajes
+        private Label lblOutMain;
+        private Label lblIn;
+        private Label lblDetalle;
+        private Label lblMensaje;
+
+        // FAB limpiar
+        private Button btnClearFab;
 
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
         private void InitializeComponent()
         {
-            this.cbTipo = new ComboBox();
-            this.txtValor = new TextBox();
-            this.btnConvertir = new Button();
-            this.lblResultado = new Label();
-            this.lblTitulo = new Label();
-            this.panelTop = new Panel();
-            this.layoutPanel = new TableLayoutPanel();
-            this.panelBottom = new Panel();
-            this.lblUnidadEntrada = new Label();
-            this.lblUnidadSalida = new Label();
+            components = new System.ComponentModel.Container();
 
-            this.SuspendLayout();
+            // ===== Root =====
+            root = new UITheme.GradientPanel
+            {
+                Dock = DockStyle.Fill,
+                Padding = new Padding(14, 18, 18, 18),
+            };
+            this.Controls.Add(root);
 
-            // === Ventana Principal ===
+            // ===== Ventana =====
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
-            this.BackColor = Color.FromArgb(10, 10, 25);
-            this.ClientSize = new Size(900, 500);
-            this.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            this.ForeColor = Color.White;
-            this.Text = "Conversor de Unidades - Cliente REST";
-            this.MinimumSize = new Size(750, 400);
+            this.ClientSize = new Size(1180, 760);
+            this.MinimumSize = new Size(1000, 640);
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.Text = "ConUni • Conversor de unidades";
+            this.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            this.DoubleBuffered = true;
 
-            // === Panel superior ===
-            this.panelTop.BackColor = Color.FromArgb(20, 20, 45);
-            this.panelTop.Dock = DockStyle.Top;
-            this.panelTop.Height = 70;
-
-            // === Título ===
-            this.lblTitulo.AutoSize = false;
-            this.lblTitulo.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold);
-            this.lblTitulo.ForeColor = Color.FromArgb(100, 200, 255);
-            this.lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
-            this.lblTitulo.Dock = DockStyle.Fill;
-            this.lblTitulo.Text = "CONVERSOR UNIVERSAL DE UNIDADES";
-            this.panelTop.Controls.Add(this.lblTitulo);
-
-            // === Layout principal (responsive) ===
-            this.layoutPanel.ColumnCount = 3;
-            this.layoutPanel.RowCount = 2;
-            this.layoutPanel.Dock = DockStyle.Fill;
-            this.layoutPanel.Padding = new Padding(40, 30, 40, 30);
-            this.layoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
-            this.layoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
-            this.layoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 180F));
-            this.layoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
-            this.layoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            this.layoutPanel.BackColor = Color.FromArgb(15, 15, 35);
-
-            // === ComboBox (tipo de conversión) ===
-            this.cbTipo.BackColor = Color.FromArgb(25, 25, 45);
-            this.cbTipo.FlatStyle = FlatStyle.Flat;
-            this.cbTipo.ForeColor = Color.FromArgb(180, 220, 255);
-            this.cbTipo.Font = new Font("Segoe UI", 10F);
-            this.cbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
-            this.cbTipo.DrawMode = DrawMode.OwnerDrawFixed;
-            this.cbTipo.DrawItem += new DrawItemEventHandler(this.cbTipo_DrawItem);
-            this.cbTipo.Items.AddRange(new object[]
+            // ===== Appbar =====
+            appbar = new Panel
             {
-                "— Temperatura —",
-                "c_to_f",
-                "f_to_c",
-                "— Longitud —",
-                "cm_to_inch",
-                "inch_to_cm",
-                "— Peso —",
-                "kg_to_lb",
-                "lb_to_kg"
-            });
-            this.cbTipo.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+                Dock = DockStyle.Top,
+                Height = 64,
+                BackColor = Color.Transparent
+            };
 
-            // === TextBox ===
-            this.txtValor.BackColor = Color.FromArgb(25, 25, 45);
-            this.txtValor.BorderStyle = BorderStyle.FixedSingle;
-            this.txtValor.ForeColor = Color.White;
-            this.txtValor.Font = new Font("Consolas", 11F);
-            this.txtValor.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            this.txtValor.KeyPress += new KeyPressEventHandler(this.txtValor_KeyPress);
+            lblTitulo = new Label
+            {
+                AutoSize = false,
+                Dock = DockStyle.Left,
+                Width = 520,
+                Text = "Conversiones de Unidades",
+                ForeColor = Color.White,
+                TextAlign = ContentAlignment.MiddleLeft,
+                Font = new Font("Segoe UI", 22f, FontStyle.Bold)
+            };
+            appbar.Controls.Add(lblTitulo);
 
-            // === Botón ===
-            this.btnConvertir.BackColor = Color.FromArgb(60, 120, 255);
-            this.btnConvertir.FlatStyle = FlatStyle.Flat;
-            this.btnConvertir.FlatAppearance.BorderSize = 0;
-            this.btnConvertir.Font = new Font("Segoe UI Semibold", 11F, FontStyle.Bold);
-            this.btnConvertir.ForeColor = Color.White;
-            this.btnConvertir.Text = "Convertir";
-            this.btnConvertir.Width = 120;
-            this.btnConvertir.Height = this.txtValor.Height;
-            this.btnConvertir.Anchor = AnchorStyles.Left;
-            this.btnConvertir.Click += new System.EventHandler(this.btnConvertir_Click);
+            // sesión + logout (se agregan desde code-behind también)
+            lblSesion = new Label
+            {
+                AutoSize = true,
+                Text = "Conectado como …",
+                ForeColor = Color.FromArgb(230, 236, 255),
+                BackColor = Color.Transparent,
+                Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                Location = new Point(this.ClientSize.Width - 360, 22)
+            };
+            appbar.Controls.Add(lblSesion);
 
-            // === Etiquetas ===
-            this.lblUnidadEntrada.Text = "Unidad de entrada";
-            this.lblUnidadEntrada.ForeColor = Color.FromArgb(130, 150, 180);
-            this.lblUnidadEntrada.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            this.lblUnidadEntrada.Dock = DockStyle.Bottom;
-            this.lblUnidadEntrada.TextAlign = ContentAlignment.MiddleCenter;
+            btnLogout = new Button
+            {
+                Text = "CERRAR SESIÓN",
+                ForeColor = Color.White,
+                BackColor = Color.FromArgb(224, 62, 62),
+                FlatStyle = FlatStyle.Flat,
+                Size = new Size(150, 34),
+                Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                Location = new Point(this.ClientSize.Width - 190, 16),
+                Cursor = Cursors.Hand
+            };
+            btnLogout.FlatAppearance.BorderSize = 0;
+            btnLogout.Click += (s, e) => VolverAlLogin();
+            appbar.Controls.Add(btnLogout);
 
-            this.lblUnidadSalida.Text = "Unidad de salida";
-            this.lblUnidadSalida.ForeColor = Color.FromArgb(130, 150, 180);
-            this.lblUnidadSalida.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
-            this.lblUnidadSalida.Dock = DockStyle.Bottom;
-            this.lblUnidadSalida.TextAlign = ContentAlignment.MiddleCenter;
+            root.Controls.Add(appbar);
 
-            // === Resultado ===
-            this.lblResultado.AutoSize = false;
-            this.lblResultado.Dock = DockStyle.Fill;
-            this.lblResultado.Font = new Font("Consolas", 13F, FontStyle.Italic);
-            this.lblResultado.ForeColor = Color.FromArgb(100, 255, 200);
-            this.lblResultado.Text = "Esperando datos...";
-            this.lblResultado.TextAlign = ContentAlignment.MiddleCenter;
+            // ===== Tarjetas (tres en fila) =====
+            cardCategoria = new UITheme.CardPanel { Size = new Size(360, 210), Top = 108, Left = 28 };
+            cardTipo = new UITheme.CardPanel { Size = new Size(360, 210), Top = 108, Left = 28 + 380 };
+            cardValor = new UITheme.CardPanel { Size = new Size(360, 230), Top = 96, Left = 28 + 380 + 380 };
 
-            // === Panel inferior ===
-            this.panelBottom.Dock = DockStyle.Bottom;
-            this.panelBottom.Height = 110;
-            this.panelBottom.BackColor = Color.FromArgb(10, 10, 25);
-            this.panelBottom.Controls.Add(this.lblResultado);
+            // Contenido interno se agrega desde code-behind (para mantener lógica allí)
+            root.Controls.Add(cardCategoria);
+            root.Controls.Add(cardTipo);
+            root.Controls.Add(cardValor);
 
-            // === Añadir al layout ===
-            this.layoutPanel.Controls.Add(this.cbTipo, 0, 0);
-            this.layoutPanel.Controls.Add(this.txtValor, 1, 0);
-            this.layoutPanel.Controls.Add(this.btnConvertir, 2, 0);
-            this.layoutPanel.Controls.Add(this.lblUnidadEntrada, 0, 1);
-            this.layoutPanel.Controls.Add(this.lblUnidadSalida, 2, 1);
+            // ===== Resultado =====
+            cardResultado = new UITheme.CardPanel
+            {
+                Top = 380, // bajamos un poco desde el inicio
+                Left = (1180 - 480) / 2 - 18,
+                Size = new Size(480, 220)
+            };
+            root.Controls.Add(cardResultado);
 
-            // === Orden de agregado ===
-            this.Controls.Add(this.layoutPanel);
-            this.Controls.Add(this.panelBottom);
-            this.Controls.Add(this.panelTop);
+            // ===== FAB (papelera) =====
+            btnClearFab = new Button
+            {
+                Width = 56,
+                Height = 56,
+                FlatStyle = FlatStyle.Flat,
+                BackColor = Color.Transparent,
+                TabStop = false
+            };
+            btnClearFab.FlatAppearance.BorderSize = 0;
+            btnClearFab.Cursor = Cursors.Hand;
+            btnClearFab.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            root.Controls.Add(btnClearFab);
+
+            // evento resize para reposicionar elementos dinámicos (FAB/appbar labels)
+            this.Resize += (s, e) => OnMainResize();
 
             this.ResumeLayout(false);
-
-            this.cbTipo.DrawItem += new DrawItemEventHandler(this.cbTipo_DrawItem);
-            this.btnConvertir.Click += new System.EventHandler(this.btnConvertir_Click);
-            this.txtValor.KeyPress += new KeyPressEventHandler(this.txtValor_KeyPress);
-
         }
     }
 }

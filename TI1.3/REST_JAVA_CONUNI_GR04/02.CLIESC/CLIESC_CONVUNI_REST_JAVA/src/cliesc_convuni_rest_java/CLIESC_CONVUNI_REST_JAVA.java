@@ -17,6 +17,15 @@ public class CLIESC_CONVUNI_REST_JAVA {
         SwingUtilities.invokeLater(() -> {
             ConUniService service = new ConUniService();
             LoginView loginView = new LoginView();
+
+            // --- Avatar desde tu ruta absoluta (usar barras dobles \\) ---
+            boolean ok = loginView.setAvatarFromPath(
+                "C:\\Users\\Marcelo Echeverría Y\\Desktop\\TI1.1\\GR04_ARQUITECTURA\\TI1.3\\REST_JAVA_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_REST_JAVA\\img\\sullivan.jpg"
+            );
+            if (!ok) {
+                System.out.println("No se pudo cargar la imagen del avatar.");
+            }
+
             LoginController loginController = new LoginController(loginView, service);
             loginView.setController(loginController);
             loginView.showView();

@@ -1,119 +1,186 @@
-﻿namespace CLIESC_CONVUNI_DOTNET_GR04.Views
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace CLIESC_CONVUNI_DOTNET_GR04.Views
 {
     partial class LoginForm
     {
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.Label lblUser;
-        private System.Windows.Forms.Label lblPass;
-        private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label lblTitle;
+
+        private UITheme.GradientPanel bg;
+        private UITheme.CardPanel card;
+        private PictureBox avatar;
+        private Label lblBien, lblSub, lblHint;
+        private UITheme.PlaceholderTextBox txtUsuario;
+        private UITheme.PlaceholderTextBox txtPassword;
+        private UITheme.GradientButton btnLogin;
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
+            if (disposing && (components != null)) components.Dispose();
             base.Dispose(disposing);
         }
 
         private void InitializeComponent()
         {
-            this.lblUser = new System.Windows.Forms.Label();
-            this.lblPass = new System.Windows.Forms.Label();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
 
-            // 
-            // LoginForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(15, 15, 30);
-            this.ClientSize = new System.Drawing.Size(380, 260);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.ForeColor = System.Drawing.Color.White;
-            this.Text = "Inicio de Sesión - Cliente REST";
-            this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            // ====== FORM ======
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(900, 560);
+            this.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.Text = "ConUni • Acceso";
+            this.DoubleBuffered = true;
 
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(100, 200, 255);
-            this.lblTitle.Location = new System.Drawing.Point(95, 25);
-            this.lblTitle.Text = "MONSTER LOGIN";
+            // ====== FONDO ======
+            bg = new UITheme.GradientPanel { Dock = DockStyle.Fill };
+            this.Controls.Add(bg);
 
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.ForeColor = System.Drawing.Color.Silver;
-            this.lblUser.Location = new System.Drawing.Point(60, 90);
-            this.lblUser.Text = "Usuario:";
+            // ====== TARJETA ======
+            card = new UITheme.CardPanel { Size = new Size(420, 500) };
+            bg.Controls.Add(card);
+            bg.Resize += (s, e) => CenterCard();
+            CenterCard();
 
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(25, 25, 40);
-            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtUsuario.Location = new System.Drawing.Point(150, 87);
-            this.txtUsuario.Size = new System.Drawing.Size(160, 25);
+            // ====== AVATAR ======
+            avatar = new PictureBox
+            {
+                Size = new Size(116, 116),
+                Location = new Point((card.Width - 116) / 2, 26),
+                BackColor = Color.Transparent
+            };
+            UITheme.MakeCircleAvatar(avatar, drawRing: false);
+            card.Controls.Add(avatar);
 
-            // 
-            // lblPass
-            // 
-            this.lblPass.AutoSize = true;
-            this.lblPass.ForeColor = System.Drawing.Color.Silver;
-            this.lblPass.Location = new System.Drawing.Point(60, 130);
-            this.lblPass.Text = "Contraseña:";
+            // ====== TITULOS ======
+            lblBien = new Label
+            {
+                Text = "¡Bienvenido!",
+                AutoSize = false,
+                Width = card.Width,
+                Height = 42,
+                TextAlign = ContentAlignment.MiddleCenter,
+                Font = new Font("Segoe UI Semibold", 22f, FontStyle.Bold),
+                ForeColor = Color.White,
+                BackColor = Color.Transparent,
+                Location = new Point(0, 160)
+            };
+            card.Controls.Add(lblBien);
 
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(25, 25, 40);
-            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPassword.ForeColor = System.Drawing.Color.White;
-            this.txtPassword.Location = new System.Drawing.Point(150, 127);
-            this.txtPassword.PasswordChar = '•';
-            this.txtPassword.Size = new System.Drawing.Size(160, 25);
+            lblSub = new Label
+            {
+                Text = "Conversor de Unidades",
+                AutoSize = false,
+                Width = card.Width,
+                Height = 24,
+                TextAlign = ContentAlignment.MiddleCenter,
+                ForeColor = Color.FromArgb(230, 235, 248),
+                BackColor = Color.Transparent,
+                Location = new Point(0, 198)
+            };
+            card.Controls.Add(lblSub);
 
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(50, 100, 255);
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(130, 180);
-            this.btnLogin.Size = new System.Drawing.Size(120, 35);
-            this.btnLogin.Text = "INICIAR";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // ====== CAMPOS ======
+            txtUsuario = new UITheme.PlaceholderTextBox
+            {
+                Placeholder = "Usuario",
+                BorderStyle = BorderStyle.None,
+                Size = new Size(320, 44)
+            };
+            var hostUser = MakeFieldHost(txtUsuario);
+            // 240 es el gap que visualmente calza con la maqueta
+            hostUser.Location = new Point((card.Width - 320) / 2, 240);
+            card.Controls.Add(hostUser);
 
-            // 
-            // LoginForm Controls
-            // 
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.lblUser);
-            this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.lblPass);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.btnLogin);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            txtPassword = new UITheme.PlaceholderTextBox
+            {
+                Placeholder = "Contraseña",
+                BorderStyle = BorderStyle.None,
+                Size = new Size(320, 44),
+                UseSystemPasswordChar = true
+            };
+            var hostPass = MakeFieldHost(txtPassword);
+            hostPass.Location = new Point((card.Width - 320) / 2, 294);
+            card.Controls.Add(hostPass);
+
+            // ====== BOTON ======
+            btnLogin = new UITheme.GradientButton
+            {
+                Text = "INICIAR SESIÓN",
+                Size = new Size(320, 44),
+                Location = new Point((card.Width - 320) / 2, 350)
+            };
+            btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            card.Controls.Add(btnLogin);
+
+            // ====== HINT ======
+            lblHint = new Label
+            {
+                Text = "Por favor, ingrese sus credenciales",
+                AutoSize = false,
+                Width = card.Width,
+                Height = 18,
+                TextAlign = ContentAlignment.MiddleCenter,
+                ForeColor = Color.FromArgb(235, 235, 245),
+                BackColor = Color.Transparent,
+                Location = new Point(0, 402)
+            };
+            card.Controls.Add(lblHint);
+        }
+
+        // Wrapper “pill” con sombra y borde
+        private Panel MakeFieldHost(TextBox inner)
+        {
+            var host = new Panel { Size = new Size(320, 44), BackColor = Color.Transparent };
+            inner.Location = new Point(14, 12);
+            inner.Width = host.Width - 28;
+            host.Controls.Add(inner);
+
+            host.Paint += (s, e) =>
+            {
+                var g = e.Graphics;
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                var r = host.ClientRectangle; r.Inflate(-1, -1);
+                int rad = 12;
+
+                using var path = Rounded(r, rad);
+                // sombra sutil
+                using var sh = new SolidBrush(Color.FromArgb(28, 0, 0, 0));
+                var m = new System.Drawing.Drawing2D.Matrix(); m.Translate(0, 3);
+                var pSh = (System.Drawing.Drawing2D.GraphicsPath)path.Clone(); pSh.Transform(m);
+                g.FillPath(sh, pSh);
+
+                // fondo blanco
+                using var fill = new SolidBrush(Color.White);
+                g.FillPath(fill, path);
+
+                // borde suave
+                using var pen = new Pen(Color.FromArgb(210, 220, 235), 2f);
+                g.DrawPath(pen, path);
+            };
+            return host;
+
+            static System.Drawing.Drawing2D.GraphicsPath Rounded(Rectangle r, int rad)
+            {
+                int d = rad * 2;
+                var p = new System.Drawing.Drawing2D.GraphicsPath();
+                p.AddArc(r.X, r.Y, d, d, 180, 90);
+                p.AddArc(r.Right - d, r.Y, d, d, 270, 90);
+                p.AddArc(r.Right - d, r.Bottom - d, d, d, 0, 90);
+                p.AddArc(r.X, r.Bottom - d, d, d, 90, 90);
+                p.CloseFigure();
+                return p;
+            }
+        }
+
+        private void CenterCard()
+        {
+            if (bg == null || card == null) return;
+            card.Location = new Point((bg.Width - card.Width) / 2, (bg.Height - card.Height) / 2);
         }
     }
 }
