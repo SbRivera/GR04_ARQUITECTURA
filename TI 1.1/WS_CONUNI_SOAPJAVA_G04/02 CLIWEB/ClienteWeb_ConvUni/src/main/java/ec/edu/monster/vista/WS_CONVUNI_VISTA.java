@@ -16,7 +16,7 @@ import java.util.Set;
 public class WS_CONVUNI_VISTA extends HttpServlet {
 
     private static final Set<String> PERMITE_NEGATIVOS = Set.of("cToF", "fToC");
-    private static final DecimalFormat RESULT_FORMAT = new DecimalFormat("#,##0.####");
+    private static final DecimalFormat RESULT_FORMAT = new DecimalFormat("#,##0.00");
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

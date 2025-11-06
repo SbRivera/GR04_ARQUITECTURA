@@ -10,7 +10,7 @@ public class Constants {
     // Para encontrar tu IP en Windows: ejecuta "ipconfig" en CMD y busca "Dirección IPv4"
     
     // 🔧 Cambia "10.0.2.2" por tu IP real si usas dispositivo físico
-    public static final String URL = "http://192.168.100.17:8080/WS_ConUni_REST_JAVA_GR04/webresources/ConUni";
+    public static final String URL = "http://10.40.14.237:8080/WS_ConUni_REST_JAVA_GR04/webresources/ConUni";
     
     // Si usas dispositivo físico, descomenta esta línea y comenta la de arriba:
     // public static final String URL = "http://192.168.100.17:8080/WS_ConUni_REST_JAVA_GR04/webresources/ConUni";

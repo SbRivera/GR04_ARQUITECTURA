@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
                 float resultado = RestClient.callConversion(metodo, parametro, valor);
                 runOnUiThread(() -> {
                     cardResultado.setVisibility(View.VISIBLE);
-                    tvResultado.setText(String.format("%.3f", resultado));
+                    tvResultado.setText(String.format("%.2f", resultado));
                     tvUnidad.setText(unidad);
                 });
             } catch (Exception e) {

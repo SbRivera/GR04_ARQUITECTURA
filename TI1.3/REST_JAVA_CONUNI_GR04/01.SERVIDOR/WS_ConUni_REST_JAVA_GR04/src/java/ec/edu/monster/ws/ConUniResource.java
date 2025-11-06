@@ -86,15 +86,31 @@ public class ConUniResource {
         return buildResponse(new Result("Libras → Kilogramos", v, "lb", out, "kg"), accept);
     }
 
-    // ---------- Utilidad para JSON o texto ----------
-    private Response buildResponse(Result r, String accept) {
-        if (accept != null && accept.contains(MediaType.TEXT_PLAIN)) {
-            // Solo el número (con 6 decimales) si piden text/plain
-            return Response.ok(String.format(java.util.Locale.US, "%.6f", r.output),
-                               MediaType.TEXT_PLAIN).build();
-        }
-        return Response.ok(r, MediaType.APPLICATION_JSON).build();
+// ---------- Utilidad de redondeo ----------
+private static double round2(double v) {
+    return java.math.BigDecimal.valueOf(v)
+            .setScale(2, java.math.RoundingMode.HALF_UP)
+            .doubleValue();
+}
+
+// ---------- Utilidad para JSON o texto ----------
+private Response buildResponse(Result r, String accept) {
+    // Redondear SIEMPRE a 2 decimales como NÚMEROS
+    r.input  = round2(r.input);
+    r.output = round2(r.output);
+
+    if (accept != null && accept.contains(MediaType.TEXT_PLAIN)) {
+        // text/plain: solo el número con 2 decimales (punto)
+        return Response.ok(
+                String.format(java.util.Locale.US, "%.2f", r.output),
+                MediaType.TEXT_PLAIN
+        ).build();
     }
+    // application/json: números ya redondeados (no strings)
+    return Response.ok(r, MediaType.APPLICATION_JSON).build();
+}
+
+
 
     // Opcional: endpoint POST con JSON { "value": 12.3 }
     public static class ValueReq { public double value; }

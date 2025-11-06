@@ -15,8 +15,11 @@
     //     que la del otro proyecto (que lee de param.resultado/param.error/param.valor/param.tipo)
     Resultado res = (Resultado) request.getAttribute("resultado");
     if (res != null) {
-        request.setAttribute("param_resultado", String.valueOf(res.getValorConvertido()));
-        request.setAttribute("param_valor", String.valueOf(res.getValorOriginal()));
+        request.setAttribute("param_resultado",
+        String.format(java.util.Locale.US, "%.2f", res.getValorConvertido()));
+request.setAttribute("param_valor",
+        String.format(java.util.Locale.US, "%.2f", res.getValorOriginal()));
+
         request.setAttribute("param_tipo", (res.getUnidadOrigen() + " → " + res.getUnidadDestino()));
     }
     String err = (String) request.getAttribute("error");
@@ -26,257 +29,285 @@
 %>
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Conversión de Unidades</title>
-    <!-- Fuente -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conversión de Unidades</title>
+        <!-- Fuente -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS (mismo archivo del otro proyecto). Ajusta el query param si quieres bust de caché. -->
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/styles.css?v=conuni">
-</head>
-<body class="main-bg">
+        <!-- CSS (mismo archivo del otro proyecto). Ajusta el query param si quieres bust de caché. -->
+        <link rel="stylesheet" href="<%= request.getContextPath() %>/styles.css?v=conuni">
+    </head>
+    <body class="main-bg">
 
-<header class="topbar">
-    <h1>Conversiones de Unidades</h1>
-    <div class="user-badge">
-        <div class="user-info">
-            <span>Conectado como</span>
-            <strong><%= sesion.getAttribute("usuario") %></strong>
-        </div>
-        <!-- Nota: en el otro proyecto hacían GET a index.jsp como "logout" visual. -->
-        <!-- Si en este proyecto tienes un servlet Logout real, cambia la action abajo. -->
-        <form action="<%= request.getContextPath() %>/index.jsp" method="get" style="margin: 0;">
-            <button type="submit" class="logout">Cerrar sesión</button>
-        </form>
-    </div>
-</header>
-
-<!-- ======= Shell (desktop: 2 columnas / mobile: 1) ======= -->
-<div class="conv-shell">
-
-    <!-- data-* sirve para rehidratar tras el POST -->
-    <main class="conv-wrapper"
-          data-cat="${param.cat}"
-          data-tipo="${empty param.tipo ? requestScope.param_tipo : param.tipo}"
-          data-valor="${empty param.valor ? requestScope.param_valor : param.valor}">
-
-        <!-- Paso 1 -->
-        <section class="conv-card">
-            <div class="conv-card__header header--blue">
-                <span class="header-icon" aria-hidden="true">i</span>
-                <h2>Categoría de Conversión</h2>
-            </div>
-            <div class="conv-card__body">
-                <div class="input-outline">
-                    <select id="categoria" aria-label="Seleccionar Categoría">
-                        <option value="" selected>Seleccionar Categoría</option>
-                        <!-- En tu app original la categoría era "peso"; en el otro proyecto es "masa".  -->
-                        <!-- Mantendremos "longitud/temperatura/peso" para que coincida con TU backend actual. -->
-                        <option value="longitud">Longitud</option>
-                        <option value="temperatura">Temperatura</option>
-                        <option value="peso">Peso</option>
-                    </select>
+        <header class="topbar">
+            <h1>Conversiones de Unidades</h1>
+            <div class="user-badge">
+                <div class="user-info">
+                    <span>Conectado como</span>
+                    <strong><%= sesion.getAttribute("usuario") %></strong>
                 </div>
+                <!-- Nota: en el otro proyecto hacían GET a index.jsp como "logout" visual. -->
+                <!-- Si en este proyecto tienes un servlet Logout real, cambia la action abajo. -->
+                <form action="<%= request.getContextPath() %>/index.jsp" method="get" style="margin: 0;">
+                    <button type="submit" class="logout">Cerrar sesión</button>
+                </form>
             </div>
-        </section>
+        </header>
 
-        <!-- Paso 2 -->
-        <section class="conv-card">
-            <div class="conv-card__header header--orange">
-                <span class="header-icon" aria-hidden="true">i</span>
-                <h2>Tipo de Conversión</h2>
-            </div>
-            <div class="conv-card__body">
-                <div class="input-outline">
-                    <select id="tipo" aria-label="Seleccionar tipo de conversión" disabled>
-                        <option value="">Primero seleccione una</option>
-                    </select>
-                </div>
-            </div>
-        </section>
+        <!-- ======= Shell (desktop: 2 columnas / mobile: 1) ======= -->
+        <div class="conv-shell">
 
-        <!-- Paso 3 -->
-        <!-- IMPORTANTE: Cambia la URL de action si en tu proyecto actual el endpoint es distinto. -->
-        <!-- El JSP anterior usaba action="Conversion" (servlet). Aquí la dejamos apuntando ahí por defecto. -->
-        <form id="form-conversion" class="conv-card"
-              action="<%= request.getContextPath() %>/Conversion" method="post" novalidate>
+            <!-- data-* sirve para rehidratar tras el POST -->
+            <main class="conv-wrapper"
+                  data-cat="${param.cat}"
+                  data-tipo="${empty param.tipo ? requestScope.param_tipo : param.tipo}"
+                  data-valor="${empty param.valor ? requestScope.param_valor : param.valor}">
 
-            <div class="conv-card__header header--green">
-                <span class="header-icon" aria-hidden="true">i</span>
-                <h2>Ingrese el Valor</h2>
-            </div>
+                <!-- Paso 1 -->
+                <section class="conv-card">
+                    <div class="conv-card__header header--blue">
+                        <span class="header-icon" aria-hidden="true">i</span>
+                        <h2>Categoría de Conversión</h2>
+                    </div>
+                    <div class="conv-card__body">
+                        <div class="input-outline">
+                            <select id="categoria" aria-label="Seleccionar Categoría">
+                                <option value="" selected>Seleccionar Categoría</option>
+                                <!-- En tu app original la categoría era "peso"; en el otro proyecto es "masa".  -->
+                                <!-- Mantendremos "longitud/temperatura/peso" para que coincida con TU backend actual. -->
+                                <option value="longitud">Longitud</option>
+                                <option value="temperatura">Temperatura</option>
+                                <option value="peso">Peso</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
 
-            <div class="conv-card__body">
-                <!-- Hidden para enviar lo seleccionado -->
-                <input type="hidden" name="tipo" id="tipo-hidden">
-                <input type="hidden" name="cat" id="cat-hidden">
+                <!-- Paso 2 -->
+                <section class="conv-card">
+                    <div class="conv-card__header header--orange">
+                        <span class="header-icon" aria-hidden="true">i</span>
+                        <h2>Tipo de Conversión</h2>
+                    </div>
+                    <div class="conv-card__body">
+                        <div class="input-outline">
+                            <select id="tipo" aria-label="Seleccionar tipo de conversión" disabled>
+                                <option value="">Primero seleccione una</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="input-outline">
-                    <input type="number" inputmode="decimal" id="valor" name="valor"
-                           placeholder="Ingrese el valor numérico" required>
-                </div>
+                <!-- Paso 3 -->
+                <!-- IMPORTANTE: Cambia la URL de action si en tu proyecto actual el endpoint es distinto. -->
+                <!-- El JSP anterior usaba action="Conversion" (servlet). Aquí la dejamos apuntando ahí por defecto. -->
+                <form id="form-conversion" class="conv-card"
+                      action="<%= request.getContextPath() %>/Conversion" method="post" novalidate>
 
-                <button type="submit" class="btn-primary btn-block">CONVERTIR</button>
+                    <div class="conv-card__header header--green">
+                        <span class="header-icon" aria-hidden="true">i</span>
+                        <h2>Ingrese el Valor</h2>
+                    </div>
 
-                <!-- Resultado para móviles -->
+                    <div class="conv-card__body">
+                        <!-- Hidden para enviar lo seleccionado -->
+                        <input type="hidden" name="tipo" id="tipo-hidden">
+                        <input type="hidden" name="cat" id="cat-hidden">
+
+                        <div class="input-outline">
+                            <input type="number" inputmode="decimal" id="valor" name="valor"
+                                   placeholder="Ingrese el valor numérico" required>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-block">CONVERTIR</button>
+
+                        <!-- Resultado para móviles -->
+                        <c:choose>
+                            <c:when test="${not empty param.resultado || not empty requestScope.param_resultado}">
+                                <div class="result-chip only-mobile">
+                                    <strong>${empty param.resultado ? requestScope.param_resultado : param.resultado}</strong>
+                                    <small>
+                                        Valor inicial: ${empty param.valor ? requestScope.param_valor : param.valor}
+                                        · Operación: ${empty param.tipo ? requestScope.param_tipo : param.tipo}
+                                    </small>
+                                </div>
+                            </c:when>
+                            <c:when test="${not empty param.error || not empty requestScope.param_error}">
+                                <p class="alert only-mobile">${empty param.error ? requestScope.param_error : param.error}</p>
+                            </c:when>
+                        </c:choose>
+                    </div>
+                </form>
+            </main>
+
+            <!-- Panel de resultado (solo desktop) -->
+            <aside class="result-panel only-desktop">
+                <h3>Resultado</h3>
                 <c:choose>
                     <c:when test="${not empty param.resultado || not empty requestScope.param_resultado}">
-                        <div class="result-chip only-mobile">
-                            <strong>${empty param.resultado ? requestScope.param_resultado : param.resultado}</strong>
-                            <small>
-                                Valor inicial: ${empty param.valor ? requestScope.param_valor : param.valor}
-                                · Operación: ${empty param.tipo ? requestScope.param_tipo : param.tipo}
-                            </small>
-                        </div>
+                        <p class="result-big">${empty param.resultado ? requestScope.param_resultado : param.resultado}</p>
+                        <p class="muted">Valor inicial: <b>${empty param.valor ? requestScope.param_valor : param.valor}</b></p>
+                        <p class="muted">Operación: <b>${empty param.tipo ? requestScope.param_tipo : param.tipo}</b></p>
                     </c:when>
                     <c:when test="${not empty param.error || not empty requestScope.param_error}">
-                        <p class="alert only-mobile">${empty param.error ? requestScope.param_error : param.error}</p>
+                        <p class="alert">${empty param.error ? requestScope.param_error : param.error}</p>
                     </c:when>
+                    <c:otherwise>
+                        <p class="muted">Ingresa un valor y presiona <b>Convertir</b>.</p>
+                    </c:otherwise>
                 </c:choose>
-            </div>
-        </form>
-    </main>
+            </aside>
+        </div>
 
-    <!-- Panel de resultado (solo desktop) -->
-    <aside class="result-panel only-desktop">
-        <h3>Resultado</h3>
-        <c:choose>
-            <c:when test="${not empty param.resultado || not empty requestScope.param_resultado}">
-                <p class="result-big">${empty param.resultado ? requestScope.param_resultado : param.resultado}</p>
-                <p class="muted">Valor inicial: <b>${empty param.valor ? requestScope.param_valor : param.valor}</b></p>
-                <p class="muted">Operación: <b>${empty param.tipo ? requestScope.param_tipo : param.tipo}</b></p>
-            </c:when>
-            <c:when test="${not empty param.error || not empty requestScope.param_error}">
-                <p class="alert">${empty param.error ? requestScope.param_error : param.error}</p>
-            </c:when>
-            <c:otherwise>
-                <p class="muted">Ingresa un valor y presiona <b>Convertir</b>.</p>
-            </c:otherwise>
-        </c:choose>
-    </aside>
-</div>
+        <!-- FAB limpiar -->
+        <button type="button" class="fab danger" id="btn-limpiar" title="Limpiar">
+            <span class="trash" aria-hidden="true">🗑️</span>
+        </button>
 
-<!-- FAB limpiar -->
-<button type="button" class="fab danger" id="btn-limpiar" title="Limpiar">
-    <span class="trash" aria-hidden="true">🗑️</span>
-</button>
+        <script>
+            // === Opciones por categoría ===
+            // NOTA: Ajustamos los valores (val) a los que usas en TU proyecto actual:
+            //       En tu JSP original enviabas valores tipo 'cm-to-in', 'in-to-cm', 'c-to-f', etc.
+            //       Los dejamos así para no romper tus servicios.
+            const opciones = {
+                longitud: [
+                    {val: "cm-to-in", txt: "Centímetros → Pulgadas", min0: true},
+                    {val: "in-to-cm", txt: "Pulgadas → Centímetros", min0: true}
+                ],
+                temperatura: [
+                    {val: "c-to-f", txt: "Celsius → Fahrenheit", min0: false},
+                    {val: "f-to-c", txt: "Fahrenheit → Celsius", min0: false}
+                ],
+                // En tu vista antigua la categoría era "peso" (no "masa").
+                peso: [
+                    {val: "kg-to-lb", txt: "Kilogramos → Libras", min0: true},
+                    {val: "lb-to-kg", txt: "Libras → Kilogramos", min0: true}
+                ]
+            };
 
-<script>
-    // === Opciones por categoría ===
-    // NOTA: Ajustamos los valores (val) a los que usas en TU proyecto actual:
-    //       En tu JSP original enviabas valores tipo 'cm-to-in', 'in-to-cm', 'c-to-f', etc.
-    //       Los dejamos así para no romper tus servicios.
-    const opciones = {
-        longitud: [
-            { val: "cm-to-in", txt: "Centímetros → Pulgadas", min0: true },
-            { val: "in-to-cm", txt: "Pulgadas → Centímetros", min0: true }
-        ],
-        temperatura: [
-            { val: "c-to-f", txt: "Celsius → Fahrenheit", min0: false },
-            { val: "f-to-c", txt: "Fahrenheit → Celsius", min0: false }
-        ],
-        // En tu vista antigua la categoría era "peso" (no "masa").
-        peso: [
-            { val: "kg-to-lb", txt: "Kilogramos → Libras", min0: true },
-            { val: "lb-to-kg", txt: "Libras → Kilogramos", min0: true }
-        ]
-    };
+            // === DOM ===
+            const categoria = document.getElementById('categoria');
+            const tipo = document.getElementById('tipo');
+            const tipoHidden = document.getElementById('tipo-hidden');
+            const catHidden = document.getElementById('cat-hidden');
+            const valor = document.getElementById('valor');
+            const form = document.getElementById('form-conversion');
+            const btnLimpiar = document.getElementById('btn-limpiar');
 
-    // === DOM ===
-    const categoria = document.getElementById('categoria');
-    const tipo = document.getElementById('tipo');
-    const tipoHidden = document.getElementById('tipo-hidden');
-    const catHidden = document.getElementById('cat-hidden');
-    const valor = document.getElementById('valor');
-    const form = document.getElementById('form-conversion');
-    const btnLimpiar = document.getElementById('btn-limpiar');
+            // === Listeners ===
+            categoria.addEventListener('change', () => {
+                const cat = categoria.value;
+                catHidden.value = cat || '';
+                tipo.innerHTML = '';
+                if (!cat) {
+                    tipo.disabled = true;
+                    tipo.innerHTML = '<option value="">Primero seleccione una</option>';
+                    tipoHidden.value = '';
+                    return;
+                }
+                opciones[cat].forEach(o => {
+                    const opt = document.createElement('option');
+                    opt.value = o.val;
+                    opt.textContent = o.txt;
+                    tipo.appendChild(opt);
+                });
+                tipo.disabled = false;
+                aplicarReglas(opciones[cat][0].min0);
+                tipoHidden.value = tipo.value;
+            });
 
-    // === Listeners ===
-    categoria.addEventListener('change', () => {
-        const cat = categoria.value;
-        catHidden.value = cat || '';
-        tipo.innerHTML = '';
-        if (!cat) {
-            tipo.disabled = true;
-            tipo.innerHTML = '<option value="">Primero seleccione una</option>';
-            tipoHidden.value = '';
-            return;
-        }
-        opciones[cat].forEach(o => {
-            const opt = document.createElement('option');
-            opt.value = o.val; opt.textContent = o.txt;
-            tipo.appendChild(opt);
-        });
-        tipo.disabled = false;
-        aplicarReglas(opciones[cat][0].min0);
-        tipoHidden.value = tipo.value;
-    });
+            tipo.addEventListener('change', () => {
+                const cat = categoria.value;
+                const sel = opciones[cat]?.find(o => o.val === tipo.value);
+                aplicarReglas(sel ? sel.min0 : true);
+                tipoHidden.value = tipo.value || '';
+            });
 
-    tipo.addEventListener('change', () => {
-        const cat = categoria.value;
-        const sel = opciones[cat]?.find(o => o.val === tipo.value);
-        aplicarReglas(sel ? sel.min0 : true);
-        tipoHidden.value = tipo.value || '';
-    });
-
-    function aplicarReglas(min0) {
-        if (min0) { valor.setAttribute('min','0'); }
-        else { valor.removeAttribute('min'); }
-    }
-
-    form.addEventListener('submit', (e) => {
-        if (!categoria.value) { e.preventDefault(); toast("Seleccione una categoría."); return; }
-        if (!tipo.value) { e.preventDefault(); toast("Seleccione el tipo de conversión."); return; }
-        if (valor.value.trim()==='' || !isFinite(parseFloat(valor.value))) {
-            e.preventDefault(); toast("Ingrese un valor numérico válido."); return;
-        }
-        tipoHidden.value = tipo.value;
-        catHidden.value = categoria.value;
-    });
-
-    btnLimpiar.addEventListener('click', () => {
-        categoria.value=''; tipo.innerHTML='<option value="">Primero seleccione una</option>';
-        tipo.disabled=true; valor.value=''; tipoHidden.value=''; catHidden.value='';
-        toast("Formulario reiniciado.");
-    });
-
-    // === Rehidratar tras POST (mantener selección) ===
-    (function rehidratar(){
-        const wrapper = document.querySelector('.conv-wrapper');
-        let cat = (wrapper.dataset.cat || '').trim();
-        const tpo = (wrapper.dataset.tipo || '').trim();
-        const val = (wrapper.dataset.valor || '').trim();
-
-        // Inferir cat por tipo si no vino (usa tus códigos actuales con guiones)
-        if (!cat && tpo){
-            if (/cm-to-in|in-to-cm/.test(tpo)) cat = 'longitud';
-            else if (/c-to-f|f-to-c/.test(tpo)) cat = 'temperatura';
-            else if (/kg-to-lb|lb-to-kg/.test(tpo)) cat = 'peso';
-        }
-
-        if (cat){
-            categoria.value = cat;
-            categoria.dispatchEvent(new Event('change'));
-            if (tpo){
-                tipo.value = tpo;
-                tipo.dispatchEvent(new Event('change'));
+            function aplicarReglas(min0) {
+                if (min0) {
+                    valor.setAttribute('min', '0');
+                } else {
+                    valor.removeAttribute('min');
+                }
             }
-        }
-        if (val) valor.value = val;
 
-        catHidden.value = categoria.value || '';
-        tipoHidden.value = tipo.value || '';
-    })();
+            form.addEventListener('submit', (e) => {
+                if (!categoria.value) {
+                    e.preventDefault();
+                    toast("Seleccione una categoría.");
+                    return;
+                }
+                if (!tipo.value) {
+                    e.preventDefault();
+                    toast("Seleccione el tipo de conversión.");
+                    return;
+                }
+                if (valor.value.trim() === '' || !isFinite(parseFloat(valor.value))) {
+                    e.preventDefault();
+                    toast("Ingrese un valor numérico válido.");
+                    return;
+                }
+                tipoHidden.value = tipo.value;
+                catHidden.value = categoria.value;
+            });
 
-    // === Toast mínimo sin librerías (como en el otro proyecto) ===
-    function toast(t) {
-        let b = document.querySelector('.banner');
-        if (!b) { b = document.createElement('div'); b.className='banner'; document.body.appendChild(b); }
-        b.textContent = t; b.classList.add('visible'); setTimeout(()=>b.classList.remove('visible'),2200);
-    }
-</script>
-</body>
+            btnLimpiar.addEventListener('click', () => {
+                categoria.value = '';
+                tipo.innerHTML = '<option value="">Primero seleccione una</option>';
+                tipo.disabled = true;
+                valor.value = '';
+                tipoHidden.value = '';
+                catHidden.value = '';
+                toast("Formulario reiniciado.");
+            });
+
+            // === Rehidratar tras POST (mantener selección) ===
+            (function rehidratar() {
+                const wrapper = document.querySelector('.conv-wrapper');
+                let cat = (wrapper.dataset.cat || '').trim();
+                const tpo = (wrapper.dataset.tipo || '').trim();
+                const val = (wrapper.dataset.valor || '').trim();
+
+                // Inferir cat por tipo si no vino (usa tus códigos actuales con guiones)
+                if (!cat && tpo) {
+                    if (/cm-to-in|in-to-cm/.test(tpo))
+                        cat = 'longitud';
+                    else if (/c-to-f|f-to-c/.test(tpo))
+                        cat = 'temperatura';
+                    else if (/kg-to-lb|lb-to-kg/.test(tpo))
+                        cat = 'peso';
+                }
+
+                if (cat) {
+                    categoria.value = cat;
+                    categoria.dispatchEvent(new Event('change'));
+                    if (tpo) {
+                        tipo.value = tpo;
+                        tipo.dispatchEvent(new Event('change'));
+                    }
+                }
+                if (val)
+                    valor.value = val;
+
+                catHidden.value = categoria.value || '';
+                tipoHidden.value = tipo.value || '';
+            })();
+
+            // === Toast mínimo sin librerías (como en el otro proyecto) ===
+            function toast(t) {
+                let b = document.querySelector('.banner');
+                if (!b) {
+                    b = document.createElement('div');
+                    b.className = 'banner';
+                    document.body.appendChild(b);
+                }
+                b.textContent = t;
+                b.classList.add('visible');
+                setTimeout(() => b.classList.remove('visible'), 2200);
+            }
+        </script>
+    </body>
 </html>
 
 <!--
