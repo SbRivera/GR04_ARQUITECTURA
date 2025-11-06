@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ec.edu.monster.vista.ui\CardHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\CardPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\CirclePictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\CircularAvatar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\FabButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\GradientButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\PillButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\PlaceholderTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\RoundedBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\RoundTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista.ui\SoftTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ec.edu.monster.vista\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

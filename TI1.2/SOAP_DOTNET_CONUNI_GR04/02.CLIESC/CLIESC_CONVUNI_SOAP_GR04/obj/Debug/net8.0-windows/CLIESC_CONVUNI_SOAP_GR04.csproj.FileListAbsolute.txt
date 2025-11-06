@@ -1,0 +1,165 @@
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.csproj.AssemblyReference.cache
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.Form1.resources
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.Properties.Resources.resources
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.csproj.GenerateResource.cache
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.AssemblyInfoInputs.cache
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.AssemblyInfo.cs
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.csproj.CoreCompileInputs.cache
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.sourcelink.json
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.exe
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.deps.json
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.runtimeconfig.json
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.pdb
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.Security.Cryptography.Xml.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.Http.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.NetFramingBase.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.NetTcp.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.Duplex.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.Primitives.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.Security.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\cs\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\de\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\es\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\fr\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\it\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ja\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ko\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pl\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ru\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\tr\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Http.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\de\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\es\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\it\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\de\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\es\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\it\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetTcp.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\cs\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\de\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\es\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\fr\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\it\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ja\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ko\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pl\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ru\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\tr\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Primitives.resources.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_C.7D6BAC51.Up2Date
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\refint\CLIESC_CONVUNI_SOAP_GR04.dll
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.pdb
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.genruntimeconfig.cache
+C:\Users\Marcelo Echeverría Y\Desktop\TI1.1\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\ref\CLIESC_CONVUNI_SOAP_GR04.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.exe
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.deps.json
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.runtimeconfig.json
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.pdb
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\Microsoft.Extensions.ObjectPool.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.Security.Cryptography.Xml.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.Http.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.NetFramingBase.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.NetTcp.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.Duplex.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.Primitives.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.Security.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\System.ServiceModel.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\cs\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\de\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\es\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\fr\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\it\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ja\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ko\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pl\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ru\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\tr\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Http.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\de\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\es\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\it\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetFramingBase.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\cs\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\de\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\es\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\fr\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\it\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ja\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ko\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pl\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ru\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\tr\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.NetTcp.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\cs\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\de\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\es\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\fr\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\it\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ja\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ko\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pl\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\pt-BR\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\ru\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\tr\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hans\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\zh-Hant\System.ServiceModel.Primitives.resources.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.csproj.AssemblyReference.cache
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.Form1.resources
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.Properties.Resources.resources
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.csproj.GenerateResource.cache
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.AssemblyInfoInputs.cache
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.AssemblyInfo.cs
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.csproj.CoreCompileInputs.cache
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_C.7D6BAC51.Up2Date
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\refint\CLIESC_CONVUNI_SOAP_GR04.dll
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.pdb
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\CLIESC_CONVUNI_SOAP_GR04.genruntimeconfig.cache
+C:\Users\DETPC\Downloads\02.CLIESC-20251106T120702Z-1-001\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\obj\Debug\net8.0-windows\ref\CLIESC_CONVUNI_SOAP_GR04.dll
