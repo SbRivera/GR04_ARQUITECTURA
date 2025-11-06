@@ -11,13 +11,15 @@ namespace _02.CLIMOV.Vista
     {
         private readonly ISoapService _soapService;
         private string _tipoConversionActual;
+        private string _unidadOrigen;
+        private string _unidadDestino;
 
-        // Diccionarios de unidades por tipo
-        private readonly Dictionary<string, List<string>> _unidadesPorTipo = new Dictionary<string, List<string>>
+        // Diccionarios de conversiones por tipo
+        private readonly Dictionary<string, List<string>> _conversionesPorTipo = new Dictionary<string, List<string>>
         {
-            { "📏 Longitud", new List<string> { "Centímetros", "Pulgadas" } },
-            { "🌡️ Temperatura", new List<string> { "Celsius", "Fahrenheit" } },
-            { "⚖️ Peso", new List<string> { "Kilogramos", "Libras" } }
+            { "📏 Longitud", new List<string> { "Centímetros → Pulgadas", "Pulgadas → Centímetros" } },
+            { "🌡️ Temperatura", new List<string> { "Celsius → Fahrenheit", "Fahrenheit → Celsius" } },
+            { "⚖️ Peso", new List<string> { "Kilogramos → Libras", "Libras → Kilogramos" } }
         };
 
         public ConversionPage()
@@ -42,18 +44,42 @@ namespace _02.CLIMOV.Vista
 
             _tipoConversionActual = PickerTipoConversion.SelectedItem.ToString();
 
-            // Actualizar las unidades según el tipo seleccionado
-            var unidades = _unidadesPorTipo[_tipoConversionActual];
+            // Actualizar las opciones de conversión según el tipo seleccionado
+            var conversiones = _conversionesPorTipo[_tipoConversionActual];
 
-            PickerOrigen.ItemsSource = unidades;
-            PickerDestino.ItemsSource = unidades;
+            PickerConversion.ItemsSource = conversiones;
+            PickerConversion.SelectedIndex = 0;
 
-            PickerOrigen.SelectedIndex = 0;
-            PickerDestino.SelectedIndex = 1;
+            // Inicializar las unidades con la primera opción
+            if (conversiones.Count > 0)
+            {
+                var partes = conversiones[0].Split('→');
+                if (partes.Length == 2)
+                {
+                    _unidadOrigen = partes[0].Trim();
+                    _unidadDestino = partes[1].Trim();
+                }
+            }
 
             // Limpiar resultado
             OcultarResultado();
             EntryValor.Text = string.Empty;
+        }
+
+        private void OnConversionChanged(object sender, EventArgs e)
+        {
+            if (PickerConversion.SelectedIndex == -1)
+                return;
+
+            string conversionSeleccionada = PickerConversion.SelectedItem.ToString();
+            
+            // Parsear la conversión seleccionada para obtener origen y destino
+            var partes = conversionSeleccionada.Split('→');
+            if (partes.Length == 2)
+            {
+                _unidadOrigen = partes[0].Trim();
+                _unidadDestino = partes[1].Trim();
+            }
         }
 
         private async void OnConvertirClicked(object sender, EventArgs e)
@@ -71,18 +97,9 @@ namespace _02.CLIMOV.Vista
                 return;
             }
 
-            if (PickerOrigen.SelectedIndex == -1 || PickerDestino.SelectedIndex == -1)
+            if (PickerConversion.SelectedIndex == -1)
             {
-                await DisplayAlert("⚠️ Error", "Por favor, seleccione las unidades de origen y destino", "OK");
-                return;
-            }
-
-            string unidadOrigen = PickerOrigen.SelectedItem.ToString();
-            string unidadDestino = PickerDestino.SelectedItem.ToString();
-
-            if (unidadOrigen == unidadDestino)
-            {
-                await DisplayAlert("⚠️ Advertencia", "Las unidades de origen y destino son iguales", "OK");
+                await DisplayAlert("⚠️ Error", "Por favor, seleccione el tipo de conversión", "OK");
                 return;
             }
 
@@ -98,20 +115,20 @@ namespace _02.CLIMOV.Vista
                 switch (_tipoConversionActual)
                 {
                     case "📏 Longitud":
-                        resultado = await ConvertirLongitud(valor, unidadOrigen, unidadDestino);
+                        resultado = await ConvertirLongitud(valor, _unidadOrigen, _unidadDestino);
                         break;
 
                     case "🌡️ Temperatura":
-                        resultado = await ConvertirTemperatura(valor, unidadOrigen, unidadDestino);
+                        resultado = await ConvertirTemperatura(valor, _unidadOrigen, _unidadDestino);
                         break;
 
                     case "⚖️ Peso":
-                        resultado = await ConvertirPeso(valor, unidadOrigen, unidadDestino);
+                        resultado = await ConvertirPeso(valor, _unidadOrigen, _unidadDestino);
                         break;
                 }
 
                 // Mostrar resultado
-                MostrarResultado(resultado, valor, unidadOrigen, unidadDestino);
+                MostrarResultado(resultado, valor, _unidadOrigen, _unidadDestino);
             }
             catch (Exception ex)
             {
@@ -158,10 +175,17 @@ namespace _02.CLIMOV.Vista
             EntryValor.Text = string.Empty;
             OcultarResultado();
             
-            if (PickerOrigen.ItemsSource != null && PickerOrigen.ItemsSource is List<string> list && list.Count > 0)
+            if (PickerConversion.ItemsSource != null && PickerConversion.ItemsSource is List<string> list && list.Count > 0)
             {
-                PickerOrigen.SelectedIndex = 0;
-                PickerDestino.SelectedIndex = Math.Min(1, list.Count - 1);
+                PickerConversion.SelectedIndex = 0;
+                
+                // Reinicializar las unidades con la primera opción
+                var partes = list[0].Split('→');
+                if (partes.Length == 2)
+                {
+                    _unidadOrigen = partes[0].Trim();
+                    _unidadDestino = partes[1].Trim();
+                }
             }
         }
 
@@ -190,10 +214,8 @@ namespace _02.CLIMOV.Vista
             LoadingIndicator.IsRunning = mostrar;
             LoadingIndicator.IsVisible = mostrar;
             BtnConvertir.IsEnabled = !mostrar;
-            BtnLimpiar.IsEnabled = !mostrar;
             PickerTipoConversion.IsEnabled = !mostrar;
-            PickerOrigen.IsEnabled = !mostrar;
-            PickerDestino.IsEnabled = !mostrar;
+            PickerConversion.IsEnabled = !mostrar;
             EntryValor.IsEnabled = !mostrar;
             BtnConvertir.Text = mostrar ? "CONVIRTIENDO..." : "CONVERTIR";
         }

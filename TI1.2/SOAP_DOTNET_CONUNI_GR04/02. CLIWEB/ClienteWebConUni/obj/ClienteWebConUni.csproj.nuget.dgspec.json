@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj": {}
+    "C:\\Users\\DETPC\\OneDrive\\Documentos\\Github\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj": {}
   },
   "projects": {
-    "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj": {
+    "C:\\Users\\DETPC\\OneDrive\\Documentos\\Github\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
+        "projectUniqueName": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Github\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
         "projectName": "ClienteWebConUni",
-        "projectPath": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
-        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\obj\\",
+        "projectPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Github\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
+        "packagesPath": "C:\\Users\\DETPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Github\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02. CLIWEB\\ClienteWebConUni\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DETPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_02.CLIMOV.Vista.LoginPage"
+             Shell.NavBarIsVisible="False">
+
+    <!-- Fondo con gradiente morado elegante -->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#6B46C1" Offset="0.0" />
+            <GradientStop Color="#8B5CF6" Offset="0.3" />
+            <GradientStop Color="#A78BFA" Offset="0.7" />
+            <GradientStop Color="#C4B5FD" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ScrollView>
+        <Grid Padding="20" RowDefinitions="Auto,*,Auto" VerticalOptions="Center">
+
+            <!-- Header con Logo Visual Studio Style -->
+            <VerticalStackLayout Grid.Row="0" Spacing="10" Margin="0,40,0,30">
+                <!-- Imagen de perfil cuadrada con bordes redondeados -->
+                <Border HeightRequest="140"
+                        WidthRequest="140"
+                        BackgroundColor="White"
+                        HorizontalOptions="Center"
+                        StrokeThickness="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="perfil.jpg"
+                           Aspect="AspectFill"/>
+                </Border>
+
+                <!-- Línea azul corta debajo de la imagen -->
+                <BoxView Color="#3B82F6"
+                         HeightRequest="4"
+                         WidthRequest="60"
+                         CornerRadius="2"
+                         HorizontalOptions="Center"
+                         Margin="0,5,0,0"/>
+
+                <Label Text="¡Bienvenido!"
+                       FontSize="32"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#FFFFFF"
+                       Margin="0,10,0,0"/>
+
+                <Label Text="Conversor de Unidades"
+                       FontSize="15"
+                       HorizontalOptions="Center"
+                       TextColor="#F3F4F6"
+                       Opacity="0.95"/>
+            </VerticalStackLayout>
+
+            <!-- Formulario de Login sin fondo blanco -->
+            <VerticalStackLayout Grid.Row="1" Padding="20,0" Spacing="25">
+
+                
+
+                <!-- Campo Usuario con placeholder -->
+                <Border Stroke="#FFFFFF"
+                        StrokeThickness="2"
+                        BackgroundColor="#FFFFFF"
+                        Padding="16,12"
+                        Opacity="0.95">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="12"/>
+                    </Border.StrokeShape>
+
+                    <Entry x:Name="EntryUsuario"
+                           Placeholder="Usuario"
+                           PlaceholderColor="#9CA3AF"
+                           TextColor="#1F2937"
+                           FontSize="16"
+                           ClearButtonVisibility="WhileEditing"/>
+                </Border>
+
+                <!-- Campo Contraseña con placeholder -->
+                <Border Stroke="#FFFFFF"
+                        StrokeThickness="2"
+                        BackgroundColor="#FFFFFF"
+                        Padding="16,12"
+                        Opacity="0.95">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="12"/>
+                    </Border.StrokeShape>
+
+                    <Entry x:Name="EntryPassword"
+                           Placeholder="Contraseña"
+                           PlaceholderColor="#9CA3AF"
+                           TextColor="#1F2937"
+                           FontSize="16"
+                           IsPassword="True"
+                           ClearButtonVisibility="WhileEditing"/>
+                </Border>
+
+                <!-- Botón Login con gradiente morado -->
+                <Button x:Name="BtnLogin"
+                        Text="INGRESAR"
+                        Clicked="OnLoginClicked"
+                        HeightRequest="55"
+                        FontAttributes="Bold"
+                        FontSize="17"
+                        TextColor="White"
+                        CornerRadius="12"
+                        Margin="0,10,0,0">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                            <GradientStop Color="#3B82F6" Offset="0.0" />
+                            <GradientStop Color="#60A5FA" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <Button.Shadow>
+                        <Shadow Brush="#3B82F6"
+                                Opacity="0.6"
+                                Radius="12"
+                                Offset="0,5"/>
+                    </Button.Shadow>
+                </Button>
+
+                <!-- Loading Indicator -->
+                <ActivityIndicator x:Name="LoadingIndicator"
+                                 IsRunning="False"
+                                 IsVisible="False"
+                                 Color="#FFFFFF"
+                                 HeightRequest="40"/>
+
+            </VerticalStackLayout>
+
+            <!-- Footer con mensaje elegante -->
+            <Label Grid.Row="2"
+                   Margin="10,20,10,20"
+                   HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="✨ " 
+                              FontSize="16"/>
+                        <Span Text="Bienvenido al sistema de conversión"
+                              FontSize="14"
+                              TextColor="White"
+                              FontAttributes="Bold"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

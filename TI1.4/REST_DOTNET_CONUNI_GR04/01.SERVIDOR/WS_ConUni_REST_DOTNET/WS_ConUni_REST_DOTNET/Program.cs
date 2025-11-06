@@ -1,5 +1,15 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// Configurar el servidor para escuchar en todas las interfaces de red
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenAnyIP(5276); // HTTP
+    serverOptions.ListenAnyIP(7118, listenOptions =>
+    {
+        listenOptions.UseHttps(); // HTTPS
+    });
+});
+
 // Add services to the container.
 
 builder.Services.AddControllers();

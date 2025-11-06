@@ -11,6 +11,11 @@
         {
             var appShell = new AppShell();
             
+            // Limpiar preferencias de sesión al iniciar (para testing)
+            // Comentar estas líneas si quieres mantener la sesión
+            Preferences.Remove("isLoggedIn");
+            Preferences.Remove("username");
+            
             // Verificar si hay sesión activa
             bool isLoggedIn = Preferences.Get("isLoggedIn", false);
             

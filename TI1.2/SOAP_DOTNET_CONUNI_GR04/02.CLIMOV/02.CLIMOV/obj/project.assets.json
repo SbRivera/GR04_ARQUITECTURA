@@ -31883,11 +31883,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\02.CLIMOV.csproj",
+      "projectUniqueName": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Github\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\02.CLIMOV.csproj",
       "projectName": "02.CLIMOV",
-      "projectPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\02.CLIMOV.csproj",
+      "projectPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Github\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\02.CLIMOV.csproj",
       "packagesPath": "C:\\Users\\DETPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\obj\\",
+      "outputPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Github\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

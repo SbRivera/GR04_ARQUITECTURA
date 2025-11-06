@@ -5,302 +5,341 @@
              Title="Conversión de Unidades"
              Shell.NavBarIsVisible="False">
 
-    <!-- Fondo con gradiente morado vibrante -->
+    <!-- Fondo con color morado sólido -->
     <ContentPage.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#E0E7FF" Offset="0.0" />
-            <GradientStop Color="#DDD6FE" Offset="0.4" />
-            <GradientStop Color="#C4B5FD" Offset="0.7" />
-            <GradientStop Color="#A78BFA" Offset="1.0" />
-        </LinearGradientBrush>
+        <SolidColorBrush Color="#8B5CF6"/>
     </ContentPage.Background>
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="15" Margin="0,0,0,80">
 
-            <!-- Header con usuario -->
+            <!-- Header Título Principal -->
+            <Label Text="Conversiones de Unidades"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   TextColor="#FFFFFF"
+                   HorizontalOptions="Start"
+                   Margin="5,20,0,10"/>
+
+            <!-- TARJETA AZUL: Categoría de Conversión -->
             <Frame CornerRadius="20"
                    HasShadow="True"
-                   Padding="20,15"
+                   Padding="0"
                    BorderColor="Transparent"
                    Margin="0,10,0,0">
-                <Frame.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#7C3AED" Offset="0.0" />
-                        <GradientStop Color="#A78BFA" Offset="1.0" />
-                    </LinearGradientBrush>
-                </Frame.Background>
-                
-                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="15">
-                    <Label Grid.Column="0"
-                           Text="📊"
-                           FontSize="32"
-                           VerticalOptions="Center"/>
-                    
-                    <VerticalStackLayout Grid.Column="1" 
-                                       Spacing="3" 
-                                       VerticalOptions="Center">
-                        <Label Text="Sistema de Conversión"
+                <Grid RowDefinitions="Auto,Auto">
+                    <!-- Header azul con icono -->
+                    <Grid Grid.Row="0" BackgroundColor="#3B82F6" Padding="20,15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <Frame Grid.Column="0"
+                               BackgroundColor="White"
+                               CornerRadius="25"
+                               Padding="8"
+                               HasShadow="False"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               VerticalOptions="Center">
+                            <Label Text="📋"
+                                   FontSize="20"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Frame>
+                        
+                        <Label Grid.Column="1"
+                               Text="Categoría de Conversión"
                                FontSize="20"
                                FontAttributes="Bold"
-                               TextColor="#FFFFFF"/>
-                        <Label x:Name="LabelUsuario"
-                               FontSize="14"
-                               TextColor="#F3F4F6"
-                               Opacity="0.95"/>
-                    </VerticalStackLayout>
+                               TextColor="White"
+                               VerticalOptions="Center"
+                               Margin="15,0,0,0"/>
 
-                    <Button Grid.Column="2"
-                            x:Name="BtnCerrarSesion"
-                            Text="Salir"
-                            Clicked="OnCerrarSesionClicked"
-                            BackgroundColor="#FFFFFF"
-                            TextColor="#7C3AED"
-                            CornerRadius="10"
-                            FontSize="13"
-                            FontAttributes="Bold"
-                            Padding="18,10"
-                            VerticalOptions="Center"/>
+                        <Button Grid.Column="2"
+                                x:Name="BtnCerrarSesion"
+                                Text="Salir"
+                                Clicked="OnCerrarSesionClicked"
+                                BackgroundColor="#FFFFFF"
+                                TextColor="#3B82F6"
+                                CornerRadius="10"
+                                FontSize="12"
+                                FontAttributes="Bold"
+                                Padding="15,8"
+                                VerticalOptions="Center"/>
+                    </Grid>
+
+                    <!-- Contenido blanco con el picker -->
+                    <Border Grid.Row="1"
+                            BackgroundColor="White"
+                            Padding="20,25">
+                        <Border Stroke="#D1D5DB"
+                                StrokeThickness="2"
+                                BackgroundColor="#F9FAFB"
+                                Padding="15,8">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="12"/>
+                            </Border.StrokeShape>
+
+                            <Picker x:Name="PickerTipoConversion"
+                                    Title="Seleccionar Categoría"
+                                    FontSize="16"
+                                    TextColor="#1F2937"
+                                    TitleColor="#9CA3AF"
+                                    SelectedIndexChanged="OnTipoConversionChanged">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>📏 Longitud</x:String>
+                                        <x:String>🌡️ Temperatura</x:String>
+                                        <x:String>⚖️ Peso</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </Border>
+                    </Border>
                 </Grid>
             </Frame>
 
-            <!-- Selector de Tipo de Conversión -->
-            <Frame CornerRadius="18"
+            <!-- TARJETA NARANJA/ROJA: Tipo de Conversión -->
+            <Frame CornerRadius="20"
                    HasShadow="True"
-                   Padding="20"
-                   BackgroundColor="#FFFFFF"
-                   BorderColor="Transparent">
-
-                <VerticalStackLayout Spacing="12">
-                    <Label Text="Tipo de Conversión"
-                           FontSize="17"
-                           FontAttributes="Bold"
-                           TextColor="#6B46C1"/>
-
-                    <Border Stroke="#8B5CF6"
-                            StrokeThickness="2"
-                            BackgroundColor="#F9FAFB"
-                            Padding="12,6">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="12"/>
-                        </Border.StrokeShape>
-
-                        <Picker x:Name="PickerTipoConversion"
-                                FontSize="16"
-                                TextColor="#1F2937"
-                                FontAttributes="Bold"
-                                SelectedIndexChanged="OnTipoConversionChanged">
-                            <Picker.ItemsSource>
-                                <x:Array Type="{x:Type x:String}">
-                                    <x:String>📏 Longitud</x:String>
-                                    <x:String>🌡️ Temperatura</x:String>
-                                    <x:String>⚖️ Peso</x:String>
-                                </x:Array>
-                            </Picker.ItemsSource>
-                        </Picker>
-                    </Border>
-                </VerticalStackLayout>
-            </Frame>
-
-            <!-- Card Principal de Conversión -->
-            <Frame CornerRadius="18"
-                   HasShadow="True"
-                   Padding="25"
-                   BackgroundColor="#FFFFFF"
-                   BorderColor="Transparent">
-
-                <VerticalStackLayout Spacing="18">
-
-                    <!-- Valor a convertir -->
-                    <VerticalStackLayout Spacing="10">
-                        <Label Text="Valor a Convertir"
-                               FontSize="16"
+                   Padding="0"
+                   BorderColor="Transparent"
+                   Margin="0,5,0,0">
+                <Grid RowDefinitions="Auto,Auto">
+                    <!-- Header naranja/rojo con icono -->
+                    <Grid Grid.Row="0" Padding="20,15">
+                        <Grid.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Color="#F97316" Offset="0.0" />
+                                <GradientStop Color="#EF4444" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <Frame Grid.Column="0"
+                               BackgroundColor="White"
+                               CornerRadius="25"
+                               Padding="8"
+                               HasShadow="False"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               VerticalOptions="Center">
+                            <Label Text="🔄"
+                                   FontSize="20"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Frame>
+                        
+                        <Label Grid.Column="1"
+                               Text="Tipo de Conversión"
+                               FontSize="20"
                                FontAttributes="Bold"
-                               TextColor="#6B46C1"/>
+                               TextColor="White"
+                               VerticalOptions="Center"
+                               Margin="15,0,0,0"/>
+                    </Grid>
 
-                        <Border Stroke="#8B5CF6"
+                    <!-- Contenido blanco con un solo picker de conversión -->
+                    <Border Grid.Row="1"
+                            BackgroundColor="White"
+                            Padding="20,25">
+                        <Border Stroke="#D1D5DB"
                                 StrokeThickness="2"
                                 BackgroundColor="#F9FAFB"
-                                Padding="14,10">
+                                Padding="15,8">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="12"/>
+                            </Border.StrokeShape>
+
+                            <Picker x:Name="PickerConversion"
+                                    Title="Primero seleccione una categoría"
+                                    FontSize="16"
+                                    TextColor="#1F2937"
+                                    TitleColor="#9CA3AF"
+                                    SelectedIndexChanged="OnConversionChanged"/>
+                        </Border>
+                    </Border>
+                </Grid>
+            </Frame>
+
+            <!-- TARJETA VERDE: Ingrese el Valor -->
+            <Frame CornerRadius="20"
+                   HasShadow="True"
+                   Padding="0"
+                   BorderColor="Transparent"
+                   Margin="0,5,0,0">
+                <Grid RowDefinitions="Auto,Auto">
+                    <!-- Header verde con icono -->
+                    <Grid Grid.Row="0" Padding="20,15">
+                        <Grid.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Color="#10B981" Offset="0.0" />
+                                <GradientStop Color="#059669" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <Frame Grid.Column="0"
+                               BackgroundColor="White"
+                               CornerRadius="25"
+                               Padding="8"
+                               HasShadow="False"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               VerticalOptions="Center">
+                            <Label Text="✏️"
+                                   FontSize="20"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                        </Frame>
+                        
+                        <Label Grid.Column="1"
+                               Text="Ingrese el Valor"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="White"
+                               VerticalOptions="Center"
+                               Margin="15,0,0,0"/>
+                    </Grid>
+
+                    <!-- Contenido blanco con entrada y botón -->
+                    <VerticalStackLayout Grid.Row="1"
+                                       BackgroundColor="White"
+                                       Padding="20,25"
+                                       Spacing="20">
+                        <Border Stroke="#D1D5DB"
+                                StrokeThickness="2"
+                                BackgroundColor="#F9FAFB"
+                                Padding="15,12">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="12"/>
                             </Border.StrokeShape>
 
                             <Entry x:Name="EntryValor"
-                                   Placeholder="Ingrese el valor"
+                                   Placeholder="Ingrese el valor numérico"
                                    PlaceholderColor="#9CA3AF"
                                    TextColor="#1F2937"
                                    Keyboard="Numeric"
-                                   FontSize="20"
-                                   FontAttributes="Bold"
+                                   FontSize="18"
                                    HorizontalTextAlignment="Center"
                                    ClearButtonVisibility="WhileEditing"/>
                         </Border>
-                    </VerticalStackLayout>
 
-                    <!-- Unidad Origen -->
-                    <VerticalStackLayout Spacing="10">
-                        <Label Text="Desde"
-                               FontSize="16"
-                               FontAttributes="Bold"
-                               TextColor="#6B46C1"/>
-
-                        <Border Stroke="#A78BFA"
-                                StrokeThickness="2"
-                                BackgroundColor="#F9FAFB"
-                                Padding="12,6">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="12"/>
-                            </Border.StrokeShape>
-
-                            <Picker x:Name="PickerOrigen"
-                                    FontSize="16"
-                                    TextColor="#1F2937"
-                                    FontAttributes="Bold"/>
-                        </Border>
-                    </VerticalStackLayout>
-
-                    <!-- Icono de conversión -->
-                    <Label Text="⇅"
-                           FontSize="40"
-                           FontAttributes="Bold"
-                           TextColor="#7C3AED"
-                           HorizontalOptions="Center"
-                           Margin="0,8"/>
-
-                    <!-- Unidad Destino -->
-                    <VerticalStackLayout Spacing="10">
-                        <Label Text="Hacia"
-                               FontSize="16"
-                               FontAttributes="Bold"
-                               TextColor="#6B46C1"/>
-
-                        <Border Stroke="#A78BFA"
-                                StrokeThickness="2"
-                                BackgroundColor="#F9FAFB"
-                                Padding="12,6">
-                            <Border.StrokeShape>
-                                <RoundRectangle CornerRadius="12"/>
-                            </Border.StrokeShape>
-
-                            <Picker x:Name="PickerDestino"
-                                    FontSize="16"
-                                    TextColor="#1F2937"
-                                    FontAttributes="Bold"/>
-                        </Border>
-                    </VerticalStackLayout>
-
-                    <!-- Botones de acción -->
-                    <Grid ColumnDefinitions="*,Auto" 
-                          ColumnSpacing="12"
-                          Margin="0,10,0,0">
-
+                        <!-- Botón Convertir -->
                         <Button x:Name="BtnConvertir"
-                                Grid.Column="0"
                                 Text="CONVERTIR"
                                 Clicked="OnConvertirClicked"
                                 HeightRequest="55"
                                 FontAttributes="Bold"
                                 FontSize="16"
                                 TextColor="White"
-                                CornerRadius="12">
+                                CornerRadius="15">
                             <Button.Background>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                                    <GradientStop Color="#7C3AED" Offset="0.0" />
-                                    <GradientStop Color="#A78BFA" Offset="1.0" />
+                                    <GradientStop Color="#3B82F6" Offset="0.0" />
+                                    <GradientStop Color="#2563EB" Offset="1.0" />
                                 </LinearGradientBrush>
                             </Button.Background>
                             <Button.Shadow>
-                                <Shadow Brush="#7C3AED"
-                                        Opacity="0.4"
-                                        Radius="8"
-                                        Offset="0,3"/>
+                                <Shadow Brush="#3B82F6"
+                                        Opacity="0.5"
+                                        Radius="10"
+                                        Offset="0,4"/>
                             </Button.Shadow>
                         </Button>
 
-                        <Button x:Name="BtnLimpiar"
-                                Grid.Column="1"
-                                Text="🗑️"
-                                Clicked="OnLimpiarClicked"
-                                BackgroundColor="#E5E7EB"
-                                TextColor="#6B7280"
-                                CornerRadius="12"
-                                WidthRequest="55"
-                                HeightRequest="55"
-                                FontSize="22"/>
-                    </Grid>
+                        <!-- Loading Indicator -->
+                        <ActivityIndicator x:Name="LoadingIndicator"
+                                         IsRunning="False"
+                                         IsVisible="False"
+                                         Color="#10B981"
+                                         HeightRequest="40"/>
 
-                    <!-- Loading Indicator -->
-                    <ActivityIndicator x:Name="LoadingIndicator"
-                                     IsRunning="False"
-                                     IsVisible="False"
-                                     Color="#7C3AED"
-                                     HeightRequest="45"
-                                     Margin="0,10"/>
+                        <!-- Frame de Resultado -->
+                        <Frame x:Name="FrameResultado"
+                               BorderColor="Transparent"
+                               CornerRadius="15"
+                               Padding="20"
+                               Margin="0,5,0,0"
+                               IsVisible="False"
+                               HasShadow="False">
+                            <Frame.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#10B981" Offset="0.0" />
+                                    <GradientStop Color="#059669" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Frame.Background>
 
-                    <!-- Frame de Resultado -->
-                    <Frame x:Name="FrameResultado"
-                           BorderColor="Transparent"
-                           CornerRadius="15"
-                           Padding="20"
-                           Margin="0,10,0,0"
-                           IsVisible="False"
-                           HasShadow="True">
-                        <Frame.Background>
-                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                <GradientStop Color="#10B981" Offset="0.0" />
-                                <GradientStop Color="#059669" Offset="1.0" />
-                            </LinearGradientBrush>
-                        </Frame.Background>
-
-                        <VerticalStackLayout Spacing="10">
-                            <Label Text="✨ Resultado de la Conversión"
-                                   FontSize="15"
-                                   TextColor="White"
-                                   FontAttributes="Bold"
-                                   Opacity="0.95"/>
-                            
-                            <Label x:Name="LabelResultado"
-                                   FontSize="28"
-                                   TextColor="White"
-                                   FontAttributes="Bold"
-                                   HorizontalTextAlignment="Center"
-                                   Margin="0,5,0,0"/>
-                            
-                            <Label x:Name="LabelDetalles"
-                                   FontSize="14"
-                                   TextColor="White"
-                                   HorizontalTextAlignment="Center"
-                                   Opacity="0.9"
-                                   Margin="0,5,0,0"/>
-                        </VerticalStackLayout>
-                    </Frame>
-
-                </VerticalStackLayout>
+                            <VerticalStackLayout Spacing="10">
+                                <Label Text="✨ Resultado de la Conversión"
+                                       FontSize="15"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       Opacity="0.95"/>
+                                
+                                <Label x:Name="LabelResultado"
+                                       FontSize="28"
+                                       TextColor="White"
+                                       FontAttributes="Bold"
+                                       HorizontalTextAlignment="Center"
+                                       Margin="0,5,0,0"/>
+                                
+                                <Label x:Name="LabelDetalles"
+                                       FontSize="14"
+                                       TextColor="White"
+                                       HorizontalTextAlignment="Center"
+                                       Opacity="0.9"
+                                       Margin="0,5,0,0"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </VerticalStackLayout>
+                </Grid>
             </Frame>
 
-            <!-- Info Footer -->
-            <Frame BackgroundColor="#FFFFFF"
-                   BorderColor="Transparent"
-                   CornerRadius="15"
-                   Padding="15"
-                   HasShadow="True"
-                   Margin="0,5,0,20">
-                <Label TextColor="#7C3AED"
-                       FontSize="13"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="✨ " FontSize="16"/>
-                            <Span Text="Powered by SOAP Web Services" FontAttributes="Bold"/>
-                            <Span Text="&#x0a;Sistema de conversión en tiempo real" TextColor="#6B7280"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Frame>
+            <!-- Usuario Info -->
+            <Label x:Name="LabelUsuario"
+                   FontSize="14"
+                   TextColor="#FFFFFF"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,15,0,20"/>
 
         </VerticalStackLayout>
     </ScrollView>
+
+    <!-- Botón Flotante para Limpiar (FAB) -->
+    <Button Grid.Row="0"
+            Text="🗑️"
+            Clicked="OnLimpiarClicked"
+            FontSize="24"
+            HeightRequest="56"
+            WidthRequest="56"
+            CornerRadius="28"
+            BackgroundColor="#F97316"
+            TextColor="White"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="0,0,20,20"
+            Padding="0">
+        <Button.Shadow>
+            <Shadow Brush="#F97316"
+                    Opacity="0.6"
+                    Radius="12"
+                    Offset="0,4"/>
+        </Button.Shadow>
+    </Button>
+</Grid>
 
 </ContentPage>
