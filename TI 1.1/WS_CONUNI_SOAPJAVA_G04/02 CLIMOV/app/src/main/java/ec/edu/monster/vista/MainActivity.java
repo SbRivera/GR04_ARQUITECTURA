@@ -1,5 +1,6 @@
 package ec.edu.monster.vista;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnerCategoria, spinnerConversion;
     private TextInputEditText etValor;
     private TextView tvResultado, tvUnidad;
-    private Button btnConvertir;
+    private Button btnConvertir, btnCerrarSesion;
     private CardView cardResultado;
     private FloatingActionButton fabLimpiar;
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         tvResultado = findViewById(R.id.tvResultado);
         tvUnidad = findViewById(R.id.tvUnidad);
         btnConvertir = findViewById(R.id.btnConvertir);
+        btnCerrarSesion = findViewById(R.id.btnCerrarSesion);
         cardResultado = findViewById(R.id.cardResultado);
         fabLimpiar = findViewById(R.id.fabLimpiar);
 
@@ -54,8 +56,20 @@ public class MainActivity extends AppCompatActivity {
         // Listener para botón convertir
         btnConvertir.setOnClickListener(v -> realizarConversion());
         
+        // Listener para botón cerrar sesión
+        btnCerrarSesion.setOnClickListener(v -> cerrarSesion());
+        
         // Listener para botón flotante de limpiar
         fabLimpiar.setOnClickListener(v -> limpiarCampos());
+    }
+    
+    private void cerrarSesion() {
+        // Regresar al login
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+        Toast.makeText(this, "Sesión cerrada", Toast.LENGTH_SHORT).show();
     }
     
     private void limpiarCampos() {

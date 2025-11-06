@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\",
+  "WorkspaceRootPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|d:\\arq\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.vista\\conversionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.vista\\conversionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|d:\\arq\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.vista\\conversionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.vista\\conversionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.vista\\conversionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|d:\\arq\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.servicio\\restservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.servicio\\restservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.vista\\conversionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.vista\\conversionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|d:\\arq\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.modelo\\conversionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.modelo\\conversionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|d:\\arq\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.servicio\\irestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.servicio\\irestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|d:\\arq\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\utils\\apiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\utils\\apiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\utils\\apiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|d:\\arq\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.vista\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.servicio\\restservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.servicio\\restservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.modelo\\conversionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.modelo\\conversionresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.servicio\\irestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.servicio\\irestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.vista\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.vista\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|d:\\arq\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.modelo\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|d:\\arq\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.vista\\conversionpage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|c:\\users\\detpc\\onedrive\\documentos\\arquitectura\\parcial 1\\tareas\\gr04_arquitectura\\ti1.4\\rest_dotnet_conuni_gr04\\02.climov\\02.climov\\ec.edu.monster.vista\\conversionpage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{ED628AC6-7BB9-491B-971B-D44A18DFD1C7}|02.CLIMOV\\02.CLIMOV.csproj|solutionrelative:02.climov\\ec.edu.monster.vista\\conversionpage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -49,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,50 +57,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "ConversionResult.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.modelo\\ConversionResult.cs",
+              "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.modelo\\ConversionResult.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.modelo\\ConversionResult.cs",
+              "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.modelo\\ConversionResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T23:07:32.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConversionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml.cs",
+              "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml.cs",
+              "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAswNIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T23:01:15.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ApiConfig.cs",
-              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\Utils\\ApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\Utils\\ApiConfig.cs",
               "RelativeDocumentMoniker": "02.CLIMOV\\Utils\\ApiConfig.cs",
-              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\Utils\\ApiConfig.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\Utils\\ApiConfig.cs",
               "RelativeToolTip": "02.CLIMOV\\Utils\\ApiConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-05T18:34:15.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ConversionPage.xaml",
-              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
               "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
-              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
               "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
-              "ViewState": "AgIAACIBAAAAAAAAAAAtwCwBAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-10-30T23:07:44.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IRestService.cs",
-              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.servicio\\IRestService.cs",
-              "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.servicio\\IRestService.cs",
-              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.servicio\\IRestService.cs",
-              "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.servicio\\IRestService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T22:43:07.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.modelo\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.modelo\\Usuario.cs",
               "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.modelo\\Usuario.cs",
-              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.modelo\\Usuario.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.modelo\\Usuario.cs",
               "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.modelo\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -108,50 +120,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConversionResult.cs",
-              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.modelo\\ConversionResult.cs",
-              "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.modelo\\ConversionResult.cs",
-              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.modelo\\ConversionResult.cs",
-              "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.modelo\\ConversionResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IRestService.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.servicio\\IRestService.cs",
+              "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.servicio\\IRestService.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.servicio\\IRestService.cs",
+              "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.servicio\\IRestService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T23:07:32.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T22:43:07.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RestService.cs",
-              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.servicio\\RestService.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.servicio\\RestService.cs",
               "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.servicio\\RestService.cs",
-              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.servicio\\RestService.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.servicio\\RestService.cs",
               "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.servicio\\RestService.cs",
               "ViewState": "AgIAAFoAAAAAAAAAAIAwwGkAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-05T18:34:11.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ConversionPage.xaml.cs",
-              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml.cs",
-              "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml.cs",
-              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml.cs",
-              "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml.cs",
-              "ViewState": "AgIAANsAAAAAAAAAAAApwOUAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T23:01:15.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-05T18:34:11.47Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\LoginPage.xaml.cs",
               "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.vista\\LoginPage.xaml.cs",
-              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\LoginPage.xaml.cs",
               "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.vista\\LoginPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -161,9 +158,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "ConversionPage.xaml",
-              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
+              "DocumentMoniker": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
               "RelativeDocumentMoniker": "02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
-              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
+              "ToolTip": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.4\\REST_DOTNET_CONUNI_GR04\\02.CLIMOV\\02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
               "RelativeToolTip": "02.CLIMOV\\ec.edu.monster.vista\\ConversionPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -174,7 +171,9 @@
               "DocumentIndex": 9,
               "Title": "Microsoft.Maui.Resizetizer.After.targets",
               "DocumentMoniker": "C:\\Users\\DETPC\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.82\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.82\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
               "ToolTip": "C:\\Users\\DETPC\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.82\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\.nuget\\packages\\microsoft.maui.resizetizer\\9.0.82\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets",
               "ViewState": "AgIAABQCAAAAAAAAAAAjwHECAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-10-30T22:44:14.415Z"

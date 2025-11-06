@@ -11,13 +11,27 @@ namespace _02.CLIMOV.Vista
     {
         private readonly IRestService _restService;
         private string _tipoConversionActual;
+        private string _unidadOrigen;
+        private string _unidadDestino;
+        private string _categoria;
 
-        // Diccionarios de unidades por tipo
-        private readonly Dictionary<string, List<string>> _unidadesPorTipo = new Dictionary<string, List<string>>
+        // Mapeo de conversiones por categoría
+        private readonly Dictionary<string, List<string>> _conversionesPorCategoria = new Dictionary<string, List<string>>
         {
-            { "📏 Longitud", new List<string> { "Centímetros", "Pulgadas" } },
-            { "🌡️ Temperatura", new List<string> { "Celsius", "Fahrenheit" } },
-            { "⚖️ Peso", new List<string> { "Kilogramos", "Libras" } }
+            { "📏 Longitud", new List<string> { "Centímetros → Pulgadas", "Pulgadas → Centímetros" } },
+            { "🌡️ Temperatura", new List<string> { "Celsius → Fahrenheit", "Fahrenheit → Celsius" } },
+            { "⚖️ Peso", new List<string> { "Kilogramos → Libras", "Libras → Kilogramos" } }
+        };
+
+        // Mapeo de conversiones directas
+        private readonly Dictionary<string, (string origen, string destino, string categoria)> _conversionesDirectas = new Dictionary<string, (string, string, string)>
+        {
+            { "Centímetros → Pulgadas", ("Centímetros", "Pulgadas", "📏 Longitud") },
+            { "Pulgadas → Centímetros", ("Pulgadas", "Centímetros", "📏 Longitud") },
+            { "Celsius → Fahrenheit", ("Celsius", "Fahrenheit", "🌡️ Temperatura") },
+            { "Fahrenheit → Celsius", ("Fahrenheit", "Celsius", "🌡️ Temperatura") },
+            { "Kilogramos → Libras", ("Kilogramos", "Libras", "⚖️ Peso") },
+            { "Libras → Kilogramos", ("Libras", "Kilogramos", "⚖️ Peso") }
         };
 
         public ConversionPage()
@@ -42,44 +56,37 @@ namespace _02.CLIMOV.Vista
 
             _tipoConversionActual = PickerTipoConversion.SelectedItem.ToString();
 
-            // Actualizar las unidades según el tipo seleccionado
-            var unidades = _unidadesPorTipo[_tipoConversionActual];
-
-            PickerOrigen.ItemsSource = unidades;
-            PickerDestino.ItemsSource = unidades;
-
-            PickerOrigen.SelectedIndex = 0;
-            PickerDestino.SelectedIndex = 1;
-
-            // Actualizar texto informativo
-            ActualizarTextoConversion();
+            // Actualizar las conversiones disponibles según la categoría
+            if (_conversionesPorCategoria.ContainsKey(_tipoConversionActual))
+            {
+                var conversiones = _conversionesPorCategoria[_tipoConversionActual];
+                PickerConversionDirecta.ItemsSource = conversiones;
+                PickerConversionDirecta.SelectedIndex = 0;
+            }
 
             // Limpiar resultado
             OcultarResultado();
             EntryValor.Text = string.Empty;
         }
 
-        private void OnPickerSelectionChanged(object sender, EventArgs e)
+        private void OnConversionDirectaChanged(object sender, EventArgs e)
         {
-            ActualizarTextoConversion();
-        }
+            if (PickerConversionDirecta.SelectedIndex == -1)
+                return;
 
-        private void ActualizarTextoConversion()
-        {
-            if (PickerOrigen.SelectedIndex != -1 && PickerDestino.SelectedIndex != -1)
+            string conversionSeleccionada = PickerConversionDirecta.SelectedItem.ToString();
+
+            if (_conversionesDirectas.ContainsKey(conversionSeleccionada))
             {
-                string origen = PickerOrigen.SelectedItem?.ToString() ?? "";
-                string destino = PickerDestino.SelectedItem?.ToString() ?? "";
-                LabelConversionInfo.Text = $"Convertir de {origen} a {destino}";
-                LabelConversionInfo.TextColor = Color.FromArgb("#F97316");
-                LabelConversionInfo.FontAttributes = FontAttributes.Bold;
+                var conversion = _conversionesDirectas[conversionSeleccionada];
+                _unidadOrigen = conversion.origen;
+                _unidadDestino = conversion.destino;
+                _categoria = conversion.categoria;
             }
-            else
-            {
-                LabelConversionInfo.Text = "Seleccione ambas unidades";
-                LabelConversionInfo.TextColor = Color.FromArgb("#6B7280");
-                LabelConversionInfo.FontAttributes = FontAttributes.None;
-            }
+
+            // Limpiar resultado
+            OcultarResultado();
+            EntryValor.Text = string.Empty;
         }
 
         private async void OnConvertirClicked(object sender, EventArgs e)
@@ -97,18 +104,9 @@ namespace _02.CLIMOV.Vista
                 return;
             }
 
-            if (PickerOrigen.SelectedIndex == -1 || PickerDestino.SelectedIndex == -1)
+            if (PickerConversionDirecta.SelectedIndex == -1)
             {
-                await DisplayAlert("⚠️ Error", "Por favor, seleccione las unidades de origen y destino", "OK");
-                return;
-            }
-
-            string unidadOrigen = PickerOrigen.SelectedItem.ToString();
-            string unidadDestino = PickerDestino.SelectedItem.ToString();
-
-            if (unidadOrigen == unidadDestino)
-            {
-                await DisplayAlert("⚠️ Advertencia", "Las unidades de origen y destino son iguales", "OK");
+                await DisplayAlert("⚠️ Error", "Por favor, seleccione el tipo de conversión", "OK");
                 return;
             }
 
@@ -121,23 +119,23 @@ namespace _02.CLIMOV.Vista
                 double resultado = 0;
 
                 // Llamar al método correcto según el tipo de conversión
-                switch (_tipoConversionActual)
+                switch (_categoria)
                 {
                     case "📏 Longitud":
-                        resultado = await ConvertirLongitud(valor, unidadOrigen, unidadDestino);
+                        resultado = await ConvertirLongitud(valor, _unidadOrigen, _unidadDestino);
                         break;
 
                     case "🌡️ Temperatura":
-                        resultado = await ConvertirTemperatura(valor, unidadOrigen, unidadDestino);
+                        resultado = await ConvertirTemperatura(valor, _unidadOrigen, _unidadDestino);
                         break;
 
                     case "⚖️ Peso":
-                        resultado = await ConvertirPeso(valor, unidadOrigen, unidadDestino);
+                        resultado = await ConvertirPeso(valor, _unidadOrigen, _unidadDestino);
                         break;
                 }
 
                 // Mostrar resultado
-                MostrarResultado(resultado, valor, unidadOrigen, unidadDestino);
+                MostrarResultado(resultado, valor, _unidadOrigen, _unidadDestino);
             }
             catch (Exception ex)
             {
@@ -183,12 +181,7 @@ namespace _02.CLIMOV.Vista
         {
             EntryValor.Text = string.Empty;
             OcultarResultado();
-            
-            if (PickerOrigen.ItemsSource != null && PickerOrigen.ItemsSource is List<string> list && list.Count > 0)
-            {
-                PickerOrigen.SelectedIndex = 0;
-                PickerDestino.SelectedIndex = Math.Min(1, list.Count - 1);
-            }
+            PickerTipoConversion.SelectedIndex = 0;
         }
 
         private async void OnCerrarSesionClicked(object sender, EventArgs e)
@@ -218,8 +211,7 @@ namespace _02.CLIMOV.Vista
             BtnConvertir.IsEnabled = !mostrar;
             BtnLimpiar.IsEnabled = !mostrar;
             PickerTipoConversion.IsEnabled = !mostrar;
-            PickerOrigen.IsEnabled = !mostrar;
-            PickerDestino.IsEnabled = !mostrar;
+            PickerConversionDirecta.IsEnabled = !mostrar;
             EntryValor.IsEnabled = !mostrar;
             BtnConvertir.Text = mostrar ? "CONVIRTIENDO..." : "CONVERTIR";
         }

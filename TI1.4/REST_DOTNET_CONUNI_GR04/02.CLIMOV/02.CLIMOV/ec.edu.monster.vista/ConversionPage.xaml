@@ -19,27 +19,34 @@
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="20">
 
-                <!-- Header con título y botón de salir -->
-                <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10" Margin="0,20,0,10">
-                    <Label Grid.Column="0"
-                           Text="Conversiones de Unidades"
-                           FontSize="28"
-                           FontAttributes="Bold"
-                           TextColor="White"
-                           VerticalOptions="Center"/>
-                    
-                    <Button Grid.Column="1"
-                            x:Name="BtnCerrarSesion"
-                            Text="Salir"
-                            Clicked="OnCerrarSesionClicked"
-                            BackgroundColor="White"
-                            TextColor="#6B46C1"
-                            CornerRadius="10"
-                            FontSize="14"
-                            FontAttributes="Bold"
-                            Padding="20,8"
-                            VerticalOptions="Center"/>
-                </Grid>
+                <!-- Header con título y botón de cerrar sesión en contenedor blanco -->
+                <Frame BackgroundColor="White"
+                       CornerRadius="15"
+                       HasShadow="True"
+                       Padding="20,15"
+                       BorderColor="Transparent"
+                       Margin="0,20,0,10">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                        <Label Grid.Column="0"
+                               Text="Conversión de Unidades"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="#6B46C1"
+                               VerticalOptions="Center"/>
+                        
+                        <Button Grid.Column="1"
+                                x:Name="BtnCerrarSesion"
+                                Text="Cerrar sesión"
+                                Clicked="OnCerrarSesionClicked"
+                                BackgroundColor="#3B82F6"
+                                TextColor="White"
+                                CornerRadius="10"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                Padding="20,8"
+                                VerticalOptions="Center"/>
+                    </Grid>
+                </Frame>
 
                 <Label x:Name="LabelUsuario"
                        FontSize="14"
@@ -129,7 +136,7 @@
                                    BorderColor="Transparent"
                                    HasShadow="False"
                                    VerticalOptions="Center">
-                                <Label Text="ℹ️"
+                                <Label Text="🔄"
                                        FontSize="22"
                                        HorizontalOptions="Center"
                                        VerticalOptions="Center"/>
@@ -142,55 +149,32 @@
                                    VerticalOptions="Center"/>
                         </Grid>
                         
-                        <!-- Contenido Blanco con una sola línea mostrando conversión -->
-                        <VerticalStackLayout BackgroundColor="White" Padding="20,25" Spacing="15">
-                            <!-- Display de conversión en una sola línea -->
+                        <!-- Contenido Blanco -->
+                        <VerticalStackLayout BackgroundColor="White" Padding="20,25">
                             <Border Stroke="#F97316"
                                     StrokeThickness="2"
-                                    BackgroundColor="#FFF7ED"
-                                    Padding="15,12">
+                                    BackgroundColor="White"
+                                    Padding="2">
                                 <Border.StrokeShape>
                                     <RoundRectangle CornerRadius="8"/>
                                 </Border.StrokeShape>
-                                <Grid ColumnDefinitions="*,Auto,*" ColumnSpacing="10">
-                                    <!-- Picker Origen -->
-                                    <Picker Grid.Column="0"
-                                            x:Name="PickerOrigen"
-                                            FontSize="16"
-                                            FontAttributes="Bold"
-                                            TextColor="#1F2937"
-                                            Title="Origen"
-                                            HorizontalOptions="Fill"
-                                            SelectedIndexChanged="OnPickerSelectionChanged"/>
-                                    
-                                    <!-- Flecha -->
-                                    <Label Grid.Column="1"
-                                           Text="→"
-                                           FontSize="20"
-                                           TextColor="#F97316"
-                                           FontAttributes="Bold"
-                                           VerticalOptions="Center"
-                                           HorizontalOptions="Center"/>
-                                    
-                                    <!-- Picker Destino -->
-                                    <Picker Grid.Column="2"
-                                            x:Name="PickerDestino"
-                                            FontSize="16"
-                                            FontAttributes="Bold"
-                                            TextColor="#1F2937"
-                                            Title="Destino"
-                                            HorizontalOptions="Fill"
-                                            SelectedIndexChanged="OnPickerSelectionChanged"/>
-                                </Grid>
+                                <Picker x:Name="PickerConversionDirecta"
+                                        FontSize="16"
+                                        TextColor="#1F2937"
+                                        SelectedIndexChanged="OnConversionDirectaChanged"
+                                        Title="Seleccionar conversión">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Centímetros → Pulgadas</x:String>
+                                            <x:String>Pulgadas → Centímetros</x:String>
+                                            <x:String>Celsius → Fahrenheit</x:String>
+                                            <x:String>Fahrenheit → Celsius</x:String>
+                                            <x:String>Kilogramos → Libras</x:String>
+                                            <x:String>Libras → Kilogramos</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
                             </Border>
-                            
-                            <!-- Texto informativo dinámico -->
-                            <Label x:Name="LabelConversionInfo"
-                                   Text="Primero seleccione una categoría"
-                                   FontSize="13"
-                                   TextColor="#6B7280"
-                                   HorizontalOptions="Center"
-                                   HorizontalTextAlignment="Center"/>
                         </VerticalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
@@ -315,6 +299,15 @@
                     </Frame>
 
                
+                <!-- Footer con texto de bienvenida -->
+                <Label Text="¡Bienvenido, Monster!"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,20,0,30"
+                       Opacity="0.9"/>
 
             </VerticalStackLayout>
         </ScrollView>

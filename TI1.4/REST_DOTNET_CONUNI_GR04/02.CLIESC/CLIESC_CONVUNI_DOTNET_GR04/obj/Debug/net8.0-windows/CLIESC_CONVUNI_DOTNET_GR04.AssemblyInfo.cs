@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CLIESC_CONVUNI_DOTNET_GR04")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6da8774f37b890518e1093c077af105f5b1d62e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6878e693de3115baf2a8bd3cae7e6c529955b7e")]
 [assembly: System.Reflection.AssemblyProductAttribute("CLIESC_CONVUNI_DOTNET_GR04")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CLIESC_CONVUNI_DOTNET_GR04")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

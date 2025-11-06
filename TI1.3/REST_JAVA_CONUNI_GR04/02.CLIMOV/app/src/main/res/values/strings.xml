@@ -38,4 +38,8 @@
     <!-- Resultados -->
     <string name="resultado">✨ Resultado</string>
     <string name="esperando_conversion">Ingrese un valor y presione un botón de conversión</string>
+    
+    <!-- Cerrar Sesión -->
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="sesion_cerrada">Sesión cerrada correctamente</string>
 </resources>

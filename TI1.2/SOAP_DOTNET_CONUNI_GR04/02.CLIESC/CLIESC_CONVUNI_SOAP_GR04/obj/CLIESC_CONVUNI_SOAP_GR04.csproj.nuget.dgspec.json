@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\CLIESC_CONVUNI_SOAP_GR04.csproj": {}
+    "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\CLIESC_CONVUNI_SOAP_GR04.csproj": {}
   },
   "projects": {
-    "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\CLIESC_CONVUNI_SOAP_GR04.csproj": {
+    "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\CLIESC_CONVUNI_SOAP_GR04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\CLIESC_CONVUNI_SOAP_GR04.csproj",
+        "projectUniqueName": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\CLIESC_CONVUNI_SOAP_GR04.csproj",
         "projectName": "CLIESC_CONVUNI_SOAP_GR04",
-        "projectPath": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\CLIESC_CONVUNI_SOAP_GR04.csproj",
-        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\obj\\",
+        "projectPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\CLIESC_CONVUNI_SOAP_GR04.csproj",
+        "packagesPath": "C:\\Users\\DETPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DETPC\\OneDrive\\Documentos\\Arquitectura\\Parcial 1\\Tareas\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DETPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

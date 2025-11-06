@@ -11,7 +11,7 @@
     <string name="ingrese_credenciales">Por favor, ingrese sus credenciales</string>
     
     <!-- Main Screen -->
-    <string name="titulo_conversiones">Conversiones de Unidades</string>
+    <string name="titulo_conversiones">Conversión de Unidades</string>
     <string name="seleccione_conversion">Seleccione el tipo de conversión</string>
     
     <!-- Longitud -->

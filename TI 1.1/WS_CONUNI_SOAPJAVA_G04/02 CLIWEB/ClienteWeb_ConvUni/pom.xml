@@ -17,7 +17,7 @@
     </properties>
 
     <dependencies>
-        <!-- Jakarta EE API (Servlets, JSP, etc.). Se queda en provided porque lo aporta el servidor -->
+        <!-- Jakarta EE API (Servlets, JSP, etc.) -->
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-api</artifactId>
@@ -25,11 +25,18 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Runtime moderno de Metro/JAX-WS 4.x -->
+        <!-- JAX-WS Runtime moderno para Java 21 -->
         <dependency>
             <groupId>com.sun.xml.ws</groupId>
             <artifactId>jaxws-rt</artifactId>
             <version>${jaxws.version}</version>
+        </dependency>
+
+        <!-- Jakarta XML Web Services API -->
+        <dependency>
+            <groupId>jakarta.xml.ws</groupId>
+            <artifactId>jakarta.xml.ws-api</artifactId>
+            <version>4.0.0</version>
         </dependency>
     </dependencies>
 
@@ -51,10 +58,11 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.2</version>
                 <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                     <webResources>
                         <resource>
-                            <directory>src/main/resources</directory>
-                            <targetPath>WEB-INF/classes</targetPath>
+                            <directory>src</directory>
+                            <targetPath>WEB-INF</targetPath>
                             <includes>
                                 <include>jax-ws-catalog.xml</include>
                                 <include>wsdl/**</include>
@@ -64,36 +72,56 @@
                 </configuration>
             </plugin>
 
-            <!-- ÚNICO plugin wsimport moderno -->
+            <!-- Plugin JAX-WS moderno compatible con JDK 21 -->
             <plugin>
                 <groupId>com.sun.xml.ws</groupId>
                 <artifactId>jaxws-maven-plugin</artifactId>
                 <version>${jaxws.version}</version>
                 <executions>
                     <execution>
-                        <id>wsimport-generate</id>
+                        <id>wsimport-generate-WSConversionUnidades</id>
                         <phase>generate-sources</phase>
                         <goals>
                             <goal>wsimport</goal>
                         </goals>
                         <configuration>
-                            <!-- Usa la URL directa, así evitas rutas con espacios.
-                                 Si prefieres archivo local, muévelo a src/main/resources/wsdl y cambia a <wsdlFiles>. -->
+                            <!-- Opción 1: Usar URL directa (recomendado si el servicio está disponible) -->
                             <wsdlUrls>
-                                <wsdlUrl>http://localhost:8080/WS_ConUni_SOAPJAVA_GR04/WSConversionUnidades?wsdl</wsdlUrl>
+                                <wsdlUrl>http://192.168.100.17:8080/WS_ConUni_SOAPJAVA_GR04/WSConversionUnidades?wsdl</wsdlUrl>
                             </wsdlUrls>
+                            
+                            <!-- Opción 2: Si prefieres usar el archivo local, comenta wsdlUrls arriba y descomenta esto:
+                            <wsdlFiles>
+                                <wsdlFile>${basedir}/src/wsdl/10.40.14.237_8080/WS_ConUni_SOAPJAVA_GR04/WSConversionUnidades.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <wsdlDirectory>${basedir}/src/wsdl</wsdlDirectory>
+                            -->
 
                             <packageName>ec.edu.monster.cliente.ws</packageName>
-                            <sourceDestDir>${project.build.directory}/generated-sources/jaxws</sourceDestDir>
+                            <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
                             <destDir>${project.build.directory}/classes</destDir>
                             <keep>true</keep>
                             <extension>true</extension>
+                            <catalog>${basedir}/src/jax-ws-catalog.xml</catalog>
                             <vmArgs>
                                 <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
                             </vmArgs>
                         </configuration>
                     </execution>
                 </executions>
+                <dependencies>
+                    <!-- Dependencias necesarias para el plugin en Java 21 -->
+                    <dependency>
+                        <groupId>com.sun.xml.ws</groupId>
+                        <artifactId>jaxws-rt</artifactId>
+                        <version>${jaxws.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>jakarta.xml.ws</groupId>
+                        <artifactId>jakarta.xml.ws-api</artifactId>
+                        <version>4.0.0</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
