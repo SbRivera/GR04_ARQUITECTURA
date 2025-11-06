@@ -630,7 +630,7 @@ namespace ec.edu.monster.vista
                         throw new NotSupportedException("Tipo de conversión no soportado");
                 }
 
-                lblResultValue.Text = $"{valor:0.####} {unidadOrigen} = {resultado:0.####} {unidadDestino}";
+                lblResultValue.Text = $"{valor:F2} {unidadOrigen} = {resultado:F2} {unidadDestino}";
                 lblResultMeta.Text = $"{cat} — {tipo}";
             }
             catch (Exception ex)

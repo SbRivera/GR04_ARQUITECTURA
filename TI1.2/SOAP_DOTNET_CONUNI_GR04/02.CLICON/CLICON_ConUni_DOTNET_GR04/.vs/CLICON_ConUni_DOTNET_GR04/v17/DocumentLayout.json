@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\OneDrive\\Desktop\\servidor aaaaa\\CLICON_ConUni_DOTNET_GR04\\",
+  "WorkspaceRootPath": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLICON\\CLICON_ConUni_DOTNET_GR04\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C5700EE-4419-4511-9B82-D2EEB109E223}|CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04.csproj|d:\\onedrive\\desktop\\servidor aaaaa\\clicon_conuni_dotnet_gr04\\clicon_conuni_dotnet_gr04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C5700EE-4419-4511-9B82-D2EEB109E223}|CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04.csproj|d:\\arq\\gr04_arquitectura\\ti1.2\\soap_dotnet_conuni_gr04\\02.clicon\\clicon_conuni_dotnet_gr04\\clicon_conuni_dotnet_gr04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C5700EE-4419-4511-9B82-D2EEB109E223}|CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04.csproj|solutionrelative:clicon_conuni_dotnet_gr04\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C5700EE-4419-4511-9B82-D2EEB109E223}|CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04.csproj|d:\\onedrive\\desktop\\servidor aaaaa\\clicon_conuni_dotnet_gr04\\clicon_conuni_dotnet_gr04\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{7C5700EE-4419-4511-9B82-D2EEB109E223}|CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04.csproj|D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLICON\\CLICON_ConUni_DOTNET_GR04\\clicon_conuni_dotnet_gr04\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{7C5700EE-4419-4511-9B82-D2EEB109E223}|CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04.csproj|solutionrelative:clicon_conuni_dotnet_gr04\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
@@ -28,22 +28,21 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "App.config",
-              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04\\App.config",
+              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLICON\\CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04\\App.config",
               "RelativeDocumentMoniker": "CLICON_ConUni_DOTNET_GR04\\App.config",
-              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04\\App.config",
+              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLICON\\CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04\\App.config",
               "RelativeToolTip": "CLICON_ConUni_DOTNET_GR04\\App.config",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-18T19:00:32.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T19:00:32.748Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\OneDrive\\Desktop\\servidor aaaaa\\CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04\\Program.cs",
+              "DocumentMoniker": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLICON\\CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04\\Program.cs",
               "RelativeDocumentMoniker": "CLICON_ConUni_DOTNET_GR04\\Program.cs",
-              "ToolTip": "D:\\OneDrive\\Desktop\\servidor aaaaa\\CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04\\Program.cs",
+              "ToolTip": "D:\\ARQ\\GR04_ARQUITECTURA\\TI1.2\\SOAP_DOTNET_CONUNI_GR04\\02.CLICON\\CLICON_ConUni_DOTNET_GR04\\CLICON_ConUni_DOTNET_GR04\\Program.cs",
               "RelativeToolTip": "CLICON_ConUni_DOTNET_GR04\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

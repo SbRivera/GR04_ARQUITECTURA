@@ -11,7 +11,7 @@ namespace WSConUniConsumer.Models
         [Required(ErrorMessage = "Selecciona una operación.")]
         public string Tipo { get; set; } = string.Empty;
 
-        public string? Resultado { get; set; }
+        public float? Resultado { get; set; }
         public string? Error { get; set; }
     }
 }

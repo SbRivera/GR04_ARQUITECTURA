@@ -7,7 +7,7 @@
         "Action": "Start"
       },
       {
-        "Path": "..\\..\\02. CLIWEB\\ClienteWebConUni\\ClienteWebConUni.csproj",
+        "Path": "..\\..\\02.CLIESC\\CLIESC_CONVUNI_SOAP_GR04\\CLIESC_CONVUNI_SOAP_GR04.csproj",
         "Action": "Start"
       }
     ]

@@ -226,8 +226,8 @@ namespace _02.CLIMOV.Vista
 
         private void MostrarResultado(double resultado, double valorOriginal, string unidadOrigen, string unidadDestino)
         {
-            LabelResultado.Text = $"{resultado:F4} {unidadDestino}";
-            LabelDetalles.Text = $"{valorOriginal} {unidadOrigen} = {resultado:F4} {unidadDestino}";
+            LabelResultado.Text = $"{resultado:F2} {unidadDestino}";
+            LabelDetalles.Text = $"{valorOriginal:F2} {unidadOrigen} = {resultado:F2} {unidadDestino}";
             FrameResultado.IsVisible = true;
         }
 

@@ -88,13 +88,15 @@
 
                     <button type="submit" class="btn-primary btn-block">CONVERTIR</button>
 
-                    @if (!string.IsNullOrWhiteSpace(Model?.Resultado))
+                    @if (!string.IsNullOrWhiteSpace(Model?.Resultado?.ToString()))
                     {
                         <div class="result-chip only-mobile">
-                            <strong>@Model.Resultado</strong>
+                            <strong>@Model.Resultado.Value.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)</strong>
                             <small>Valor inicial: @Model.Valor · Operación: @Model.Tipo</small>
                         </div>
                     }
+
+
                     else if (!string.IsNullOrWhiteSpace(Model?.Error))
                     {
                         <p class="alert only-mobile">@Model.Error</p>
@@ -105,12 +107,13 @@
 
         <aside class="result-panel only-desktop">
             <h3>Resultado</h3>
-            @if (!string.IsNullOrWhiteSpace(Model?.Resultado))
+            @if (!string.IsNullOrWhiteSpace(Model?.Resultado?.ToString()))
             {
-                <p class="result-big">@Model.Resultado</p>
+                <p class="result-big">@Model.Resultado.Value.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)</p>
                 <p class="muted">Valor inicial: <b>@Model.Valor</b></p>
                 <p class="muted">Operación: <b>@Model.Tipo</b></p>
             }
+
             else if (!string.IsNullOrWhiteSpace(Model?.Error))
             {
                 <p class="alert">@Model.Error</p>

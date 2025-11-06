@@ -37,15 +37,36 @@ namespace WSConUniConsumer.Controllers
                 return View(model);
             }
 
+
+            // ... tras validar y antes del try puedes dejarlo tal cual
+
             try
             {
                 using var proxy = new WSConUniProxy();
-                model.Resultado = await proxy.ConvertAsync(model.Tipo, valorNumerico);
+
+                var resultadoStr = await proxy.ConvertAsync(model.Tipo, valorNumerico);
+
+                if (!decimal.TryParse(resultadoStr, NumberStyles.Float, CultureInfo.InvariantCulture, out var resultadoDec))
+                {
+                    model.Error = "La respuesta del servicio no es numérica.";
+                    return View(model);
+                }
+
+                var redondeado = Math.Round(resultadoDec, 2, MidpointRounding.AwayFromZero);
+                model.Resultado = (float)redondeado;
+
+                // ✅ que el valor ingresado también se muestre con 2 decimales
+                model.Valor = valorNumerico.ToString("F2", CultureInfo.InvariantCulture);
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
                 model.Error = $"No fue posible completar la operación. Detalles: {ex.Message}";
             }
+
+            return View(model);
+
+
+
 
             return View(model);
         }

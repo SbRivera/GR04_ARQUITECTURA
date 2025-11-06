@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_ConUni_SOAP_DOTNET_GR04"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteWebConUni", "..\..\02. CLIWEB\ClienteWebConUni\ClienteWebConUni.csproj", "{6F45FF5A-66E1-4A2D-A96A-CFE1AF365FF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIESC_CONVUNI_SOAP_GR04", "..\..\02.CLIESC\CLIESC_CONVUNI_SOAP_GR04\CLIESC_CONVUNI_SOAP_GR04.csproj", "{DFF5470F-4D3C-378D-0F4C-A05E7962D9F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6F45FF5A-66E1-4A2D-A96A-CFE1AF365FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F45FF5A-66E1-4A2D-A96A-CFE1AF365FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F45FF5A-66E1-4A2D-A96A-CFE1AF365FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFF5470F-4D3C-378D-0F4C-A05E7962D9F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFF5470F-4D3C-378D-0F4C-A05E7962D9F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFF5470F-4D3C-378D-0F4C-A05E7962D9F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFF5470F-4D3C-378D-0F4C-A05E7962D9F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,7 @@ namespace _02.CLIMOV.Utils
     {
         // ⚠️ CONFIGURACIÓN: Cambia estas constantes según tu escenario
         private const bool USE_EMULATOR = false;  // true = emulador Android, false = dispositivo físico
-        private const string YOUR_PC_IP = "192.168.100.17";  // Tu IP de Windows (ipconfig)
+        private const string YOUR_PC_IP = "192.168.0.101";  // Tu IP de Windows (ipconfig)
         private const string PORT = "7118";
         
         // ⚠️ IMPORTANTE: Esta URL se ajusta automáticamente según la plataforma

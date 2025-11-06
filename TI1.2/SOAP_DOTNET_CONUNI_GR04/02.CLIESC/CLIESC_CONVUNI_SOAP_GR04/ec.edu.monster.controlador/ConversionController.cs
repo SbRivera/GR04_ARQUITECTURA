@@ -10,7 +10,7 @@ namespace ec.edu.monster.controlador
 
         public async Task<float> ConvertirAsync(ConversionType tipo, float v)
         {
-            return tipo switch
+            float resultado = tipo switch
             {
                 ConversionType.CM_A_IN => await _svc.CmAPulgadas(v),
                 ConversionType.IN_A_CM => await _svc.PulgadasACm(v),
@@ -20,6 +20,9 @@ namespace ec.edu.monster.controlador
                 ConversionType.LB_A_KG => await _svc.LibrasAKg(v),
                 _ => throw new NotSupportedException("Tipo no soportado")
             };
+
+            // 🔹 Siempre redondea a 2 decimales antes de retornar
+            return (float)Math.Round(resultado, 2, MidpointRounding.AwayFromZero);
         }
     }
 }

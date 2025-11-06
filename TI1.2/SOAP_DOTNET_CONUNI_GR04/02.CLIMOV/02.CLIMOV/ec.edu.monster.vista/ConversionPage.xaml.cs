@@ -1,9 +1,11 @@
+using _02.CLIMOV.Servicio;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using _02.CLIMOV.Servicio;
+using static Android.Util.EventLogTags;
 
 namespace _02.CLIMOV.Vista
 {
@@ -222,10 +224,12 @@ namespace _02.CLIMOV.Vista
 
         private void MostrarResultado(float resultado, float valorOriginal, string unidadOrigen, string unidadDestino)
         {
-            LabelResultado.Text = $"{resultado:F4} {unidadDestino}";
-            LabelDetalles.Text = $"{valorOriginal} {unidadOrigen} = {resultado:F4} {unidadDestino}";
+            LabelResultado.Text = $"{resultado.ToString("F2", CultureInfo.InvariantCulture)} {unidadDestino}";
+            LabelDetalles.Text = $"{valorOriginal.ToString("F2", CultureInfo.InvariantCulture)} {unidadOrigen} = " +
+                                  $"{resultado.ToString("F2", CultureInfo.InvariantCulture)} {unidadDestino}";
             FrameResultado.IsVisible = true;
         }
+
 
         private void OcultarResultado()
         {

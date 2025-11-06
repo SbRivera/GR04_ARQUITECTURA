@@ -103,7 +103,7 @@ namespace _02.CLIMOV.Servicio
                                 System.Globalization.CultureInfo.InvariantCulture, out double result))
                             {
                                 System.Diagnostics.Debug.WriteLine($"[REST] Resultado parseado: {result}");
-                                return result;
+                                return Math.Round(result, 2, MidpointRounding.AwayFromZero);
                             }
                         }
                     }
