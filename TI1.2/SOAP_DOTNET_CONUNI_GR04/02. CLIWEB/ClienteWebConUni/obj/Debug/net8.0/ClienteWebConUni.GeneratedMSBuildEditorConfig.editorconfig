@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ClienteWebConUni
 build_property.RootNamespace = ClienteWebConUni
-build_property.ProjectDir = C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02. CLIWEB\ClienteWebConUni\
+build_property.ProjectDir = C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02. CLIWEB\ClienteWebConUni\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\DETPC\OneDrive\Documentos\Arquitectura\Parcial 1\Tareas\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02. CLIWEB\ClienteWebConUni
+build_property.MSBuildProjectDirectory = C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI1.2\SOAP_DOTNET_CONUNI_GR04\02. CLIWEB\ClienteWebConUni
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/ec.edu.monster.vista/Conversion/Index.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/ec.edu.monster.vista/Conversion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = ZWMuZWR1Lm1vbnN0ZXIudmlzdGFcQ29udmVyc2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/ec.edu.monster.vista/Login/Index.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/ec.edu.monster.vista/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = ZWMuZWR1Lm1vbnN0ZXIudmlzdGFcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/ec.edu.monster.vista/_ViewImports.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/ec.edu.monster.vista/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = ZWMuZWR1Lm1vbnN0ZXIudmlzdGFcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Error.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Index.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Privacy.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/_ViewImports.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/_ViewStart.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DETPC/OneDrive/Documentos/Arquitectura/Parcial 1/Tareas/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Shared/_Layout.cshtml]
+[C:/Users/Marcelo Echeverría Y/Desktop/ARQUITECTURA/GR04_ARQUITECTURA/TI1.2/SOAP_DOTNET_CONUNI_GR04/02. CLIWEB/ClienteWebConUni/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z6tbuhkwa4

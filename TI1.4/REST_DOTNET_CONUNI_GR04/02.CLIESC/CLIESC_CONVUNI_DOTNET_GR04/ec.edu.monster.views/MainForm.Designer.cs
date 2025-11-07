@@ -28,11 +28,11 @@ namespace CLIESC_CONVUNI_DOTNET_GR04.Views
         private UITheme.PlaceholderTextBox txtValor;
         private UITheme.GradientButton btnConvertir;
 
-        // Resultado / mensajes
+        // Resultado / mensajes (los creamos en code-behind, pero los campos viven aquí)
         private Label lblOutMain;
-        private Label lblIn;
-        private Label lblDetalle;
-        private Label lblMensaje;
+        private Label lblIn;       // lo mantendremos oculto
+        private Label lblDetalle;  // lo mantendremos oculto
+        private Label lblMensaje;  // banda inferior (mensajes / errores)
 
         // FAB limpiar
         private Button btnClearFab;
@@ -86,7 +86,6 @@ namespace CLIESC_CONVUNI_DOTNET_GR04.Views
             };
             appbar.Controls.Add(lblTitulo);
 
-            // sesión + logout (se agregan desde code-behind también)
             lblSesion = new Label
             {
                 AutoSize = true,
@@ -110,7 +109,6 @@ namespace CLIESC_CONVUNI_DOTNET_GR04.Views
                 Cursor = Cursors.Hand
             };
             btnLogout.FlatAppearance.BorderSize = 0;
-            btnLogout.Click += (s, e) => VolverAlLogin();
             appbar.Controls.Add(btnLogout);
 
             root.Controls.Add(appbar);
@@ -120,7 +118,6 @@ namespace CLIESC_CONVUNI_DOTNET_GR04.Views
             cardTipo = new UITheme.CardPanel { Size = new Size(360, 210), Top = 108, Left = 28 + 380 };
             cardValor = new UITheme.CardPanel { Size = new Size(360, 230), Top = 96, Left = 28 + 380 + 380 };
 
-            // Contenido interno se agrega desde code-behind (para mantener lógica allí)
             root.Controls.Add(cardCategoria);
             root.Controls.Add(cardTipo);
             root.Controls.Add(cardValor);
@@ -128,7 +125,7 @@ namespace CLIESC_CONVUNI_DOTNET_GR04.Views
             // ===== Resultado =====
             cardResultado = new UITheme.CardPanel
             {
-                Top = 380, // bajamos un poco desde el inicio
+                Top = 380,
                 Left = (1180 - 480) / 2 - 18,
                 Size = new Size(480, 220)
             };

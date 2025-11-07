@@ -1,56 +1,46 @@
-﻿using System.Net.Http;
+﻿// ec.edu.monster.controllers/ConversionController.cs
+using System.Net.Http;
 using System.Text;
 using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using CLIESC_CONVUNI_DOTNET_GR04.Models;
 
 namespace CLIESC_CONVUNI_DOTNET_GR04.Controllers
 {
-    public class ConversionController
+    public sealed class ConversionController
     {
-        private readonly HttpClient _httpClient;
-        private readonly string _baseUrl = "https://localhost:7118/ConUni/ConUni"; // Usa el puerto real de tu servidor REST
+        private const string BASE_URL = "https://localhost:7118/ConUni/";
+        private static readonly string[] CandidatePaths = { "ConUni" };
+
+        private readonly HttpClient _http;
+        private static readonly JsonSerializerOptions SerOpts = new()
+        {
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            PropertyNameCaseInsensitive = true
+        };
 
         public ConversionController()
         {
-            // Permite certificados HTTPS locales (solo para desarrollo)
-            var handler = new HttpClientHandler
-            {
-                ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => true
-            };
-
-            _httpClient = new HttpClient(handler);
+            var baseUri = BASE_URL.EndsWith("/") ? BASE_URL : BASE_URL + "/";
+            _http = new HttpClient { BaseAddress = new Uri(baseUri) };
         }
 
-        public async Task<ConversionResponse> ConvertAsync(ConversionRequest request)
+        public async Task<ConversionResponse> ConvertAsync(ConversionRequest req, CancellationToken ct = default)
         {
-            var json = JsonSerializer.Serialize(request);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var payload = JsonSerializer.Serialize(req, SerOpts);
+            using var content = new StringContent(payload, Encoding.UTF8, "application/json");
 
-            try
-            {
-                var response = await _httpClient.PostAsync(_baseUrl, content);
-                var responseText = await response.Content.ReadAsStringAsync();
+            using var resp = await _http.PostAsync(CandidatePaths[0], content, ct);
+            var body = await resp.Content.ReadAsStringAsync(ct);
 
-                if (!response.IsSuccessStatusCode)
-                {
-                    return new ConversionResponse
-                    {
-                        Error = $"Error del servidor ({response.StatusCode}): {responseText}"
-                    };
-                }
+            if (!resp.IsSuccessStatusCode)
+                return new ConversionResponse { Error = $"HTTP {(int)resp.StatusCode}: {body}" };
 
-                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
-                return JsonSerializer.Deserialize<ConversionResponse>(responseText, options);
-            }
-            catch (HttpRequestException ex)
-            {
-                // Captura cuando el servidor no responde o el puerto es incorrecto
-                return new ConversionResponse
-                {
-                    Error = $"No se pudo conectar al servidor: {ex.Message}"
-                };
-            }
+            var ok = JsonSerializer.Deserialize<ConversionResponse>(body, SerOpts)
+                     ?? new ConversionResponse { Error = "Respuesta vacía del servidor." };
+            ok.Raw = body;   // para depurar
+            return ok;
         }
     }
 }

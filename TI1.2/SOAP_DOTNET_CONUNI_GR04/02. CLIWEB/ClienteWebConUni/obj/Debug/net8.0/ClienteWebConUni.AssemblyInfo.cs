@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClienteWebConUni")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6878e693de3115baf2a8bd3cae7e6c529955b7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66986225dd195389d87ed19b62f69a54c753ce27")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClienteWebConUni")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClienteWebConUni")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

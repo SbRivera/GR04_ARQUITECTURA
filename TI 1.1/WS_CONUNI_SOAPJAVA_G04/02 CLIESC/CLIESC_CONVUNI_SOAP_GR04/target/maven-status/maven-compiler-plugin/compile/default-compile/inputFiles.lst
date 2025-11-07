@@ -1,18 +1,18 @@
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\SoftPasswordField.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\LoginFrame.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\CardHeader.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\controller\ConversionController.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\SoftComboBox.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\model\ConversionCategory.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\cliesc_convuni_soap_gr04\CLIESC_CONVUNI_SOAP_GR04.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\model\ConversionType.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\controller\AuthController.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\wsclient\WSConversionUnidadesClient.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\PlaceholderTextField.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\GradientPanel.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\RoundedPanel.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\MainFrame.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\CircleAvatar.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\FabButton.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\GradientButton.java
-D:\ARQ\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\PillButton.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\model\ConversionType.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\PlaceholderTextField.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\LoginFrame.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\cliesc_convuni_soap_gr04\CLIESC_CONVUNI_SOAP_GR04.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\CircleAvatar.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\PillButton.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\wsclient\WSConversionUnidadesClient.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\GradientPanel.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\controller\AuthController.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\GradientButton.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\RoundedPanel.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\CardHeader.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\MainFrame.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\FabButton.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\controller\ConversionController.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\SoftComboBox.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\model\ConversionCategory.java
+C:\Users\Marcelo Echeverría Y\Desktop\ARQUITECTURA\GR04_ARQUITECTURA\TI 1.1\WS_CONUNI_SOAPJAVA_G04\02 CLIESC\CLIESC_CONVUNI_SOAP_GR04\src\main\java\ec\edu\monster\view\ui\SoftPasswordField.java
